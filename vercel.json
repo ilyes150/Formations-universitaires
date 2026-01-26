@@ -1,7 +1,12 @@
 {
-  "rewrites": [
-    { "source": "/", "destination": "/templates/index.html" },
-    { "source": "/majors", "destination": "/templates/majors.html" },
-    { "source": "/program", "destination": "/templates/program.html" }
+  "version": 3,
+  "functions": {
+    "app.py": {
+      "runtime": "python3.11",
+      "handler": "app.app" 
+    }
+  },
+  "routes": [
+    { "src": "/(.*)", "dest": "app.py" }
   ]
 }
