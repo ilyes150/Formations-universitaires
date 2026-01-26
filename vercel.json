@@ -1,5 +1,7 @@
 {
   "routes": [
-    { "src": "/", "dest": "/templates/index.html" }
+    { "src": "/", "dest": "/templates/index.html" },
+    { "src": "/majors", "dest": "/templates/majors.html" },
+    { "src": "/program", "dest": "/templates/program.html" }
   ]
 }
