@@ -1,0 +1,498 @@
+{
+  "fields": [
+    {
+      "code": "ST",
+      "name": "Sciences et Technologies",
+      "majors": [
+        {
+          "name": "Tronc Commun",
+          "formations": []
+        },
+        {
+          "name": "Genie Minier",
+          "formations": []
+        },
+        {
+          "name": "Automatique",
+          "formations": []
+        },
+        {
+          "name": "Hydrocarbures",
+          "formations": []
+        },
+        {
+          "name": "Metallurgie",
+          "formations": []
+        },
+        {
+          "name": "Genie Civil",
+          "formations": []
+        },
+        {
+          "name": "Aeronautique",
+          "formations": []
+        },
+        {
+          "name": "Electromecanique",
+          "formations": []
+        },
+        {
+          "name": "Genie Des Procedes",
+          "formations": []
+        },
+        {
+          "name": "Energies Renouvelables",
+          "formations": []
+        },
+        {
+          "name": "Genie Maritime",
+          "formations": []
+        },
+        {
+          "name": "Genie Industriel",
+          "formations": []
+        },
+        {
+          "name": "Genie Mecanique",
+          "formations": []
+        },
+        {
+          "name": "Electronique",
+          "formations": []
+        },
+        {
+          "name": "Electrotechnique",
+          "formations": []
+        },
+        {
+          "name": "Telecommunications",
+          "formations": []
+        },
+        {
+          "name": "Genie Climatique",
+          "formations": []
+        },
+        {
+          "name": "Genie Biomedical",
+          "formations": []
+        },
+        {
+          "name": "Architecture",
+          "formations": []
+        },
+        {
+          "name": "Genie De L'Eau",
+          "formations": []
+        },
+        {
+          "name": "Travaux Publics",
+          "formations": []
+        },
+        {
+          "name": "Hydraulique",
+          "formations": []
+        },
+        {
+          "name": "Machines Hydrauliques",
+          "formations": []
+        }
+      ]
+    },
+    {
+      "code": "SM",
+      "name": "Sciences de la Matière",
+      "majors": [
+        {
+          "name": "Tronc Commun",
+          "formations": []
+        },
+        {
+          "name": "Physique",
+          "formations": []
+        },
+        {
+          "name": "Chimie",
+          "formations": []
+        }
+      ]
+    },
+    {
+      "code": "MI",
+      "name": "Mathématiques et Informatique",
+      "majors": [
+        {
+          "name": "Tronc Commun",
+          "formations": [
+            {
+              "type": "Ingenieur",
+              "specialties": ["Tronc Commun"],
+              "programPath": "MI/tronc commun/ingenieur"
+            }
+          ]
+        },
+        {
+          "name": "Informatique",
+          "formations": [
+            {
+              "type": "Genie Logicial",
+              "specialties": ["Genie Logicial"],
+              "programPath": "MI/informatique/ingenieur/genie-logicial"
+            }
+          ]
+        },
+        {
+          "name": "Mathematiques",
+          "formations": []
+        },
+        {
+          "name": "Mathématiques Appliquées",
+          "formations": []
+        }
+      ]
+    },
+    {
+      "code": "SNV",
+      "name": "Sciences de la Nature et de la Vie",
+      "majors": [
+        {
+          "name": "Tronc Commun",
+          "formations": []
+        },
+        {
+          "name": "Biologie",
+          "formations": []
+        },
+        {
+          "name": "Biotechnologie",
+          "formations": []
+        },
+        {
+          "name": "Sciences Agronomiques",
+          "formations": []
+        },
+        {
+          "name": "Hydrobiologie Marine Et Continentale",
+          "formations": []
+        },
+        {
+          "name": "Ecologie Et Environnement",
+          "formations": []
+        },
+        {
+          "name": "Sciences Alimentaires",
+          "formations": []
+        }
+      ]
+    },
+    {
+      "code": "STU",
+      "name": "Sciences de la Terre et de l'Univers",
+      "majors": [
+        {
+          "name": "Geographie Et Amenagement Du Territoire",
+          "formations": []
+        },
+        {
+          "name": "Geophysique",
+          "formations": []
+        },
+        {
+          "name": "Geologie",
+          "formations": []
+        }
+      ]
+    },
+    {
+      "code": "SEGC",
+      "name": "Sciences Économiques, Gestion et Commerce",
+      "majors": [
+        {
+          "name": "Tronc Commun",
+          "formations": []
+        },
+        {
+          "name": "Sciences Commerciales",
+          "formations": []
+        },
+        {
+          "name": "Sciences De Gestion",
+          "formations": []
+        },
+        {
+          "name": "Sciences Economiques",
+          "formations": []
+        },
+        {
+          "name": "Sciences Financieres Et Comptabilite",
+          "formations": []
+        }
+      ]
+    },
+    {
+      "code": "DSP",
+      "name": "Droit et Sciences Politiques",
+      "majors": [
+        {
+          "name": "Sciences Politiques",
+          "formations": []
+        },
+        {
+          "name": "Droit",
+          "formations": []
+        }
+      ]
+    },
+    {
+      "code": "LLE",
+      "name": "Langues et Littératures Étrangères",
+      "majors": [
+        {
+          "name": "Langue Française",
+          "formations": []
+        },
+        {
+          "name": "Langue Anglaise",
+          "formations": []
+        },
+        {
+          "name": "Langue Espagnole",
+          "formations": []
+        },
+        {
+          "name": "Langue Allemande",
+          "formations": []
+        },
+        {
+          "name": "Langue Russe",
+          "formations": []
+        },
+        {
+          "name": "Langue Turque",
+          "formations": []
+        },
+        {
+          "name": "Langue Italienne",
+          "formations": []
+        },
+        {
+          "name": "Langue Chinoise",
+          "formations": []
+        },
+        {
+          "name": "Traduction Interpretariat",
+          "formations": []
+        }
+      ]
+    },
+    {
+      "code": "SHS",
+      "name": "Sciences Humaines et Sociales",
+      "majors": [
+        {
+          "name": "Sciences Humaines - Archeologie",
+          "formations": []
+        },
+        {
+          "name": "Sciences Humaines - Bibliotheconomie",
+          "formations": []
+        },
+        {
+          "name": "Sciences Humaines - Histoire",
+          "formations": []
+        },
+        {
+          "name": "Sciences Humaines - Sciences De L’Information Et De La Communication",
+          "formations": []
+        },
+        {
+          "name": "Sciences Sociales - Anthropologie",
+          "formations": []
+        },
+        {
+          "name": "Sciences Sociales - Sociologie",
+          "formations": []
+        },
+        {
+          "name": "Sciences Sociales - Psychologie",
+          "formations": []
+        },
+        {
+          "name": "Sciences Sociales - Orthophonie",
+          "formations": []
+        },
+        {
+          "name": "Sciences Sociales - Demographie",
+          "formations": []
+        },
+        {
+          "name": "Sciences Sociales - Sciences De L'Education",
+          "formations": []
+        },
+        {
+          "name": "Sciences Sociales - Philosophie",
+          "formations": []
+        },
+        {
+          "name": "Sciences Islamiques - Fondements De La Religion",
+          "formations": []
+        },
+        {
+          "name": "Sciences Islamiques - Charia",
+          "formations": []
+        },
+        {
+          "name": "Sciences Islamiques - Langue Arabe Et Civilisation Islamique",
+          "formations": []
+        }
+      ]
+    },
+    {
+      "code": "STAPS",
+      "name": "Sciences et Techniques des Activités Physiques et Sportives",
+      "majors": [
+        {
+          "name": "Tronc Commun",
+          "formations": []
+        },
+        {
+          "name": "Activite Physique Et Sportive Adaptee",
+          "formations": []
+        },
+        {
+          "name": "Activite Physique Et Sportive Educative",
+          "formations": []
+        },
+        {
+          "name": "Administration Et Gestion Du Sport",
+          "formations": []
+        },
+        {
+          "name": "Entrainement Sportif",
+          "formations": []
+        },
+        {
+          "name": "Information Et Communication Sportive",
+          "formations": []
+        }
+      ]
+    },
+    {
+      "code": "ART",
+      "name": "Arts",
+      "majors": [
+        {
+          "name": "Arts Du Spectacle",
+          "formations": []
+        },
+        {
+          "name": "Arts Visuels",
+          "formations": []
+        }
+      ]
+    },
+    {
+      "code": "LLA",
+      "name": "Langues et Littérature Arabe",
+      "majors": [
+        {
+          "name": "Etudes Litteraires",
+          "formations": []
+        },
+        {
+          "name": "Etudes Critique",
+          "formations": []
+        },
+        {
+          "name": "Etudes Linguistiques",
+          "formations": []
+        }
+      ]
+    },
+    {
+      "code": "LCA",
+      "name": "Langues et Civilisation Amazighe",
+      "majors": [
+        {
+          "name": "Linguistique Et Education",
+          "formations": []
+        },
+        {
+          "name": "Langue Et Civilisation",
+          "formations": []
+        },
+        {
+          "name": "Langue Et Litterature",
+          "formations": []
+        }
+      ]
+    },
+    {
+      "code": "AUMV",
+      "name": "Architecture, urbanisme et professions urbaines",
+      "majors": [
+        {
+          "name": "Gestion Des Techniques Urbaines",
+          "formations": []
+        },
+        {
+          "name": "Management Des Projets De Construction",
+          "formations": []
+        },
+        {
+          "name": "Geometre - Topographe",
+          "formations": []
+        },
+        {
+          "name": "Urbanisme",
+          "formations": []
+        },
+        {
+          "name": "Architecture",
+          "formations": []
+        }
+      ]
+    },
+    {
+      "code": "SS",
+      "name": "Sciences de la santé",
+      "majors": [
+        {
+          "name": "Pharmacie Industrie Des Produits Pharmaceutiques Et De Sante",
+          "formations": []
+        },
+        {
+          "name": "Pharmacie Auxiliaires En Pharmaci",
+          "formations": []
+        }
+      ]
+    },
+    {
+      "code": "SVET",
+      "name": "Sciences Vétérinaires  ",
+      "majors": [
+        {
+          "name": "Sciences Veterinaires",
+          "formations": []
+        }
+      ]
+    },
+    {
+      "code": "SMED",
+      "name": "Sciences Médicales",
+      "majors": [
+        {
+          "name": "Medecine",
+          "formations": []
+        },
+        {
+          "name": "Pharmacie",
+          "formations": []
+        },
+        {
+          "name": "Medecine Dentaire",
+          "formations": []
+        }
+      ]
+    }
+  ]
+}

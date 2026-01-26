@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filières - Université</title>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/styles.css">
+</head>
+<body>
+    <!-- Back Button -->
+    <a href="index.html" class="back-button">
+        <span>←</span> Retour
+    </a>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="hero-content">
+            <div class="breadcrumb">
+                <a href="index.html">Domaines</a> / <span id="breadcrumbField">...</span>
+            </div>
+            <h1 id="fieldTitle">Domaine</h1>
+            <p class="hero-subtitle" id="fieldSubtitle">Découvrez les filières disponibles</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="note-box" id="noteBox" style="display: none;">
+            <strong>📝 Structure Future</strong>
+            Les types de formation (Licence, Master, Ingénieur) et leurs spécialités seront ajoutés prochainement. Actuellement, seul le programme Tronc Commun pour Informatique est disponible.
+        </div>
+
+        <div class="section-header">
+            <h2 class="section-title">Filières Disponibles</h2>
+            <p class="section-subtitle">Cliquez sur une formation pour voir le programme</p>
+        </div>
+
+        <div class="majors-grid" id="majorsGrid"></div>
+    </div>
+
+    <script src="../src/app.js"></script>
+</body>
+</html>

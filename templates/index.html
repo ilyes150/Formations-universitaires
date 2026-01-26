@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Université - Domaines d'Études</title>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/styles.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Domaines d'Études</h1>
+            <p class="hero-subtitle">Explorez l'ensemble de notre offre de formation universitaire</p>
+            
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-number" id="fieldCount">17</div>
+                    <div class="stat-label">Domaines</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="majorCount">89</div>
+                    <div class="stat-label">Filières</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search Section -->
+    <div class="controls">
+        <div class="search-box">
+            <span class="search-icon">🔍</span>
+            <input 
+                type="text" 
+                id="searchInput" 
+                placeholder="Rechercher un domaine..."
+                autocomplete="off"
+            >
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Tous les Domaines</h2>
+            <p class="section-subtitle">Sélectionnez un domaine pour explorer ses filières et spécialités</p>
+        </div>
+
+        <div class="fields-grid" id="fieldsGrid"></div>
+
+        <div class="empty-state" id="emptyState">
+            <div class="empty-icon">🔍</div>
+            <div class="empty-text">Aucun domaine trouvé</div>
+        </div>
+    </div>
+
+    <script src="../src/app.js"></script>
+</body>
+</html>
