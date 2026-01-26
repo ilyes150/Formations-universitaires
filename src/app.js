@@ -211,13 +211,15 @@ const UniversityApp = {
     }
 };
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const path = window.location.pathname;
-    if (path.includes('index.html') || path.endsWith('/') || path.endsWith('/templates/')) {
+    if (path === '/' ) {
         UniversityApp.initIndexPage();
-    } else if (path.includes('majors.html')) {
+    } 
+    else if (path === '/majors') {
         UniversityApp.initMajorsPage();
-    } else if (path.includes('program.html')) {
+    } 
+    else if (path === '/program') {
         UniversityApp.initProgramPage();
     }
 });
