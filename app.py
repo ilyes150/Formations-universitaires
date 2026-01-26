@@ -1,0 +1,28 @@
+from flask import Flask, render_template, send_from_directory
+
+app = Flask(__name__)
+
+# Pages
+@app.route("/")
+def index():
+    return render_template("index.html")
+
+@app.route("/majors")
+def majors():
+    return render_template("majors.html")
+
+@app.route("/program")
+def program():
+    return render_template("program.html")
+
+# Serve static files
+@app.route("/src/<path:filename>")
+def src_files(filename):
+    return send_from_directory("src", filename)
+
+@app.route("/data/<path:filename>")
+def data_files(filename):
+    return send_from_directory("data", filename)
+
+if __name__ == "__main__":
+    app.run(debug=True)
