@@ -147,7 +147,7 @@
               "formations": [
                 {
                   "specialties": "Tronc Commun",
-                  "programPath": "MI/Tronc Commun/ingenieur"
+                  "programPath": "MI/Tronc-Commun/ingenieur"
                 }
               ]
             },
@@ -156,7 +156,7 @@
               "formations": [
                 {
                   "specialties": "Tronc Commun",
-                  "programPath": "MI/Tronc Commun/lmd"
+                  "programPath": "MI/Tronc-Commun/lmd"
                 }
               ]
             }
