@@ -6,7 +6,7 @@
     "semester": 1,
     "units": [
       {
-        "code": "UEF 3.1",
+        "code": "UEF 1.1",
         "credit": 16,
         "Coefficients": 12,
         "subjects": [
@@ -16,7 +16,7 @@
         ]
       },
       {
-        "code": "UEF 3.2",
+        "code": "UEF 1.2",
         "credit": 9,
         "Coefficients": 6,
         "subjects": [
@@ -25,7 +25,7 @@
         ]
       },
       {
-        "code": "UEM 3.1",
+        "code": "UEM 1.1",
         "credit": 3,
         "Coefficients": 1,
         "subjects": [
@@ -33,7 +33,7 @@
         ]
       },
       {
-        "code": "UET 3.1",
+        "code": "UET 1.1",
         "credit": 2,
         "Coefficients": 1,
         "subjects": [
@@ -47,7 +47,7 @@
     "semester": 2,
     "units": [
       {
-        "code": "UEF 4.1",
+        "code": "UEF 2.1",
         "credit": 12,
         "Coefficients": 8,
         "subjects": [
@@ -56,7 +56,7 @@
         ]
       },
       {
-        "code": "UEF 4.2",
+        "code": "UEF 2.2",
         "credit": 12,
         "Coefficients": 9,
         "subjects": [
@@ -66,7 +66,7 @@
         ]
       },
       {
-        "code": "UEM 4.1",
+        "code": "UEM 2.1",
         "credit": 4,
         "Coefficients": 2,
         "subjects": [
@@ -74,7 +74,7 @@
         ]
       },
       {
-        "code": "UET 4.1",
+        "code": "UET 2.1",
         "credit": 2,
         "Coefficients": 1,
         "subjects": [
