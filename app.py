@@ -15,7 +15,7 @@ def majors():
 def program():
     return render_template("program.html")
 
-# Serve static files
+# Static files: local dev uses these; on Vercel, public/src & public/data are served by CDN
 @app.route("/src/<path:filename>")
 def src_files(filename):
     return send_from_directory("src", filename)
