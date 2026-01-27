@@ -8,13 +8,12 @@ const UniversityApp = {
         const backEls = document.querySelectorAll('[data-back]');
         backEls.forEach((el) => {
             el.addEventListener('click', (e) => {
-                // If we have history, prefer going back to preserve query params.
+                // Always handle "Retour" ourselves so it only goes back ONE step.
+                e.preventDefault();
                 if (window.history.length > 1) {
-                    e.preventDefault();
                     window.history.back();
-                    return;
                 }
-                // Fall back to index.html (default anchor behavior).
+                // If there is no history, do nothing instead of skipping multiple levels.
             });
         });
     },
@@ -227,7 +226,7 @@ const UniversityApp = {
             this.renderProgram(programData);
         } catch (error) {
             console.error('Error:', error);
-            document.querySelector('.container').innerHTML = '<div class="empty-state show"><div class="empty-icon">📚</div><div class="empty-text">Programme introuvable</div><a href="index.html" style="margin-top: 20px; display: inline-block; padding: 10px 20px; background: #f59e0b; color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">Retour</a></div>';
+            document.querySelector('.container').innerHTML = '<div class="empty-state show"><div class="empty-icon">📚</div><div class="empty-text">Programme introuvable</div><a href="#" data-back style="margin-top: 20px; display: inline-block; padding: 10px 20px; background: #f59e0b; color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">Retour</a></div>';
         }
     },
 
