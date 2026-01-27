@@ -6,7 +6,26 @@
       "majors": [
         {
           "name": "Tronc Commun",
-          "formations": []
+          "types" : [
+            {
+              "type": "Ingenieur",
+              "formations": [
+                {
+                  "specialties": "Tronc Commun",
+                  "programPath": "MI/tronc Commun/ingenieur"
+                }
+              ]
+            },
+            {
+              "type": "Licence",
+              "formations": [
+                {
+                  "specialties": "Tronc Commun",
+                  "programPath": "MI/tronc Commun/lmd"
+                }
+              ]
+            }
+          ]
         },
         {
           "name": "Genie Minier",
