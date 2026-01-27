@@ -1,4 +1,5 @@
 // University Website - Main JavaScript (Dynamic JSON Loading)
+const BASE_URL = window.location.origin;
 
 const UniversityApp = {
     universityData: null,
@@ -20,7 +21,7 @@ const UniversityApp = {
 
     async loadConfig() {
         try {
-            const response = await fetch('/data/config/fields.json');
+            const response = await fetch(`${BASE_URL}/data/config/fields.json`);
             if (!response.ok) throw new Error('Failed to load configuration');
             this.universityData = await response.json();
             return this.universityData;
@@ -220,7 +221,7 @@ const UniversityApp = {
 
         try {
             this.wireBackButtons();
-            const response = await fetch(`/data/${programPath}.json`);
+            const response = await fetch(`${BASE_URL}/data/${programPath}.json`);
             if (!response.ok) throw new Error('Program not found');
             const programData = await response.json();
             this.renderProgram(programData);
