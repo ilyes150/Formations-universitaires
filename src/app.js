@@ -3,6 +3,21 @@
 const UniversityApp = {
     universityData: null,
 
+    wireBackButtons() {
+        const backEls = document.querySelectorAll('[data-back]');
+        backEls.forEach((el) => {
+            el.addEventListener('click', (e) => {
+                // If we have history, prefer going back to preserve query params.
+                if (window.history.length > 1) {
+                    e.preventDefault();
+                    window.history.back();
+                    return;
+                }
+                // Fall back to index.html (default anchor behavior).
+            });
+        });
+    },
+
     async loadConfig() {
         try {
             const response = await fetch('../data/config/fields.json');
@@ -34,6 +49,7 @@ const UniversityApp = {
         if (!fieldsGrid) return;
 
         try {
+            this.wireBackButtons();
             const data = await this.loadConfig();
             const stats = this.getStatistics(data);
             const fieldCountEl = document.getElementById('fieldCount');
@@ -93,6 +109,7 @@ const UniversityApp = {
         }
 
         try {
+            this.wireBackButtons();
             const data = await this.loadConfig();
             const field = data.fields.find(f => f.code === fieldCode);
             if (!field) {
@@ -107,7 +124,10 @@ const UniversityApp = {
             const majorsGrid = document.getElementById('majorsGrid');
             const noteBox = document.getElementById('noteBox');
 
-            const majorsWithoutFormations = field.majors.filter(major => !major.formations || major.formations.length === 0).length;
+            const majorsWithoutFormations = field.majors.filter(major => {
+                const groups = this.getMajorTypeGroups(major);
+                return !groups.some(g => Array.isArray(g.formations) && g.formations.length > 0);
+            }).length;
             if (noteBox && majorsWithoutFormations > 0) {
                 noteBox.style.display = 'block';
                 noteBox.innerHTML = `<strong>📝 Informations</strong>${majorsWithoutFormations} filière${majorsWithoutFormations > 1 ? 's' : ''} en cours d'ajout.`;
@@ -120,21 +140,71 @@ const UniversityApp = {
         }
     },
 
+    getMajorTypeGroups(major) {
+        // Normalize data into groups by type:
+        // - new shape: major.types[] -> type.formations[]
+        // - legacy:   major.formations[] (single "Programme" type)
+        if (Array.isArray(major.types) && major.types.length > 0) {
+            return major.types.map(t => ({
+                type: t.type || 'Programme',
+                formations: Array.isArray(t.formations)
+                    ? t.formations.map(f => ({
+                        specialties: f.specialties || 'Programme',
+                        programPath: f.programPath || null
+                    }))
+                    : []
+            }));
+        }
+        if (Array.isArray(major.formations)) {
+            return [{
+                type: 'Programme',
+                formations: major.formations.map(f => ({
+                    specialties: f.specialties || 'Programme',
+                    programPath: f.programPath || null
+                }))
+            }];
+        }
+        return [];
+    },
+
     renderMajors(field, container) {
         container.innerHTML = '';
         field.majors.forEach((major) => {
             const majorCard = document.createElement('div');
             majorCard.className = 'major-card';
-            const hasFormations = major.formations && major.formations.length > 0;
+            const typeGroups = this.getMajorTypeGroups(major);
+            const totalFormations = typeGroups.reduce(
+                (sum, g) => sum + (Array.isArray(g.formations) ? g.formations.length : 0),
+                0
+            );
+            const hasFormations = totalFormations > 0;
             
             if (!hasFormations) {
                 majorCard.innerHTML = `<div class="major-header"><div class="major-name">${major.name}</div><div class="major-info">Filière</div></div><div class="formations-list"><div class="formation-item no-program"><div class="formation-header"><div class="formation-type">Programme</div><div class="formation-badge coming-soon">À venir</div></div></div></div>`;
             } else {
-                const formationsList = major.formations.map(formation => {
-                    const specialtiesText = formation.specialties || 'Programme';
-                    return `<div class="formation-item"><div class="formation-header"><div class="formation-type">${formation.type}</div><div class="formation-badge">${specialtiesText}</div></div>${formation.programPath ? `<a href="program.html?path=${encodeURIComponent(formation.programPath)}" class="program-link">Voir le programme →</a>` : '<div style="margin-top: 10px; font-size: 0.85rem; color: #64748b;">Programme à venir</div>'}</div>`;
+                const formationsList = typeGroups.map((group, index) => {
+                    const items = (group.formations || []).map(formation => {
+                        const specialtiesText = formation.specialties || 'Programme';
+                        const linkHtml = formation.programPath
+                            ? `<a href="program.html?path=${encodeURIComponent(formation.programPath)}" class="program-link">Voir le programme →</a>`
+                            : '<div style="margin-top: 10px; font-size: 0.85rem; color: #64748b;">Programme à venir</div>';
+                        return `<div class="formation-item"><div class="formation-header"><div class="formation-type-specialty">${specialtiesText}</div></div>${linkHtml}</div>`;
+                    }).join('');
+                    // All types start closed; user clicks to open
+                    return `<div class="formation-type-group"><button type="button" class="formation-type-title">${group.type}</button><div class="formation-type-items">${items}</div></div>`;
                 }).join('');
-                majorCard.innerHTML = `<div class="major-header"><div class="major-name">${major.name}</div><div class="major-info">${major.formations.length} formation${major.formations.length > 1 ? 's' : ''}</div></div><div class="formations-list">${formationsList}</div>`;
+                majorCard.innerHTML = `<div class="major-header"><div class="major-name">${major.name}</div><div class="major-info">${totalFormations} formation${totalFormations > 1 ? 's' : ''}</div></div><div class="formations-list">${formationsList}</div>`;
+
+                // Click on type title to toggle its specialties list
+                const typeTitles = majorCard.querySelectorAll('.formation-type-title');
+                typeTitles.forEach((titleEl) => {
+                    titleEl.addEventListener('click', () => {
+                        const groupEl = titleEl.closest('.formation-type-group');
+                        if (groupEl) {
+                            groupEl.classList.toggle('open');
+                        }
+                    });
+                });
             }
             container.appendChild(majorCard);
         });
@@ -149,6 +219,7 @@ const UniversityApp = {
         }
 
         try {
+            this.wireBackButtons();
             const response = await fetch(`../data/${programPath}.json`);
             if (!response.ok) throw new Error('Program not found');
             const programData = await response.json();
@@ -213,11 +284,11 @@ const UniversityApp = {
 
 document.addEventListener('DOMContentLoaded', function() {
     const path = window.location.pathname;
-    if (path.includes('index.html') || path.endsWith('/') || path.endsWith('/templates/')) {
+    if (path.includes('index.html') || path === '/' || path.endsWith('/templates/')) {
         UniversityApp.initIndexPage();
-    } else if (path.includes('majors.html')) {
+    } else if (path.includes('majors.html') || path.endsWith('/majors')) {
         UniversityApp.initMajorsPage();
-    } else if (path.includes('program.html')) {
+    } else if (path.includes('program.html') || path.endsWith('/program')) {
         UniversityApp.initProgramPage();
     }
 });

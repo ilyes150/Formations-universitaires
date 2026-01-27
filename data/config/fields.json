@@ -122,21 +122,51 @@
       "majors": [
         {
           "name": "Tronc Commun",
-          "formations": [
+          "types" : [
             {
               "type": "Ingenieur",
-              "specialties": ["Tronc Commun"],
-              "programPath": "MI/tronc Commun/ingenieur"
+              "formations": [
+                {
+                  "specialties": "Tronc Commun",
+                  "programPath": "MI/tronc Commun/ingenieur"
+                }
+              ]
+            },
+            {
+              "type": "Licence",
+              "formations": []
             }
           ]
         },
         {
           "name": "Informatique",
-          "formations": [
+          "types": [
             {
-              "type": "Genie Logicial",
-              "specialties": ["Genie Logicial"],
-              "programPath": "MI/informatique/ingenieur/genie-logicial"
+              "type": "Licence",
+              "formations" : [
+                {
+                  "specialties": "System Informatique",
+                  "programPath": "MI/informatique/licence/system-informatique"
+                }
+              ]
+            },
+            {
+              "type": "Master",
+              "formations" : [
+                {
+                  "specialties": "Reseaux",
+                  "programPath": "MI/informatique/master/reseaux"
+                }
+              ]
+            },
+            {
+              "type": "ingenieur",
+              "formations" : [
+                {
+                  "specialties": "Genie Logicial",
+                  "programPath": "MI/informatique/ingenieur/genie-logicial"
+                }
+              ]
             }
           ]
         },

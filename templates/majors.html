@@ -9,7 +9,7 @@
 </head>
 <body>
     <!-- Back Button -->
-    <a href="index.html" class="back-button">
+    <a href="index.html" class="back-button" data-back> 
         <span>←</span> Retour
     </a>
 
@@ -36,7 +36,12 @@
             <p class="section-subtitle">Cliquez sur une formation pour voir le programme</p>
         </div>
 
-        <div class="majors-grid" id="majorsGrid"></div>
+        <div class="majors-grid" id="majorsGrid">   
+            <!-- Bottom Back Button -->
+            <div class="back-bottom-wrap">
+                <a href="index.html" class="back-bottom" data-back>Retour</a>
+            </div>
+        </div>
     </div>
 
     <script src="/src/app.js"></script>

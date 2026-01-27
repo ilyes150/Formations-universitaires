@@ -4,14 +4,17 @@ app = Flask(__name__)
 
 # Pages
 @app.route("/")
+@app.route("/index.html")
 def index():
     return render_template("index.html")
 
 @app.route("/majors")
+@app.route("/majors.html")
 def majors():
     return render_template("majors.html")
 
 @app.route("/program")
+@app.route("/program.html")
 def program():
     return render_template("program.html")
 

@@ -54,6 +54,34 @@ body {
     transform: translateX(-3px);
 }
 
+/* Bottom back button */
+.back-bottom-wrap {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.back-bottom {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    border-radius: 12px;
+    border: 2px solid var(--border);
+    background: white;
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.back-bottom:hover {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+    transform: translateY(-2px);
+}
+
 /* Hero Section */
 .hero {
     background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
@@ -403,6 +431,35 @@ body {
     padding: 25px;
 }
 
+.formation-type-group {
+    margin-bottom: 18px;
+}
+
+.formation-type-title {
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: var(--primary);
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.95rem;
+}
+
+.formation-type-title::after {
+    content: '▾';
+    font-size: 0.75rem;
+    color: var(--text-light);
+    transition: transform 0.2s ease;
+}
+
+.formation-type-group.open .formation-type-title::after {
+    transform: rotate(180deg);
+}
+
 .formation-item {
     background: white;
     border-radius: 12px;
@@ -444,6 +501,20 @@ body {
     font-weight: 600;
     color: var(--primary);
     font-size: 1rem;
+}
+
+.formation-type-specialty {
+    font-weight: 500;
+    color: var(--primary);
+    font-size: 0.95rem;
+}
+
+.formation-type-items {
+    display: none;
+}
+
+.formation-type-group.open .formation-type-items {
+    display: block;
 }
 
 .formation-badge {
