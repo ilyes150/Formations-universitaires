@@ -130,8 +130,8 @@
       },
       {
         "code": "UEM",
-        "credit": 4,
-        "Coefficients": 2,
+        "credit": 7,
+        "Coefficients": 4,
         "subjects": [
           { 
             "name": "Introduction aux probabilités et statistique descriptive", 
@@ -157,14 +157,15 @@
       },
       {
         "code": "UED",
-        "credit": 2,
-        "Coefficients": 3,
+        "credit": 3,
+        "Coefficients": 2,
         "subjects": [
           { 
             "name": "Physique 2 (Eléctricité Générale)", 
             "coef": 1, 
             "credit": 2, 
-            "exam": 1 
+            "continuous": 0.4, 
+            "exam": 0.6 
             }
         ]
       }
