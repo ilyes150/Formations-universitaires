@@ -134,7 +134,12 @@
             },
             {
               "type": "Licence",
-              "formations": []
+              "formations": [
+                {
+                  "specialties": "Tronc Commun",
+                  "programPath": "MI/tronc Commun/lmd"
+                }
+              ]
             }
           ]
         },

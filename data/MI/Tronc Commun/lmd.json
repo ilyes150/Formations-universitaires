@@ -1,0 +1,173 @@
+[
+  {
+    "system": "licence",
+    "track": "Tronc Commun",
+    "year": 1,
+    "semester": 1,
+    "units": [
+      {
+        "code": "UEF 1",
+        "credit": 11,
+        "Coefficients": 7,
+        "subjects": [
+          { 
+            "name": "Analyse 1", 
+            "coef": 4, 
+            "credit": 6, 
+            "continuous": 0.4, 
+            "exam": 0.6 
+            },
+          { 
+            "name": "Algèbre 1",
+            "coef": 3, 
+            "credit": 5, 
+            "continuous": 0.4, 
+            "exam": 0.6 
+            }
+        ]
+      },
+      {
+        "code": "UEF 2",
+        "credit": 11,
+        "Coefficients": 7,
+        "subjects": [
+          { 
+            "name": "Algorithmes et Structure de Données 1", 
+            "coef": 4, 
+            "credit": 6, 
+            "continuous": 0.4, 
+            "exam": 0.6 
+            },
+          { 
+            "name": "Structure Machine 1", 
+            "coef": 3, 
+            "credit": 5, 
+            "continuous": 0.4, 
+            "exam": 0.6 
+            }
+        ]
+      },
+      {
+        "code": "UEM",
+        "credit": 4,
+        "Coefficients": 2,
+        "subjects": [
+          { 
+            "name": "Terminologie Scientifique et expression écrite", 
+            "coef": 1, 
+            "credit": 2, 
+            "exam": 1 
+            },
+          { 
+            "name": "Langue étrangère 1", 
+            "coef": 1, 
+            "credit": 2, 
+            "exam": 1 
+            }
+        ]
+      },
+      {
+        "code": "UED",
+        "credit": 4,
+        "Coefficients": 2,
+        "subjects": [
+          { 
+            "name": "Physique 1 (mécanique du point)", 
+            "coef": 2, 
+            "credit": 4, 
+            "continuous": 0.4, 
+            "exam": 0.6 
+            }
+        ]
+      }
+    ]
+  },
+  {
+    "year": 1,
+    "semester": 2,
+    "units": [
+      {
+        "code": "UEF 1",
+        "credit": 10,
+        "Coefficients": 6,
+        "subjects": [
+          { 
+            "name": "Analyse 2", 
+            "coef": 4, 
+            "credit": 6, 
+            "continuous": 0.4, 
+            "exam": 0.6 
+            },
+          { 
+            "name": "Algèbre 2", 
+            "coef": 2, 
+            "credit": 6, 
+            "continuous": 0.4, 
+            "exam": 0.6
+            }
+        ]
+      },
+      {
+        "code": "UEF 2",
+        "credit": 10,
+        "Coefficients": 6,
+        "subjects": [
+          { 
+            "name": "Algorithmique et structure de données 2", 
+            "coef": 4, 
+            "credit": 6, 
+            "continuous": 0.4, 
+            "exam": 0.6 
+            },
+          { 
+            "name": "Algorithmique et structure de données 2", 
+            "coef": 2, 
+            "credit": 4, 
+            "continuous": 0.4, 
+            "exam": 0.6 
+            }
+        ]
+      },
+      {
+        "code": "UEM",
+        "credit": 4,
+        "Coefficients": 2,
+        "subjects": [
+          { 
+            "name": "Introduction aux probabilités et statistique descriptive", 
+            "coef": 2, 
+            "credit": 3, 
+            "continuous": 0.4, 
+            "exam": 0.6
+            },
+          { 
+            "name": "Technologie de l'information et de la communication", 
+            "coef": 1, 
+            "credit": 2, 
+            "exam": 1
+            },
+          { 
+            "name": "Outils de programmation pour les Mathématiques", 
+            "coef": 1, 
+            "credit": 2, 
+            "continuous": 0.4, 
+            "exam": 0.6
+            }
+        ]
+      },
+      {
+        "code": "UED",
+        "credit": 2,
+        "Coefficients": 3,
+        "subjects": [
+          { 
+            "name": "Physique 2 (Eléctricité Générale)", 
+            "coef": 1, 
+            "credit": 2, 
+            "exam": 1 
+            }
+        ]
+      }
+    ]
+  }
+]

@@ -272,7 +272,18 @@ const UniversityApp = {
             const totalCoef = semester.units.reduce((sum, unit) => sum + unit.Coefficients, 0);
 
             const unitsHtml = semester.units.map(unit => {
-                const subjectsHtml = unit.subjects.map(subject => `<div class="subject-item"><div class="subject-name">${subject.name}</div><div class="subject-detail"><span class="subject-label">Credit</span><span class="subject-value">${subject.credit}</span></div><div class="subject-detail"><span class="subject-label">Coef.</span><span class="subject-value">${subject.coef}</span></div><div class="subject-assessment">${subject.continuous ? `<span>CC: ${(subject.continuous * 100)}%</span>` : ''} ${subject.exam ? `<span>Exam: ${(subject.exam * 100)}%</span>` : ''}</div></div>`).join('');
+                const subjectsHtml = unit.subjects.map(subject => {
+                    // Support both "continuous"/"exam" and "Continuous"/"Exam" keys from JSON
+                    const continuous = subject.continuous ?? subject.Continuous;
+                    const exam = subject.exam ?? subject.Exam;
+                    const ccHtml = continuous !== undefined && continuous !== null
+                        ? `<span>CC: ${(continuous * 100)}%</span>`
+                        : '';
+                    const examHtml = exam !== undefined && exam !== null
+                        ? `<span>Exam: ${(exam * 100)}%</span>`
+                        : '';
+                    return `<div class="subject-item"><div class="subject-name">${subject.name}</div><div class="subject-detail"><span class="subject-label">Credit</span><span class="subject-value">${subject.credit}</span></div><div class="subject-detail"><span class="subject-label">Coef.</span><span class="subject-value">${subject.coef}</span></div><div class="subject-assessment">${ccHtml} ${examHtml}</div></div>`;
+                }).join('');
                 return `<div class="unit-card"><div class="unit-header"><div class="unit-code">${unit.code}</div><div class="unit-stats"><div class="stat-badge"><span class="stat-value">${unit.credit}</span><span class="stat-label">Credits</span></div><div class="stat-badge"><span class="stat-value">${unit.Coefficients}</span><span class="stat-label">Coef.</span></div></div></div><div class="subjects-list">${subjectsHtml}</div></div>`;
             }).join('');
 
