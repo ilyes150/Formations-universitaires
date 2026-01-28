@@ -813,3 +813,150 @@ body {
         flex-wrap: wrap;
     }
 }
+
+/* =====================================================
+   PROGRAM TABLE STYLES - Official Format
+   ===================================================== */
+
+.semester-header {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    color: white;
+    padding: 20px 30px;
+    border-radius: 12px 12px 0 0;
+    margin-bottom: 0;
+}
+
+.semester-header h2 {
+    margin: 0;
+}
+
+.table-container {
+    overflow-x: auto;
+    background: white;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin-bottom: 30px;
+}
+
+.program-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.program-table thead th {
+    background: var(--secondary);
+    color: white;
+    padding: 12px 10px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.85rem;
+    border: 1px solid #334155;
+    white-space: nowrap;
+}
+
+.program-table thead th small {
+    font-size: 0.75rem;
+    opacity: 0.9;
+    display: block;
+    font-weight: 400;
+}
+
+.program-table tbody td {
+    padding: 10px;
+    border: 1px solid var(--border);
+}
+
+.unit-row {
+    height: 0;
+    padding: 0;
+}
+
+.unit-cell {
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+    vertical-align: top;
+    font-weight: 600;
+    min-width: 150px;
+    padding: 15px !important;
+}
+
+.unit-name {
+    font-size: 1rem;
+    color: var(--primary);
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.unit-meta {
+    font-size: 0.8rem;
+    color: var(--text-light);
+    font-weight: 400;
+    margin-bottom: 4px;
+}
+
+.subject-name-cell {
+    font-weight: 500;
+    color: var(--text);
+    min-width: 250px;
+}
+
+.number-cell {
+    text-align: center;
+    font-weight: 500;
+    color: var(--text);
+    min-width: 60px;
+    white-space: nowrap;
+}
+
+.subject-row {
+    transition: background 0.2s ease;
+}
+
+.subject-row:hover {
+    background: #fffbeb;
+}
+
+.total-row {
+    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+    font-weight: 700;
+}
+
+.total-row td {
+    padding: 14px 10px !important;
+    border-top: 2px solid var(--accent);
+    font-weight: 700;
+}
+
+/* Responsive table */
+@media (max-width: 1024px) {
+    .table-container {
+        overflow-x: scroll;
+    }
+    
+    .program-table {
+        min-width: 900px;
+    }
+}
+
+@media (max-width: 768px) {
+    .program-table {
+        font-size: 0.8rem;
+    }
+    
+    .program-table thead th {
+        padding: 8px 6px;
+        font-size: 0.75rem;
+    }
+    
+    .program-table tbody td {
+        padding: 8px 6px;
+    }
+    
+    .unit-name {
+        font-size: 0.9rem;
+    }
+    
+    .unit-meta {
+        font-size: 0.7rem;
+    }
+}

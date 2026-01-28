@@ -8,12 +8,10 @@ const UniversityApp = {
         const backEls = document.querySelectorAll('[data-back]');
         backEls.forEach((el) => {
             el.addEventListener('click', (e) => {
-                // Always handle "Retour" ourselves so it only goes back ONE step.
                 e.preventDefault();
                 if (window.history.length > 1) {
                     window.history.back();
                 }
-                // If there is no history, do nothing instead of skipping multiple levels.
             });
         });
     },
@@ -49,9 +47,9 @@ const UniversityApp = {
         if (!fieldsGrid) return;
 
         try {
-            this.wireBackButtons();
             const data = await this.loadConfig();
             const stats = this.getStatistics(data);
+
             const fieldCountEl = document.getElementById('fieldCount');
             const majorCountEl = document.getElementById('majorCount');
             if (fieldCountEl) fieldCountEl.textContent = stats.totalFields;
@@ -62,17 +60,17 @@ const UniversityApp = {
             if (searchInput) {
                 searchInput.addEventListener('input', (e) => {
                     const searchTerm = e.target.value.toLowerCase().trim();
-                    if (searchTerm === '') {
-                        this.renderFields(data.fields, fieldsGrid, emptyState);
-                        return;
-                    }
-                    const filteredFields = data.fields.filter(field => 
-                        field.code.toLowerCase().includes(searchTerm) ||
-                        (field.name && field.name.toLowerCase().includes(searchTerm))
-                    );
+                    const filteredFields = searchTerm
+                        ? data.fields.filter(field =>
+                              field.code.toLowerCase().includes(searchTerm) ||
+                              (field.name && field.name.toLowerCase().includes(searchTerm))
+                          )
+                        : data.fields;
+
                     this.renderFields(filteredFields, fieldsGrid, emptyState);
                 });
             }
+
             localStorage.setItem('universityData', JSON.stringify(data));
         } catch (error) {
             console.error('Failed to initialize:', error);
@@ -90,12 +88,16 @@ const UniversityApp = {
             return;
         }
         if (emptyState) emptyState.classList.remove('show');
+
         fields.forEach(field => {
             const fieldCard = document.createElement('a');
             fieldCard.className = 'field-card';
-            fieldCard.href = `majors.html?field=${encodeURIComponent(field.code)}`;
+            fieldCard.href = `${BASE_URL}/majors?field=${encodeURIComponent(field.code)}`;
             if (field.name) fieldCard.title = field.name;
-            fieldCard.innerHTML = `<div class="field-code">${field.code}</div><div class="field-count">${field.majors.length} filière${field.majors.length > 1 ? 's' : ''}<span class="field-arrow">→</span></div>`;
+            fieldCard.innerHTML = `
+                <div class="field-code">${field.code}</div>
+                <div class="field-count">${field.majors.length} filière${field.majors.length > 1 ? 's' : ''}<span class="field-arrow">→</span></div>
+            `;
             container.appendChild(fieldCard);
         });
     },
@@ -104,16 +106,15 @@ const UniversityApp = {
         const urlParams = new URLSearchParams(window.location.search);
         const fieldCode = urlParams.get('field');
         if (!fieldCode) {
-            window.location.href = 'index.html';
+            window.location.href = `${BASE_URL}/`;
             return;
         }
 
         try {
-            this.wireBackButtons();
             const data = await this.loadConfig();
             const field = data.fields.find(f => f.code === fieldCode);
             if (!field) {
-                window.location.href = 'index.html';
+                window.location.href = `${BASE_URL}/`;
                 return;
             }
 
@@ -126,8 +127,10 @@ const UniversityApp = {
 
             const majorsWithoutFormations = field.majors.filter(major => {
                 const groups = this.getMajorTypeGroups(major);
-                return !groups.some(g => Array.isArray(g.formations) && g.formations.length > 0);
+                const total = groups.reduce((s, g) => s + (g.formations?.length || 0), 0);
+                return total === 0;
             }).length;
+            
             if (noteBox && majorsWithoutFormations > 0) {
                 noteBox.style.display = 'block';
                 noteBox.innerHTML = `<strong>📝 Informations</strong>${majorsWithoutFormations} filière${majorsWithoutFormations > 1 ? 's' : ''} en cours d'ajout.`;
@@ -186,7 +189,7 @@ const UniversityApp = {
                     const items = (group.formations || []).map(formation => {
                         const specialtiesText = formation.specialties || 'Programme';
                         const linkHtml = formation.programPath
-                            ? `<a href="program.html?path=${encodeURIComponent(formation.programPath)}" class="program-link">Voir le programme →</a>`
+                            ? `<a href="${BASE_URL}/program?path=${encodeURIComponent(formation.programPath)}" class="program-link">Voir le programme →</a>`
                             : '<div style="margin-top: 10px; font-size: 0.85rem; color: #64748b;">Programme à venir</div>';
                         return `<div class="formation-item"><div class="formation-header"><div class="formation-type-specialty">${specialtiesText}</div></div>${linkHtml}</div>`;
                     }).join('');
@@ -198,10 +201,11 @@ const UniversityApp = {
                 // Click on type title to toggle its specialties list
                 const typeTitles = majorCard.querySelectorAll('.formation-type-title');
                 typeTitles.forEach((titleEl) => {
-                    titleEl.addEventListener('click', () => {
-                        const groupEl = titleEl.closest('.formation-type-group');
-                        if (groupEl) {
-                            groupEl.classList.toggle('open');
+                    titleEl.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        const parent = titleEl.closest('.formation-type-group');
+                        if (parent) {
+                            parent.classList.toggle('open');
                         }
                     });
                 });
@@ -214,29 +218,34 @@ const UniversityApp = {
         const urlParams = new URLSearchParams(window.location.search);
         const programPath = urlParams.get('path');
         if (!programPath) {
-            window.location.href = 'index.html';
+            window.location.href = `${BASE_URL}/`;
             return;
         }
 
         try {
-            this.wireBackButtons();
             const response = await fetch(`${BASE_URL}/data/${programPath}.json`);
             if (!response.ok) throw new Error('Program not found');
             const programData = await response.json();
             this.renderProgram(programData);
         } catch (error) {
             console.error('Error:', error);
-            document.querySelector('.container').innerHTML = '<div class="empty-state show"><div class="empty-icon">📚</div><div class="empty-text">Programme introuvable</div><a href="#" data-back style="margin-top: 20px; display: inline-block; padding: 10px 20px; background: #f59e0b; color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">Retour</a></div>';
+            document.querySelector('.container').innerHTML = `
+                <div class="empty-state show">
+                    <div class="empty-icon">📚</div>
+                    <div class="empty-text">Programme introuvable</div>
+                    <a href="${BASE_URL}/" style="margin-top: 20px; display: inline-block; padding: 10px 20px; background: #f59e0b; color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">Retour</a>
+                </div>
+            `;
         }
     },
 
     renderProgram(programData) {
-        if (programData.length > 0) {
-            const firstSemester = programData[0];
-            document.getElementById('systemValue').textContent = firstSemester.system.toUpperCase();
-            document.getElementById('trackValue').textContent = firstSemester.track.replace(/-/g, ' ').toUpperCase();
-            document.getElementById('programTitle').textContent = `${firstSemester.track.replace(/-/g, ' ').toUpperCase()}`;
-        }
+        if (!programData || programData.length === 0) return;
+
+        const firstSemester = programData[0];
+        document.getElementById('systemValue').textContent = firstSemester.system.toUpperCase();
+        document.getElementById('trackValue').textContent = firstSemester.track.replace(/-/g, ' ').toUpperCase();
+        document.getElementById('programTitle').textContent = firstSemester.track.replace(/-/g, ' ').toUpperCase();
 
         const years = [...new Set(programData.map(s => s.year))].sort();
         let currentYear = years[0];
@@ -262,32 +271,112 @@ const UniversityApp = {
 
     renderSemesters(programData, year) {
         const content = document.getElementById('programContent');
+        if (!content) return;
         content.innerHTML = '';
         const semesters = programData.filter(s => s.year === year);
 
         semesters.forEach(semester => {
             const semesterDiv = document.createElement('div');
             semesterDiv.className = 'semester-container';
+            
             const totalCredits = semester.units.reduce((sum, unit) => sum + unit.credit, 0);
             const totalCoef = semester.units.reduce((sum, unit) => sum + unit.Coefficients, 0);
 
-            const unitsHtml = semester.units.map(unit => {
-                const subjectsHtml = unit.subjects.map(subject => {
-                    // Support both "continuous"/"exam" and "Continuous"/"Exam" keys from JSON
-                    const continuous = subject.continuous ?? subject.Continuous;
-                    const exam = subject.exam ?? subject.Exam;
-                    const ccHtml = continuous !== undefined && continuous !== null
-                        ? `<span>CC: ${(continuous * 100)}%</span>`
-                        : '';
-                    const examHtml = exam !== undefined && exam !== null
-                        ? `<span>Exam: ${(exam * 100)}%</span>`
-                        : '';
-                    return `<div class="subject-item"><div class="subject-name">${subject.name}</div><div class="subject-detail"><span class="subject-label">Credit</span><span class="subject-value">${subject.credit}</span></div><div class="subject-detail"><span class="subject-label">Coef.</span><span class="subject-value">${subject.coef}</span></div><div class="subject-assessment">${ccHtml} ${examHtml}</div></div>`;
-                }).join('');
-                return `<div class="unit-card"><div class="unit-header"><div class="unit-code">${unit.code}</div><div class="unit-stats"><div class="stat-badge"><span class="stat-value">${unit.credit}</span><span class="stat-label">Credits</span></div><div class="stat-badge"><span class="stat-value">${unit.Coefficients}</span><span class="stat-label">Coef.</span></div></div></div><div class="subjects-list">${subjectsHtml}</div></div>`;
-            }).join('');
+            // Calculate total weekly hours
+            let totalC = 0, totalTD = 0, totalTP = 0;
+            semester.units.forEach(unit => {
+                unit.subjects.forEach(subject => {
+                    totalC += parseFloat(subject.C || subject.c || 0);
+                    totalTD += parseFloat(subject.TD || subject.td || 0);
+                    totalTP += parseFloat(subject.TP || subject.tp || 0);
+                });
+            });
 
-            semesterDiv.innerHTML = `<div class="semester-header"><div class="semester-title">Semestre ${semester.semester}</div><div class="semester-info">${totalCredits} Crédits • ${totalCoef} Coefficients • ${semester.units.length} Unités</div></div><div class="units-grid">${unitsHtml}</div>`;
+            // Build table rows
+            let tableRows = '';
+            semester.units.forEach(unit => {
+                // Unit header row
+                tableRows += `
+                    <tr class="unit-row">
+                        <td class="unit-cell" rowspan="${unit.subjects.length + 1}">
+                            <div class="unit-name">${unit.code}</div>
+                            <div class="unit-meta">Crédits : ${unit.credit}</div>
+                            <div class="unit-meta">Coefficients : ${unit.Coefficients}</div>
+                        </td>
+                    </tr>
+                `;
+
+                // Subject rows
+                unit.subjects.forEach(subject => {
+                    const c = subject.C || subject.c || 0;
+                    const td = subject.TD || subject.td || 0;
+                    const tp = subject.TP || subject.tp || 0;
+                    const vhs = (c + td + tp) * 14;
+                    const continuous = subject.continuous ?? subject.Continuous ?? 0;
+                    const exam = subject.exam ?? subject.Exam ?? 0;
+
+                    const formatHours = (h) => h > 0 ? (h % 1 === 0 ? h : h.toFixed(1)) + 'h' : '-';
+
+                    tableRows += `
+                        <tr class="subject-row">
+                            <td class="subject-name-cell">${subject.name}</td>
+                            <td class="number-cell">${subject.credit}</td>
+                            <td class="number-cell">${subject.coef}</td>
+                            <td class="number-cell">${formatHours(c)}</td>
+                            <td class="number-cell">${formatHours(td)}</td>
+                            <td class="number-cell">${formatHours(tp)}</td>
+                            <td class="number-cell">${formatHours(vhs)}</td>
+                            <td class="number-cell">${continuous > 0 ? (continuous * 100) + '%' : '-'}</td>
+                            <td class="number-cell">${exam > 0 ? (exam * 100) + '%' : '100%'}</td>
+                        </tr>
+                    `;
+                });
+            });
+
+            // Total row
+            const totalVHS = (totalC + totalTD + totalTP) * 14;
+            const formatHours = (h) => h > 0 ? (h % 1 === 0 ? h : h.toFixed(1)) + 'h' : '-';
+            
+            tableRows += `
+                <tr class="total-row">
+                    <td colspan="2"><strong>Total Semestre ${semester.semester}</strong></td>
+                    <td class="number-cell"><strong>${totalCredits}</strong></td>
+                    <td class="number-cell"><strong>${totalCoef}</strong></td>
+                    <td class="number-cell"><strong>${formatHours(totalC)}</strong></td>
+                    <td class="number-cell"><strong>${formatHours(totalTD)}</strong></td>
+                    <td class="number-cell"><strong>${formatHours(totalTP)}</strong></td>
+                    <td class="number-cell"><strong>${formatHours(totalVHS)}</strong></td>
+                    <td colspan="2"></td>
+                </tr>
+            `;
+
+            semesterDiv.innerHTML = `
+                <div class="semester-header">
+                    <h2 class="semester-title">Semestre ${semester.semester}</h2>
+                </div>
+                <div class="table-container">
+                    <table class="program-table">
+                        <thead>
+                            <tr>
+                                <th>Unités d'Enseignement</th>
+                                <th>Intitulés des matières</th>
+                                <th>Crédits</th>
+                                <th>Coef.</th>
+                                <th>C</th>
+                                <th>TD</th>
+                                <th>TP</th>
+                                <th>VHS<br><small>(14 sem.)</small></th>
+                                <th>Continu</th>
+                                <th>Examen</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            ${tableRows}
+                        </tbody>
+                    </table>
+                </div>
+            `;
+
             content.appendChild(semesterDiv);
         });
     }
@@ -295,6 +384,8 @@ const UniversityApp = {
 
 document.addEventListener('DOMContentLoaded', function() {
     const path = window.location.pathname;
+    UniversityApp.wireBackButtons();
+    
     if (path.includes('index.html') || path === '/' || path.endsWith('/templates/')) {
         UniversityApp.initIndexPage();
     } else if (path.includes('majors.html') || path.endsWith('/majors')) {
