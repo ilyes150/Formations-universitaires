@@ -216,7 +216,7 @@
         "credit": 30,
         "Coefficients": 18,
         "subjects": [
-          { "name": "Stage en entreprise (Mémoire)", "coef": 24, "credit": 30, "C": 0, "TD": 0, "TP": 0, "Continuous": 1.0, "Exam": 0 }
+          { "name": "Stage en entreprise (Mémoire)", "coef": 18, "credit": 30, "C": 0, "TD": 0, "TP": 0, "Continuous": 1.0, "Exam": 0 }
         ]
       }
     ]
