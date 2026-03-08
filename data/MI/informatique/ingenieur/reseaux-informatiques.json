@@ -182,5 +182,19 @@
         ] 
       }
     ]
+  },
+  {
+    "year": 5,
+    "semester": 10,
+    "units": [
+      {
+        "code": "PFE",
+        "credit": 30,
+        "Coefficients": 23,
+        "subjects": [
+          { "name": "Stage en entreprise (Mémoire)", "coef": 24, "credit": 30, "C": 0, "TD": 0, "TP": 0, "Continuous": 1.0, "Exam": 0 }
+        ]
+      }
+    ]
   }
 ]

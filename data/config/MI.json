@@ -40,10 +40,6 @@
         {
           "system": "Master",
           "specialties": [
-            {
-              "specialtie": "Fondements et Ingénierie de l'Information et de l'image",
-              "programPath": "MI/informatique/master/f3i"
-            }
           ]
         },
         {
@@ -68,6 +64,10 @@
             {
               "specialtie": "Reseaux Informatiques",
               "programPath": "MI/informatique/ingenieur/reseaux-informatiques"
+            },
+            {
+              "specialtie": "Systèmes d’Information",
+              "programPath": "MI/informatique/ingenieur/information-systems"
             }
           ]
         }

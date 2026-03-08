@@ -326,7 +326,7 @@ const UniversityApp = {
                             <td class="number-cell">${formatHours(tp)}</td>
                             <td class="number-cell">${formatHours(vhs)}</td>
                             <td class="number-cell">${continuous > 0 ? (continuous * 100) + '%' : '-'}</td>
-                            <td class="number-cell">${exam > 0 ? (exam * 100) + '%' : '100%'}</td>
+                            <td class="number-cell">${exam > 0 ? (exam * 100) + '%' : '-'}</td>
                         </tr>
                     `;
                 });

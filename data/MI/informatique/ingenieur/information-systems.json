@@ -1,0 +1,245 @@
+[
+  {
+    "year": 3,
+    "semester": 5,
+    "units": [
+      {
+        "code": "UEF1",
+        "credit": 8,
+        "Coefficients": 7,
+        "subjects": [
+          { "name": "Bases de données avancées", "coef": 4, "credit": 4, "C": 1.5, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 },
+          { "name": "Génie logiciel", "coef": 3, "credit": 4, "C": 1.5, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
+        ]
+      },
+      {
+        "code": "UEF2",
+        "credit": 8,
+        "Coefficients": 7,
+        "subjects": [
+          { "name": "Systèmes d’information avancés 1", "coef": 4, "credit": 4, "C": 1.5, "TD": 1.5, "TP": 0, "Continuous": 0.4, "Exam": 0.6 },
+          { "name": "Compilation", "coef": 3, "credit": 4, "C": 1.5, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
+        ]
+      },
+      {
+        "code": "UEM 1",
+        "credit": 8,
+        "Coefficients": 6,
+        "subjects": [
+          { "name": "Réseaux et protocoles", "coef": 3, "credit": 4, "C": 1.5, "TD": 0, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 },
+          { "name": "Représentation des connaissances et raisonnement", "coef": 3, "credit": 4, "C": 1.5, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
+        ]
+      },
+      {
+        "code": "UET 1",
+        "credit": 3,
+        "Coefficients": 2,
+        "subjects": [
+          { "name": "Recherche opérationnelle", "coef": 2, "credit": 3, "C": 1.5, "TD": 1.5, "TP": 0, "Continuous": 0.4, "Exam": 0.6 }
+        ]
+      },
+      {
+        "code": "UED 1",
+        "credit": 3,
+        "Coefficients": 2,
+        "subjects": [
+          { "name": "Recherche d’information", "coef": 2, "credit": 3, "C": 1.5, "TD": 0, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
+        ]
+      }
+    ]
+  },
+  {
+    "year": 3,
+    "semester": 6,
+    "units": [
+      {
+        "code": "UEF 1",
+        "credit": 8,
+        "Coefficients": 7,
+        "subjects": [
+          { "name": "Bases de données NoSQL", "coef": 3, "credit": 4, "C": 1.5, "TD": 0, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 },
+          { "name": "Conception de logiciels", "coef": 4, "credit": 4, "C": 1.5, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
+        ]
+      },
+      {
+        "code": "UEF 2",
+        "credit": 8,
+        "Coefficients": 7,
+        "subjects": [
+          { "name": "Systèmes d’information avancés 2", "coef": 4, "credit": 4, "C": 1.5, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 },
+          { "name": "La transformation digitale", "coef": 3, "credit": 4, "C": 1.5, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
+        ]
+      },
+      {
+        "code": "UEM 1",
+        "credit": 8,
+        "Coefficients": 6,
+        "subjects": [
+          { "name": "Réseaux avancés", "coef": 3, "credit": 4, "C": 1.5, "TD": 0, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 },
+          { "name": "Web sémantique", "coef": 3, "credit": 4, "C": 1.5, "TD": 0, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
+        ]
+      },
+      {
+        "code": "UET 1",
+        "credit": 3,
+        "Coefficients": 2,
+        "subjects": [
+          { "name": "Analyse de Données", "coef": 2, "credit": 3, "C": 1.5, "TD": 1.5, "TP": 0, "Continuous": 0.4, "Exam": 0.6 }
+        ]
+      },
+      {
+        "code": "UED 1",
+        "credit": 3,
+        "Coefficients": 2,
+        "subjects": [
+          { "name": "Systèmes de recommandation", "coef": 2, "credit": 3, "C": 1.5, "TD": 0, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
+        ]
+      }
+    ]
+  },
+  {
+    "year": 4,
+    "semester": 7,
+    "units": [
+      {
+        "code": "UEF 1",
+        "credit": 9,
+        "Coefficients": 8,
+        "subjects": [
+          { "name": "Enterprise Resource Planning (ERP)", "coef": 4, "credit": 4, "C": 1.5, "TD": 0, "TP": 3.0, "Continuous": 0.4, "Exam": 0.6 },
+          { "name": "Développement Web", "coef": 4, "credit": 5, "C": 1.5, "TD": 0, "TP": 3.0, "Continuous": 0.4, "Exam": 0.6 }
+        ]
+      },
+      {
+        "code": "UEF 2",
+        "credit": 9,
+        "Coefficients": 8,
+        "subjects": [
+          { "name": "Ingénierie des exigences", "coef": 4, "credit": 4, "C": 1.5, "TD": 1.5, "TP": 0, "Continuous": 0.4, "Exam": 0.6 },
+          { "name": "Interopérabilité des systèmes d’information", "coef": 4, "credit": 5, "C": 1.5, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
+        ]
+      },
+      {
+        "code": "UEM 1",
+        "credit": 8,
+        "Coefficients": 6,
+        "subjects": [
+          { "name": "Sécurité informatique", "coef": 3, "credit": 4, "C": 1.5, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 },
+          { "name": "Fondements de l’Intelligence Artificielle", "coef": 3, "credit": 4, "C": 1.5, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
+        ]
+      },
+      {
+        "code": "UED 1",
+        "credit": 4,
+        "Coefficients": 2,
+        "subjects": [
+          { "name": "Ingénierie des systèmes", "coef": 2, "credit": 4, "C": 1.5, "TD": 1.5, "TP": 0, "Continuous": 0.4, "Exam": 0.6 }
+        ]
+      }
+    ]
+  },
+  {
+    "year": 4,
+    "semester": 8,
+    "units": [
+      {
+        "code": "UEF 1",
+        "credit": 9,
+        "Coefficients": 7,
+        "subjects": [
+          { "name": "Architecture et Gestion des SI Avancés", "coef": 4, "credit": 5, "C": 1.5, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 },
+          { "name": "Développement mobile", "coef": 3, "credit": 4, "C": 1.5, "TD": 0, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
+        ]
+      },
+      {
+        "code": "UEF 2",
+        "credit": 9,
+        "Coefficients": 6,
+        "subjects": [
+          { "name": "Architectures logicielles", "coef": 3, "credit": 5, "C": 1.5, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 },
+          { "name": "Big data analytics", "coef": 3, "credit": 4, "C": 1.5, "TD": 0, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
+        ]
+      },
+      {
+        "code": "UEM 1",
+        "credit": 6,
+        "Coefficients": 6,
+        "subjects": [
+          { "name": "Sécurité des Systèmes d’information", "coef": 3, "credit": 3, "C": 1.5, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 },
+          { "name": "Machine and Deep Learning", "coef": 3, "credit": 3, "C": 1.5, "TD": 0, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
+        ]
+      },
+      {
+        "code": "UET 1",
+        "credit": 4,
+        "Coefficients": 3,
+        "subjects": [
+          { "name": "Projet pluridisciplinaire", "coef": 3, "credit": 4, "C": 0, "TD": 0, "TP": 3.0, "Continuous": 1.0, "Exam": 0 }
+        ]
+      },
+      {
+        "code": "UED 1",
+        "credit": 2,
+        "Coefficients": 2,
+        "subjects": [
+          { "name": "Fondements de la Data Science", "coef": 2, "credit": 2, "C": 1.5, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
+        ]
+      }
+    ]
+  },
+  {
+    "year": 5,
+    "semester": 9,
+    "units": [
+      {
+        "code": "UEF 1",
+        "credit": 10,
+        "Coefficients": 8,
+        "subjects": [
+          { "name": "Interfaces Homme Machine (IHM)", "coef": 4, "credit": 5, "C": 1.5, "TD": 0, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 },
+          { "name": "Architectures et technologies blockchain", "coef": 4, "credit": 5, "C": 1.5, "TD": 0, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
+        ]
+      },
+      {
+        "code": "UEF 2",
+        "credit": 10,
+        "Coefficients": 8,
+        "subjects": [
+          { "name": "DevOps et Cloud Computing", "coef": 4, "credit": 5, "C": 1.5, "TD": 1.5, "TP": 3.0, "Continuous": 0.4, "Exam": 0.6 },
+          { "name": "Internet of Things (IoT) : Concepts et développement", "coef": 4, "credit": 5, "C": 1.5, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
+        ]
+      },
+      {
+        "code": "UEM 1",
+        "credit": 8,
+        "Coefficients": 6,
+        "subjects": [
+          { "name": "Business Intelligence (BI)", "coef": 3, "credit": 4, "C": 1.5, "TD": 0, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 },
+          { "name": "Gestion de projets informatiques", "coef": 3, "credit": 4, "C": 1.5, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
+        ]
+      },
+      {
+        "code": "UET 1",
+        "credit": 2,
+        "Coefficients": 2,
+        "subjects": [
+          { "name": "Aspect Juridique pour les technologies de l’information", "coef": 2, "credit": 2, "C": 1.5, "TD": 0, "TP": 0, "Continuous": 1.0, "Exam": 0 }
+        ]
+      }
+    ]
+  },
+  {
+    "year": 5,
+    "semester": 10,
+    "units": [
+      {
+        "code": "PFE",
+        "credit": 30,
+        "Coefficients": 24,
+        "subjects": [
+          { "name": "Stage en entreprise (Mémoire)", "coef": 24, "credit": 30, "C": 0, "TD": 0, "TP": 0, "Continuous": 1.0, "Exam": 0 }
+        ]
+      }
+    ]
+  }
+]
