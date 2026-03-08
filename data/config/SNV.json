@@ -1,0 +1,34 @@
+{
+  "code": "SNV",
+  "name": "Sciences de la Nature et de la Vie",
+  "majors": [
+    {
+      "name": "Tronc Commun",
+      "formation": []
+    },
+    {
+      "name": "Biologie",
+      "formation": []
+    },
+    {
+      "name": "Biotechnologie",
+      "formation": []
+    },
+    {
+      "name": "Sciences Agronomiques",
+      "formation": []
+    },
+    {
+      "name": "Hydrobiologie Marine Et Continentale",
+      "formation": []
+    },
+    {
+      "name": "Ecologie Et Environnement",
+      "formation": []
+    },
+    {
+      "name": "Sciences Alimentaires",
+      "formation": []
+    }
+  ]
+}

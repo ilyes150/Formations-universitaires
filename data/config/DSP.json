@@ -1,0 +1,14 @@
+{
+  "code": "DSP",
+  "name": "Droit et Sciences Politiques",
+  "majors": [
+    {
+      "name": "Sciences Politiques",
+      "formation": []
+    },
+    {
+      "name": "Droit",
+      "formation": []
+    }
+  ]
+}

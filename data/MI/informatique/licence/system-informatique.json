@@ -1,0 +1,174 @@
+[
+  {
+    "system": "licence",
+    "track": "Système informatique",
+    "year": 2,
+    "semester": 3,
+    "units": [
+      {
+        "code": "UEF 1.1",
+        "credit": 11,
+        "Coefficients": 6,
+        "subjects": [
+          { "name": "Architecture des ordinateurs", "credit": 5, "coef": 3, "C": 1.5, "TD": 1.5, "TP": 1.5, "VHS": 63, "continuous": 0.4, "exam": 0.6 },
+          { "name": "Algorithmique et structure de données 3", "credit": 6, "coef": 3, "C": 3, "TD": 1.5, "TP": 1.5, "VHS": 84, "continuous": 0.4, "exam": 0.6 }
+        ]
+      },
+      {
+        "code": "UEF 1.2",
+        "credit": 9,
+        "Coefficients": 5,
+        "subjects": [
+          { "name": "Systèmes d'information", "credit": 5, "coef": 3, "C": 1.5, "TD": 1.5, "TP": 1.5, "VHS": 63, "continuous": 0.4, "exam": 0.6 },
+          { "name": "Théorie des graphes", "credit": 4, "coef": 2, "C": 1.5, "TD": 1.5, "TP": 0, "VHS": 42, "continuous": 0.4, "exam": 0.6 }
+        ]
+      },
+      {
+        "code": "UEM 1.1",
+        "credit": 8,
+        "Coefficients": 4,
+        "subjects": [
+          { "name": "Méthodes numériques", "credit": 4, "coef": 2, "C": 1.5, "TD": 1.5, "TP": 0, "VHS": 42, "continuous": 0.4, "exam": 0.6 },
+          { "name": "Logique mathématique", "credit": 4, "coef": 2, "C": 1.5, "TD": 1.5, "TP": 0, "VHS": 42, "continuous": 0.4, "exam": 0.6 }
+        ]
+      },
+      {
+        "code": "UET 1.1",
+        "credit": 2,
+        "Coefficients": 1,
+        "subjects": [
+          { "name": "Langue étrangère 3", "credit": 2, "coef": 1, "C": 1.5, "TD": 0, "TP": 0, "VHS": 21, "continuous": 0, "exam": 1 }
+        ]
+      }
+    ]
+  },
+  {
+    "system": "licence",
+    "track": "licence-informatique",
+    "year": 2,
+    "semester": 4,
+    "units": [
+      {
+        "code": "UEF 2.1",
+        "credit": 10,
+        "Coefficients": 5,
+        "subjects": [
+          { "name": "Théories des langages", "credit": 5, "coef": 2, "C": 1.5, "TD": 1.5, "TP": 1.5, "VHS": 63, "continuous": 0.4, "exam": 0.6 },
+          { "name": "Système d'exploitation 1", "credit": 5, "coef": 3, "C": 1.5, "TD": 1.5, "TP": 1.5, "VHS": 63, "continuous": 0.4, "exam": 0.6 }
+        ]
+      },
+      {
+        "code": "UEF 2.2",
+        "credit": 10,
+        "Coefficients": 6,
+        "subjects": [
+          { "name": "Base de données", "credit": 5, "coef": 3, "C": 1.5, "TD": 1.5, "TP": 1.5, "VHS": 63, "continuous": 0.4, "exam": 0.6 },
+          { "name": "Réseaux", "credit": 5, "coef": 3, "C": 1.5, "TD": 1.5, "TP": 1.5, "VHS": 63, "continuous": 0.4, "exam": 0.6 }
+        ]
+      },
+      {
+        "code": "UEM 2.1",
+        "credit": 7,
+        "Coefficients": 4,
+        "subjects": [
+          { "name": "Programmation orienté objet", "credit": 4, "coef": 2, "C": 1.5, "TD": 1.5, "TP": 0, "VHS": 42, "continuous": 0.4, "exam": 0.6 },
+          { "name": "Développement d'applications web", "credit": 4, "coef": 2, "C": 1.5, "TD": 1.5, "TP": 0, "VHS": 42, "continuous": 0.4, "exam": 0.6 }
+        ]
+      },
+      {
+        "code": "UET 2.1",
+        "credit": 1,
+        "Coefficients": 1,
+        "subjects": [
+          { "name": "Langue étrangère 3", "credit": 2, "coef": 1, "C": 1.5, "TD": 0, "TP": 0, "VHS": 21, "continuous": 0, "exam": 1 }
+        ]
+      }
+    ]
+  },
+  {
+    "system": "licence",
+    "track": "licence-informatique",
+    "year": 3,
+    "semester": 5,
+    "units": [
+      {
+        "code": "UEF 3.1",
+        "credit": 10,
+        "Coefficients": 6,
+        "subjects": [
+          { "name": "Système d'exploitation 2", "credit": 5, "coef": 3, "C": 1.5, "TD": 1.5, "TP": 1.5, "VHS": 63, "continuous": 0.4, "exam": 0.6 },
+          { "name": "Compilation", "credit": 5, "coef": 3, "C": 1.5, "TD": 1.5, "TP": 1.5, "VHS": 63, "continuous": 0.4, "exam": 0.6 }
+        ]
+      },
+      {
+        "code": "UEF 3.2",
+        "credit": 10,
+        "Coefficients": 6,
+        "subjects": [
+          { "name": "Génie logiciel", "credit": 5, "coef": 3, "C": 1.5, "TD": 1.5, "TP": 1.5, "VHS": 63, "continuous": 0.4, "exam": 0.6 },
+          { "name": "Interface homme machine", "credit": 5, "coef": 3, "C": 1.5, "TD": 1.5, "TP": 1.5, "VHS": 63, "continuous": 0.4, "exam": 0.6 }
+        ]
+      },
+      {
+        "code": "UEM 3.1",
+        "credit": 8,
+        "Coefficients": 4,
+        "subjects": [
+          { "name": "Programmation linéaire", "credit": 4, "coef": 2, "C": 1.5, "TD": 1.5, "TP": 0, "VHS": 42, "continuous": 0.4, "exam": 0.6 },
+          { "name": "Probabilités et statistique", "credit": 4, "coef": 2, "C": 1.5, "TD": 1.5, "TP": 0, "VHS": 42, "continuous": 0.4, "exam": 0.6 }
+        ]
+      },
+      {
+        "code": "UET 3.1",
+        "credit": 2,
+        "Coefficients": 1,
+        "subjects": [
+          { "name": "Economie numérique et veille stratégique", "credit": 2, "coef": 1, "C": 1.5, "TD": 0, "TP": 0, "VHS": 21, "continuous": 0, "exam": 1 }
+        ]
+      }
+    ]
+  },
+  {
+    "system": "licence",
+    "track": "licence-informatique",
+    "year": 3,
+    "semester": 6,
+    "units": [
+      {
+        "code": "UEF 4.1",
+        "credit": 10,
+        "Coefficients": 6,
+        "subjects": [
+          { "name": "Applications mobiles", "credit": 5, "coef": 3, "C": 1.5, "TD": 1.5, "TP": 0, "VHS": 63, "continuous": 0.4, "exam": 0.6 },
+          { "name": "Sécurité informatique", "credit": 5, "coef": 3, "C": 1.5, "TD": 1.5, "TP": 0, "VHS": 63, "continuous": 0.4, "exam": 0.6 }
+        ]
+      },
+      {
+        "code": "UEF 4.2",
+        "credit": 10,
+        "Coefficients": 6,
+        "subjects": [
+          { "name": "Intelligence artificielle", "credit": 5, "coef": 3, "C": 1.5, "TD": 1.5, "TP": 0, "VHS": 63, "continuous": 0.4, "exam": 0.6 },
+          { "name": "Données semi-structurées", "credit": 5, "coef": 3, "C": 1.5, "TD": 1.5, "TP": 0, "VHS": 63, "continuous": 0.4, "exam": 0.6 }
+        ]
+      },
+      {
+        "code": "UEM 4.1",
+        "credit": 8,
+        "Coefficients": 4,
+        "subjects": [
+          { "name": "Projet", "credit": 6, "coef": 3, "C": 0, "TD": 0, "TP": 0, "VHS": null, "continuous": 1, "exam": 0 },
+          { "name": "Rédaction scientifique", "credit": 2, "coef": 1, "C": 1.5, "TD": 0, "TP": 0, "VHS": 21, "continuous": 0, "exam": 1 }
+        ]
+      },
+      {
+        "code": "UET 4.1",
+        "credit": 2,
+        "Coefficients": 1,
+        "subjects": [
+          { "name": "Créer et développer une startup", "credit": 2, "coef": 1, "C": 1.5, "TD": 0, "TP": 0, "VHS": 21, "continuous": 0, "exam": 1 }
+        ]
+      }
+    ]
+  }
+]

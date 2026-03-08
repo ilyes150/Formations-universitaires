@@ -1,0 +1,26 @@
+{
+  "code": "AUMV",
+  "name": "Architecture, urbanisme et professions urbaines",
+  "majors": [
+    {
+      "name": "Gestion Des Techniques Urbaines",
+      "formation": []
+    },
+    {
+      "name": "Management Des Projets De Construction",
+      "formation": []
+    },
+    {
+      "name": "Geometre - Topographe",
+      "formation": []
+    },
+    {
+      "name": "Urbanisme",
+      "formation": []
+    },
+    {
+      "name": "Architecture",
+      "formation": []
+    }
+  ]
+}

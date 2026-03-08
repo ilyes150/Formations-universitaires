@@ -1,0 +1,14 @@
+{
+  "code": "SS",
+  "name": "Sciences de la santé",
+  "majors": [
+    {
+      "name": "Pharmacie Industrie Des Produits Pharmaceutiques Et De Sante",
+      "formation": []
+    },
+    {
+      "name": "Pharmacie Auxiliaires En Pharmaci",
+      "formation": []
+    }
+  ]
+}

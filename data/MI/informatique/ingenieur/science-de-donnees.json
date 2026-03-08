@@ -1,0 +1,210 @@
+[
+  {
+    "year": 3,
+    "semester": 5,
+    "units": [
+      {
+        "code": "UEF51",
+        "credit": 13,
+        "Coefficients": 9,
+        "subjects": [
+          { "name": "Compilation", "coef": 3, "credit": 5, "C": 1.5, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 },
+          { "name": "Réseaux Avancés", "coef": 3, "credit": 4, "C": 1.5, "TD": 0, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 },
+          { "name": "Programmation Avancée", "coef": 3, "credit": 4, "C": 0, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
+        ]
+      },
+      {
+        "code": "UEF52",
+        "credit": 9,
+        "Coefficients": 6,
+        "subjects": [
+          { "name": "Les fondements de l’Intelligence Artificielle", "coef": 3, "credit": 4, "C": 1.5, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 },
+          { "name": "Analyse des données", "coef": 3, "credit": 5, "C": 1.5, "TD": 1.5, "TP": 0, "Continuous": 0.4, "Exam": 0.6 }
+        ]
+      },
+      {
+        "code": "UEM53",
+        "credit": 6,
+        "Coefficients": 4,
+        "subjects": [
+          { "name": "Fondement des sciences des données", "coef": 2, "credit": 3, "C": 1.5, "TD": 0, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 },
+          { "name": "Génie Logiciel", "coef": 2, "credit": 3, "C": 1.5, "TD": 1.5, "TP": 0, "Continuous": 0.4, "Exam": 0.6 }
+        ]
+      },
+      {
+        "code": "UET21",
+        "credit": 2,
+        "Coefficients": 1,
+        "subjects": [
+          { "name": "Management de l’innovation", "coef": 1, "credit": 2, "C": 0, "TD": 1.5, "TP": 0, "Continuous": 0.4, "Exam": 0.6 }
+        ]
+      }
+    ]
+  },
+  {
+    "year": 3,
+    "semester": 6,
+    "units": [
+      {
+        "code": "UEF61",
+        "credit": 13,
+        "Coefficients": 9,
+        "subjects": [
+          { "name": "Bases de données avancées", "coef": 3, "credit": 5, "C": 1.5, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 },
+          { "name": "Programmation Web Avancée", "coef": 3, "credit": 4, "C": 1.5, "TD": 0, "TP": 3.0, "Continuous": 0.4, "Exam": 0.6 },
+          { "name": "Sécurité des données", "coef": 3, "credit": 4, "C": 1.5, "TD": 0, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
+        ]
+      },
+      {
+        "code": "UEF62",
+        "credit": 10,
+        "Coefficients": 7,
+        "subjects": [
+          { "name": "Machine Learning 1", "coef": 4, "credit": 5, "C": 3.0, "TD": 0, "TP": 3.0, "Continuous": 0.4, "Exam": 0.6 },
+          { "name": "Analyse de données avancée", "coef": 3, "credit": 5, "C": 1.5, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
+        ]
+      },
+      {
+        "code": "UEM63",
+        "credit": 5,
+        "Coefficients": 3,
+        "subjects": [
+          { "name": "Méthodes Numériques", "coef": 3, "credit": 5, "C": 1.5, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
+        ]
+      },
+      {
+        "code": "UET64",
+        "credit": 2,
+        "Coefficients": 1,
+        "subjects": [
+          { "name": "Cyber sécurité", "coef": 1, "credit": 2, "C": 1.5, "TD": 0, "TP": 0, "Continuous": 0.4, "Exam": 0.6 }
+        ]
+      }
+    ]
+  },
+  {
+    "year": 4,
+    "semester": 7,
+    "units": [
+      {
+        "code": "UEF71",
+        "credit": 12,
+        "Coefficients": 8,
+        "subjects": [
+          { "name": "Statistique en Science des données", "coef": 4, "credit": 6, "C": 1.5, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 },
+          { "name": "Programmation linéaire et Optimisation", "coef": 4, "credit": 6, "C": 1.5, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
+        ]
+      },
+      {
+        "code": "UEF72",
+        "credit": 10,
+        "Coefficients": 7,
+        "subjects": [
+          { "name": "Machine Learning 2", "coef": 4, "credit": 6, "C": 3.0, "TD": 0, "TP": 3.0, "Continuous": 0.4, "Exam": 0.6 },
+          { "name": "Visualisation des données", "coef": 3, "credit": 4, "C": 1.5, "TD": 0, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
+        ]
+      },
+      {
+        "code": "UEM71",
+        "credit": 6,
+        "Coefficients": 4,
+        "subjects": [
+          { "name": "Gestion de projet en Science des données", "coef": 2, "credit": 3, "C": 1.5, "TD": 0, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 },
+          { "name": "DEVOPS", "coef": 2, "credit": 3, "C": 1.5, "TD": 0, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
+        ]
+      },
+      {
+        "code": "UET711",
+        "credit": 2,
+        "Coefficients": 1,
+        "subjects": [
+          { "name": "Ethique et Déontologie", "coef": 1, "credit": 2, "C": 1.5, "TD": 0, "TP": 0, "Continuous": 0.4, "Exam": 0.6 }
+        ]
+      }
+    ]
+  },
+  {
+    "year": 4,
+    "semester": 8,
+    "units": [
+      {
+        "code": "UEF1",
+        "credit": 9,
+        "Coefficients": 6,
+        "subjects": [
+          { "name": "Sécurité des données", "coef": 3, "credit": 4, "C": 1.5, "TD": 1.5, "TP": 0, "Continuous": 0.4, "Exam": 0.6 },
+          { "name": "Deep learning", "coef": 3, "credit": 5, "C": 1.5, "TD": 1.5, "TP": 0, "Continuous": 0.4, "Exam": 0.6 }
+        ]
+      },
+      {
+        "code": "UEF2",
+        "credit": 8,
+        "Coefficients": 5,
+        "subjects": [
+          { "name": "Traitement Automatique du Langage Naturel", "coef": 2, "credit": 5, "C": 0, "TD": 1.5, "TP": 0, "Continuous": 0.4, "Exam": 0.6 },
+          { "name": "Traitement de données massives", "coef": 3, "credit": 3, "C": 3.0, "TD": 0, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
+        ]
+      },
+      {
+        "code": "UEM1",
+        "credit": 11,
+        "Coefficients": 8,
+        "subjects": [
+          { "name": "Technologies de Calcul Distribué et Intelligence Artificielle", "coef": 2, "credit": 4, "C": 1.5, "TD": 0, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 },
+          { "name": "Analyse et Traitement d’image", "coef": 2, "credit": 3, "C": 1.5, "TD": 0, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 },
+          { "name": "Projet Pluridisciplinaire", "coef": 4, "credit": 4, "C": 0, "TD": 0, "TP": 3.0, "Continuous": 1.0, "Exam": 0 }
+        ]
+      },
+      {
+        "code": "UET1",
+        "credit": 2,
+        "Coefficients": 1,
+        "subjects": [
+          { "name": "Techniques d’expression et communication", "coef": 1, "credit": 2, "C": 1.5, "TD": 0, "TP": 0, "Continuous": 0.4, "Exam": 0.6 }
+        ]
+      }
+    ]
+  },
+  {
+    "year": 5,
+    "semester": 9,
+    "units": [
+      {
+        "code": "UEF91",
+        "credit": 10,
+        "Coefficients": 6,
+        "subjects": [
+          { "name": "Système d’Aide à la Décision", "coef": 3, "credit": 5, "C": 1.5, "TD": 0, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 },
+          { "name": "Big Data", "coef": 3, "credit": 5, "C": 1.5, "TD": 0, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
+        ]
+      },
+      {
+        "code": "UEF92",
+        "credit": 9,
+        "Coefficients": 6,
+        "subjects": [
+          { "name": "Calcul Intensif", "coef": 3, "credit": 4, "C": 1.5, "TD": 0, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 },
+          { "name": "Optimisation avancée et Méta heuristiques", "coef": 3, "credit": 5, "C": 1.5, "TD": 0, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
+        ]
+      },
+      {
+        "code": "UEM93",
+        "credit": 9,
+        "Coefficients": 7,
+        "subjects": [
+          { "name": "Cloud Computing", "coef": 2, "credit": 3, "C": 1.5, "TD": 0, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 },
+          { "name": "Applications Avancées des Sciences de données", "coef": 3, "credit": 3, "C": 1.5, "TD": 0, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 },
+          { "name": "Systèmes de Recommandation", "coef": 2, "credit": 3, "C": 1.5, "TD": 0, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
+        ]
+      },
+      {
+        "code": "UET21",
+        "credit": 2,
+        "Coefficients": 1,
+        "subjects": [
+          { "name": "Rédaction Scientifique", "coef": 1, "credit": 2, "C": 1.5, "TD": 0, "TP": 0, "Continuous": 0.4, "Exam": 0.6 }
+        ]
+      }
+    ]
+  }
+]

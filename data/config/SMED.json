@@ -1,0 +1,18 @@
+{
+  "code": "SMED",
+  "name": "Sciences Médicales",
+  "majors": [
+    {
+      "name": "Medecine",
+      "formation": []
+    },
+    {
+      "name": "Pharmacie",
+      "formation": []
+    },
+    {
+      "name": "Medecine Dentaire",
+      "formation": []
+    }
+  ]
+}

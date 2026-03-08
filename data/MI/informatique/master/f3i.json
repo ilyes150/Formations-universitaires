@@ -1,0 +1,152 @@
+[
+  {
+    "system": "master",
+    "track": "Fondements et Ingénierie de l'Information et de l'image",
+    "institution": "UFAS1",
+    "academic_year": "2016/2017",
+    "year": 1,
+    "semester": 1,
+    "total": { "VHS": "750h", "coef": 15, "credits": 30 },
+    "units": [
+      {
+        "code": "UEF-MTCx11",
+        "type": "fondamentale",
+        "subjects": [
+          { "name": "BDA: Bases de Données Avancées",              "VHS": "105h", "C": 1.5, "TD": 1.5, "TP": 0,   "autres": "4h",    "coef": 2, "credit": 4, "continuous": 0.4, "exam": 0.6 },
+          { "name": "PWA: Programmation Web Avancée",              "VHS": "105h", "C": 1.5, "TD": 1.5, "TP": 0,   "autres": "4h",    "coef": 2, "credit": 4, "continuous": 0.4, "exam": 0.6 },
+          { "name": "AAC: Algorithmique avancé et complexité",     "VHS": "105h", "C": 1.5, "TD": 1.5, "TP": 0,   "autres": "4h",    "coef": 2, "credit": 4, "continuous": 0.4, "exam": 0.6 },
+          { "name": "SR: Systèmes Répartis",                       "VHS": "135h", "C": 1.5, "TD": 1.5, "TP": 1.5, "autres": "4h30",  "coef": 3, "credit": 6, "continuous": 0.4, "exam": 0.6 }
+        ]
+      },
+      {
+        "code": "UEM-MTCx12",
+        "type": "méthodologie",
+        "subjects": [
+          { "name": "MS: Modélisation et Simulation", "VHS": "105h", "C": 1.5, "TD": 1.5, "TP": 0, "autres": "4h",   "coef": 2, "credit": 4, "continuous": 0.4, "exam": 0.6 },
+          { "name": "CP: Conduite de projets",         "VHS": "120h", "C": 1.5, "TD": 1.5, "TP": 1, "autres": "4h",   "coef": 2, "credit": 5, "continuous": 0.4, "exam": 0.6 }
+        ]
+      },
+      {
+        "code": "UET-MTCx13",
+        "type": "transversale",
+        "subjects": [
+          { "name": "ANG 1: Anglais 1",                          "VHS": "48h45", "C": 1.5, "TD": 1.5, "TP": 0, "autres": "15mn", "coef": 1, "credit": 2, "continuous": 0, "exam": 1 },
+          { "name": "CDT: Corruption et Déontologie de Travail", "VHS": "26h15", "C": 1.5, "TD": 0,   "TP": 0, "autres": "15mn", "coef": 1, "credit": 1, "continuous": 0, "exam": 1 }
+        ]
+      }
+    ]
+  },
+  {
+    "system": "master",
+    "track": "Fondements et Ingénierie de l'Information et de l'image",
+    "institution": "UFAS1",
+    "academic_year": "2016/2017",
+    "year": 1,
+    "semester": 2,
+    "total": { "VHS": "750h", "coef": 15, "credits": 30 },
+    "units": [
+      {
+        "code": "UEF1-F3ix21",
+        "type": "fondamentale",
+        "subjects": [
+          { "name": "FDD: Fouille de données et extraction de connaissances", "VHS": "90h",   "C": 1.5, "TD": 1.5, "TP": 0, "autres": "4h",    "coef": 3, "credit": 6, "continuous": 0.4, "exam": 0.6 },
+          { "name": "MIA: Méthodes pour l'intelligence artificielle",          "VHS": "67h30", "C": 1.5, "TD": 0,   "TP": 0, "autres": "3h",    "coef": 1, "credit": 3, "continuous": 0.4, "exam": 0.6 },
+          { "name": "RRM: Recherche et reconnaissances de motifs",             "VHS": "82h30", "C": 1.5, "TD": 1.5, "TP": 0, "autres": "2h30",  "coef": 1, "credit": 3, "continuous": 0.4, "exam": 0.6 }
+        ]
+      },
+      {
+        "code": "UEF2-F3ix22",
+        "type": "fondamentale",
+        "subjects": [
+          { "name": "INF: Infographie",         "VHS": "105h", "C": 1.5, "TD": 1.5, "TP": 0, "autres": "4h", "coef": 2, "credit": 3, "continuous": 0.4, "exam": 0.6 },
+          { "name": "TIM: Traitement d'images", "VHS": "105h", "C": 1.5, "TD": 1.5, "TP": 0, "autres": "4h", "coef": 2, "credit": 3, "continuous": 0.4, "exam": 0.6 }
+        ]
+      },
+      {
+        "code": "UEM-F3ix23",
+        "type": "méthodologie",
+        "subjects": [
+          { "name": "CMU: Contenu multimédias",  "VHS": "120h", "C": 1.5, "TD": 0,   "TP": 2.5, "autres": "4h", "coef": 2, "credit": 5, "continuous": 0.4, "exam": 0.6 },
+          { "name": "CIM: Compression d'Images", "VHS": "105h", "C": 1.5, "TD": 1.5, "TP": 0,   "autres": "4h", "coef": 2, "credit": 4, "continuous": 0.4, "exam": 0.6 }
+        ]
+      },
+      {
+        "code": "UET-F3ix24",
+        "type": "transversale",
+        "subjects": [
+          { "name": "ANG2: Anglais 2", "VHS": "48h45", "C": 1.5, "TD": 1.5, "TP": 0, "autres": "15mn", "coef": 1, "credit": 2, "continuous": 0, "exam": 1 },
+          { "name": "ELR: E-learning",  "VHS": "26h15", "C": 1.5, "TD": 0,   "TP": 0, "autres": "15mn", "coef": 1, "credit": 1, "continuous": 0, "exam": 1 }
+        ]
+      }
+    ]
+  },
+  {
+    "system": "master",
+    "track": "Fondements et Ingénierie de l'Information et de l'image",
+    "institution": "UFAS1",
+    "academic_year": "2016/2017",
+    "year": 2,
+    "semester": 3,
+    "total": { "VHS": "750h", "coef": 15, "credits": 30 },
+    "units": [
+      {
+        "code": "UEF1-F3ix31",
+        "type": "fondamentale",
+        "subjects": [
+          { "name": "APS: Apprentissage statistique",                  "VHS": "90h",   "C": 1.5, "TD": 1.5, "TP": 0, "autres": "4h",   "coef": 3, "credit": 6, "continuous": 0.4, "exam": 0.6 },
+          { "name": "SIG: Systèmes d'information géographiques",       "VHS": "67h30", "C": 1.5, "TD": 1.5, "TP": 0, "autres": "3h",   "coef": 1, "credit": 3, "continuous": 0.4, "exam": 0.6 },
+          { "name": "EBD: Entrepôts de données et Big Data",           "VHS": "82h30", "C": 1.5, "TD": 1.5, "TP": 0, "autres": "2h30", "coef": 1, "credit": 3, "continuous": 0.4, "exam": 0.6 }
+        ]
+      },
+      {
+        "code": "UEF2-F3ix32",
+        "type": "fondamentale",
+        "subjects": [
+          { "name": "RDF: Reconnaissance de formes", "VHS": "105h", "C": 1.5, "TD": 1.5, "TP": 0, "autres": "4h", "coef": 2, "credit": 3, "continuous": 0.4, "exam": 0.6 },
+          { "name": "RI: Recherche d'informations",  "VHS": "105h", "C": 1.5, "TD": 1.5, "TP": 0, "autres": "4h", "coef": 2, "credit": 3, "continuous": 0.4, "exam": 0.6 }
+        ]
+      },
+      {
+        "code": "UEM-F3ix33",
+        "type": "méthodologie",
+        "subjects": [
+          { "name": "ADD: Analyse de données",   "VHS": "120h", "C": 1.5, "TD": 0,   "TP": 2.5, "autres": "4h", "coef": 2, "credit": 5, "continuous": 0.4, "exam": 0.6 },
+          { "name": "SMA: Systèmes multi-agents", "VHS": "105h", "C": 1.5, "TD": 1.5, "TP": 0,   "autres": "4h", "coef": 2, "credit": 4, "continuous": 0.4, "exam": 0.6 }
+        ]
+      },
+      {
+        "code": "UET-F3ix34",
+        "type": "transversale",
+        "subjects": [
+          { "name": "ANG3: Anglais 3",              "VHS": "48h45", "C": 1.5, "TD": 1.5, "TP": 0, "autres": "15mn", "coef": 1, "credit": 2, "continuous": 0, "exam": 1 },
+          { "name": "MDR: Méthodologie de recherche", "VHS": "26h15", "C": 1.5, "TD": 0,   "TP": 0, "autres": "15mn", "coef": 1, "credit": 1, "continuous": 0, "exam": 1 }
+        ]
+      }
+    ]
+  },
+  {
+    "system": "master",
+    "track": "Fondements et Ingénierie de l'Information et de l'image",
+    "institution": "UFAS1",
+    "academic_year": "2016/2017",
+    "year": 2,
+    "semester": 4,
+    "total": { "VHS": "750h", "coef": 6, "credits": 30 },
+    "units": [
+      {
+        "code": "S4-MEMOIR",
+        "type": "stage",
+        "subjects": [
+          {
+            "name": "Stage en entreprise / Mémoire et soutenance",
+            "VHS": "750h",
+            "C": 0, "TD": 0, "TP": 0, "autres": null,
+            "coef": 6, "credit": 30,
+            "continuous": 0, "exam": 1,
+            "note": "Stage en entreprise sanctionné par un mémoire et une soutenance"
+          }
+        ]
+      }
+    ]
+  }
+]

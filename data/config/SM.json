@@ -1,0 +1,18 @@
+{
+  "code": "SM",
+  "name": "Sciences de la Matière",
+  "majors": [
+    {
+      "name": "Tronc Commun",
+      "formation": []
+    },
+    {
+      "name": "Physique",
+      "formation": []
+    },
+    {
+      "name": "Chimie",
+      "formation": []
+    }
+  ]
+}

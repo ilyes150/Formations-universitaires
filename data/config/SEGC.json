@@ -1,0 +1,26 @@
+{
+  "code": "SEGC",
+  "name": "Sciences Économiques, Gestion et Commerce",
+  "majors": [
+    {
+      "name": "Tronc Commun",
+      "formation": []
+    },
+    {
+      "name": "Sciences Commerciales",
+      "formation": []
+    },
+    {
+      "name": "Sciences De Gestion",
+      "formation": []
+    },
+    {
+      "name": "Sciences Economiques",
+      "formation": []
+    },
+    {
+      "name": "Sciences Financieres Et Comptabilite",
+      "formation": []
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "code": "LLA",
+  "name": "Langues et Littérature Arabe",
+  "majors": [
+    {
+      "name": "Etudes Litteraires",
+      "formation": []
+    },
+    {
+      "name": "Etudes Critique",
+      "formation": []
+    },
+    {
+      "name": "Etudes Linguistiques",
+      "formation": []
+    }
+  ]
+}

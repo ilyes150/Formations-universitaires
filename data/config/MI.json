@@ -1,0 +1,87 @@
+{
+  "code": "MI",
+  "name": "Mathématiques et Informatique",
+  "majors": [
+    {
+      "name": "Tronc Commun",
+      "formation": [
+        {
+          "system": "Ingenieur",
+          "specialties": [
+            {
+              "specialtie": "Tronc Commun",
+              "programPath": "MI/TC/ingenieur"
+            }
+          ]
+        },
+        {
+          "system": "Licence",
+          "specialties": [
+            {
+              "specialtie": "Tronc Commun",
+              "programPath": "MI/TC/lmd"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Informatique",
+      "formation": [
+        {
+          "system": "Licence",
+          "specialties": [
+            {
+              "specialtie": "Système informatique",
+              "programPath": "MI/informatique/licence/system-informatique"
+            }
+          ]
+        },
+        {
+          "system": "Master",
+          "specialties": [
+            {
+              "specialtie": "Fondements et Ingénierie de l'Information et de l'image",
+              "programPath": "MI/informatique/master/f3i"
+            }
+          ]
+        },
+        {
+          "system": "Ingenieur",
+          "specialties": [
+            {
+              "specialtie": "Genie Logiciel",
+              "programPath": "MI/informatique/ingenieur/genie-logicial"
+            },
+            {
+              "specialtie": "Intelligence Artificielle",
+              "programPath": "MI/informatique/ingenieur/intelligence-artificielle"
+            },
+            {
+              "specialtie": "Computer Security",
+              "programPath": "MI/informatique/ingenieur/computer-security"
+            },
+            {
+              "specialtie": "Science de Donnees",
+              "programPath": "MI/informatique/ingenieur/science-de-donnees"
+            },
+            {
+              "specialtie": "Reseaux Informatiques",
+              "programPath": "MI/informatique/ingenieur/reseaux-informatiques"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mathematiques",
+      "formation": [
+      ]
+    },
+    {
+      "name": "Mathématiques Appliquées",
+      "formation": [
+      ]
+    }
+  ]
+}

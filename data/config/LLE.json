@@ -1,0 +1,42 @@
+{
+  "code": "LLE",
+  "name": "Langues et Littératures Étrangères",
+  "majors": [
+    {
+      "name": "Langue Française",
+      "formation": []
+    },
+    {
+      "name": "Langue Anglaise",
+      "formation": []
+    },
+    {
+      "name": "Langue Espagnole",
+      "formation": []
+    },
+    {
+      "name": "Langue Allemande",
+      "formation": []
+    },
+    {
+      "name": "Langue Russe",
+      "formation": []
+    },
+    {
+      "name": "Langue Turque",
+      "formation": []
+    },
+    {
+      "name": "Langue Italienne",
+      "formation": []
+    },
+    {
+      "name": "Langue Chinoise",
+      "formation": []
+    },
+    {
+      "name": "Traduction Interpretariat",
+      "formation": []
+    }
+  ]
+}

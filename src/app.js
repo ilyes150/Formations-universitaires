@@ -24,18 +24,25 @@ const UniversityApp = {
             return this.universityData;
         } catch (error) {
             console.error('Error loading config:', error);
-            const stored = localStorage.getItem('universityData');
-            if (stored) {
-                this.universityData = JSON.parse(stored);
-                return this.universityData;
-            }
+            throw error;
+        }
+    },
+
+    async loadField(code) {
+        try {
+            const response = await fetch(`${BASE_URL}/data/config/${code}.json`);
+            if (!response.ok) throw new Error(`Failed to load field: ${code}`);
+            return await response.json();
+        } catch (error) {
+            console.error('Error loading field:', error);
             throw error;
         }
     },
 
     getStatistics(data) {
         const totalFields = data.fields.length;
-        const totalMajors = data.fields.reduce((sum, field) => sum + field.majors.length, 0);
+        // majors is now a count number in the index
+        const totalMajors = data.fields.reduce((sum, field) => sum + (field.majors || 0), 0);
         return { totalFields, totalMajors };
     },
 
@@ -70,8 +77,6 @@ const UniversityApp = {
                     this.renderFields(filteredFields, fieldsGrid, emptyState);
                 });
             }
-
-            localStorage.setItem('universityData', JSON.stringify(data));
         } catch (error) {
             console.error('Failed to initialize:', error);
             if (emptyState) {
@@ -94,9 +99,10 @@ const UniversityApp = {
             fieldCard.className = 'field-card';
             fieldCard.href = `${BASE_URL}/majors?field=${encodeURIComponent(field.code)}`;
             if (field.name) fieldCard.title = field.name;
+            const majorCount = field.majors || 0;
             fieldCard.innerHTML = `
                 <div class="field-code">${field.code}</div>
-                <div class="field-count">${field.majors.length} filière${field.majors.length > 1 ? 's' : ''}<span class="field-arrow">→</span></div>
+                <div class="field-count">${majorCount} filière${majorCount > 1 ? 's' : ''}<span class="field-arrow">→</span></div>
             `;
             container.appendChild(fieldCard);
         });
@@ -112,15 +118,18 @@ const UniversityApp = {
 
         try {
             const data = await this.loadConfig();
-            const field = data.fields.find(f => f.code === fieldCode);
-            if (!field) {
+            const fieldMeta = data.fields.find(f => f.code === fieldCode);
+            if (!fieldMeta) {
                 window.location.href = `${BASE_URL}/`;
                 return;
             }
 
+            const field = await this.loadField(fieldCode);
+
             document.getElementById('breadcrumbField').textContent = field.code;
             document.getElementById('fieldTitle').textContent = field.name || `Domaine ${field.code}`;
-            document.getElementById('fieldSubtitle').textContent = `${field.majors.length} filière${field.majors.length > 1 ? 's' : ''} disponible${field.majors.length > 1 ? 's' : ''}`;
+            const majorCount = field.majors.filter(m => m.name.trim().toLowerCase() !== 'tronc commun').length;
+            document.getElementById('fieldSubtitle').textContent = `${majorCount} filière${majorCount > 1 ? 's' : ''} disponible${majorCount > 1 ? 's' : ''}`;
 
             const majorsGrid = document.getElementById('majorsGrid');
             const noteBox = document.getElementById('noteBox');
@@ -144,28 +153,17 @@ const UniversityApp = {
     },
 
     getMajorTypeGroups(major) {
-        // Normalize data into groups by type:
-        // - new shape: major.types[] -> type.formations[]
-        // - legacy:   major.formations[] (single "Programme" type)
-        if (Array.isArray(major.types) && major.types.length > 0) {
-            return major.types.map(t => ({
-                type: t.type || 'Programme',
-                formations: Array.isArray(t.formations)
-                    ? t.formations.map(f => ({
-                        specialties: f.specialties || 'Programme',
-                        programPath: f.programPath || null
+        if (Array.isArray(major.formation)) {
+            return major.formation.map(f => ({
+                type: f.system || 'Programme',
+                formations: Array.isArray(f.specialties)
+                    ? f.specialties.map(s => ({
+                        specialties: s.specialtie || 'Programme',
+                        programPath: s.programPath || null,
+                        system: f.system || null
                     }))
                     : []
             }));
-        }
-        if (Array.isArray(major.formations)) {
-            return [{
-                type: 'Programme',
-                formations: major.formations.map(f => ({
-                    specialties: f.specialties || 'Programme',
-                    programPath: f.programPath || null
-                }))
-            }];
         }
         return [];
     },
@@ -189,7 +187,7 @@ const UniversityApp = {
                     const items = (group.formations || []).map(formation => {
                         const specialtiesText = formation.specialties || 'Programme';
                         const linkHtml = formation.programPath
-                            ? `<a href="${BASE_URL}/program?path=${encodeURIComponent(formation.programPath)}" class="program-link">Voir le programme →</a>`
+                            ? `<a href="${BASE_URL}/program?path=${encodeURIComponent(formation.programPath)}&system=${encodeURIComponent(formation.system || '')}&specialty=${encodeURIComponent(formation.specialties || '')}" class="program-link">Voir le programme →</a>`
                             : '<div style="margin-top: 10px; font-size: 0.85rem; color: #64748b;">Programme à venir</div>';
                         return `<div class="formation-item"><div class="formation-header"><div class="formation-type-specialty">${specialtiesText}</div></div>${linkHtml}</div>`;
                     }).join('');
@@ -217,6 +215,8 @@ const UniversityApp = {
     async initProgramPage() {
         const urlParams = new URLSearchParams(window.location.search);
         const programPath = urlParams.get('path');
+        const system = urlParams.get('system') || '';
+        const specialty = urlParams.get('specialty') || '';
         if (!programPath) {
             window.location.href = `${BASE_URL}/`;
             return;
@@ -226,7 +226,7 @@ const UniversityApp = {
             const response = await fetch(`${BASE_URL}/data/${programPath}.json`);
             if (!response.ok) throw new Error('Program not found');
             const programData = await response.json();
-            this.renderProgram(programData);
+            this.renderProgram(programData, system, specialty);
         } catch (error) {
             console.error('Error:', error);
             document.querySelector('.container').innerHTML = `
@@ -239,13 +239,12 @@ const UniversityApp = {
         }
     },
 
-    renderProgram(programData) {
+    renderProgram(programData, system, specialty) {
         if (!programData || programData.length === 0) return;
 
-        const firstSemester = programData[0];
-        document.getElementById('systemValue').textContent = firstSemester.system.toUpperCase();
-        document.getElementById('trackValue').textContent = firstSemester.track.replace(/-/g, ' ').toUpperCase();
-        document.getElementById('programTitle').textContent = firstSemester.track.replace(/-/g, ' ').toUpperCase();
+        document.getElementById('systemValue').textContent = system.toUpperCase();
+        document.getElementById('trackValue').textContent = specialty.toUpperCase();
+        document.getElementById('programTitle').textContent = specialty.toUpperCase();
 
         const years = [...new Set(programData.map(s => s.year))].sort();
         let currentYear = years[0];

@@ -1,0 +1,30 @@
+{
+  "code": "STAPS",
+  "name": "Sciences et Techniques des Activités Physiques et Sportives",
+  "majors": [
+    {
+      "name": "Tronc Commun",
+      "formation": []
+    },
+    {
+      "name": "Activite Physique Et Sportive Adaptee",
+      "formation": []
+    },
+    {
+      "name": "Activite Physique Et Sportive Educative",
+      "formation": []
+    },
+    {
+      "name": "Administration Et Gestion Du Sport",
+      "formation": []
+    },
+    {
+      "name": "Entrainement Sportif",
+      "formation": []
+    },
+    {
+      "name": "Information Et Communication Sportive",
+      "formation": []
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "code": "SHS",
+  "name": "Sciences Humaines et Sociales",
+  "majors": [
+    {
+      "name": "Sciences Humaines - Archeologie",
+      "formation": []
+    },
+    {
+      "name": "Sciences Humaines - Bibliotheconomie",
+      "formation": []
+    },
+    {
+      "name": "Sciences Humaines - Histoire",
+      "formation": []
+    },
+    {
+      "name": "Sciences Humaines - Sciences De L’Information Et De La Communication",
+      "formation": []
+    },
+    {
+      "name": "Sciences Sociales - Anthropologie",
+      "formation": []
+    },
+    {
+      "name": "Sciences Sociales - Sociologie",
+      "formation": []
+    },
+    {
+      "name": "Sciences Sociales - Psychologie",
+      "formation": []
+    },
+    {
+      "name": "Sciences Sociales - Orthophonie",
+      "formation": []
+    },
+    {
+      "name": "Sciences Sociales - Demographie",
+      "formation": []
+    },
+    {
+      "name": "Sciences Sociales - Sciences De L'Education",
+      "formation": []
+    },
+    {
+      "name": "Sciences Sociales - Philosophie",
+      "formation": []
+    },
+    {
+      "name": "Sciences Islamiques - Fondements De La Religion",
+      "formation": []
+    },
+    {
+      "name": "Sciences Islamiques - Charia",
+      "formation": []
+    },
+    {
+      "name": "Sciences Islamiques - Langue Arabe Et Civilisation Islamique",
+      "formation": []
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "code": "ART",
+  "name": "Arts",
+  "majors": [
+    {
+      "name": "Arts Du Spectacle",
+      "formation": []
+    },
+    {
+      "name": "Arts Visuels",
+      "formation": []
+    }
+  ]
+}

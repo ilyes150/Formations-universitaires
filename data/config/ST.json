@@ -1,0 +1,117 @@
+{
+  "code": "ST",
+  "name": "Sciences et Technologies",
+  "majors": [
+    {
+      "name": "Tronc Commun",
+      "formation": [
+        {
+          "system": "Ingenieur",
+          "specialties": [
+            {
+              "specialtie": "Tronc Commun",
+              "programPath": "MI/tronc Commun/ingenieur"
+            }
+          ]
+        },
+        {
+          "system": "Licence",
+          "specialties": [
+            {
+              "specialtie": "Tronc Commun",
+              "programPath": "MI/tronc Commun/lmd"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Genie Minier",
+      "formation": []
+    },
+    {
+      "name": "Automatique",
+      "formation": []
+    },
+    {
+      "name": "Hydrocarbures",
+      "formation": []
+    },
+    {
+      "name": "Metallurgie",
+      "formation": []
+    },
+    {
+      "name": "Genie Civil",
+      "formation": []
+    },
+    {
+      "name": "Aeronautique",
+      "formation": []
+    },
+    {
+      "name": "Electromecanique",
+      "formation": []
+    },
+    {
+      "name": "Genie Des Procedes",
+      "formation": []
+    },
+    {
+      "name": "Energies Renouvelables",
+      "formation": []
+    },
+    {
+      "name": "Genie Maritime",
+      "formation": []
+    },
+    {
+      "name": "Genie Industriel",
+      "formation": []
+    },
+    {
+      "name": "Genie Mecanique",
+      "formation": []
+    },
+    {
+      "name": "Electronique",
+      "formation": []
+    },
+    {
+      "name": "Electrotechnique",
+      "formation": []
+    },
+    {
+      "name": "Telecommunications",
+      "formation": []
+    },
+    {
+      "name": "Genie Climatique",
+      "formation": []
+    },
+    {
+      "name": "Genie Biomedical",
+      "formation": []
+    },
+    {
+      "name": "Architecture",
+      "formation": []
+    },
+    {
+      "name": "Genie De L'Eau",
+      "formation": []
+    },
+    {
+      "name": "Travaux Publics",
+      "formation": []
+    },
+    {
+      "name": "Hydraulique",
+      "formation": []
+    },
+    {
+      "name": "Machines Hydrauliques",
+      "formation": []
+    }
+  ]
+}

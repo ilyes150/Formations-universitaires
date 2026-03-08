@@ -1,0 +1,18 @@
+{
+  "code": "STU",
+  "name": "Sciences de la Terre et de l'Univers",
+  "majors": [
+    {
+      "name": "Geographie Et Amenagement Du Territoire",
+      "formation": []
+    },
+    {
+      "name": "Geophysique",
+      "formation": []
+    },
+    {
+      "name": "Geologie",
+      "formation": []
+    }
+  ]
+}

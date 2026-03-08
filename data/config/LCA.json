@@ -1,0 +1,18 @@
+{
+  "code": "LCA",
+  "name": "Langues et Civilisation Amazighe",
+  "majors": [
+    {
+      "name": "Linguistique Et Education",
+      "formation": []
+    },
+    {
+      "name": "Langue Et Civilisation",
+      "formation": []
+    },
+    {
+      "name": "Langue Et Litterature",
+      "formation": []
+    }
+  ]
+}
