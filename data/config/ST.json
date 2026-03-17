@@ -66,6 +66,26 @@
       "formation": []
     },
     {
+      "name": "Optique et Mecanique De Precision",
+      "formation": []
+    },
+    {
+      "name": "Hydraulique",
+      "formation": []
+    },
+    {
+      "name": "Industries Petrochimiques",
+      "formation": []
+    },
+    {
+      "name": "Ingenierie Des Transports",
+      "formation": []
+    },
+    {
+      "name": "Travaux Publics",
+      "formation": []
+    },
+    {
       "name": "Genie Industriel",
       "formation": []
     },
@@ -74,11 +94,11 @@
       "formation": []
     },
     {
-      "name": "Electronique",
+      "name": "Electrotechnique",
       "formation": []
     },
     {
-      "name": "Electrotechnique",
+      "name": "Electronique",
       "formation": []
     },
     {
@@ -86,7 +106,7 @@
       "formation": []
     },
     {
-      "name": "Genie Climatique",
+      "name": "Hygiene Et Securite Industrielle",
       "formation": []
     },
     {
@@ -94,23 +114,7 @@
       "formation": []
     },
     {
-      "name": "Architecture",
-      "formation": []
-    },
-    {
-      "name": "Genie De L'Eau",
-      "formation": []
-    },
-    {
-      "name": "Travaux Publics",
-      "formation": []
-    },
-    {
-      "name": "Hydraulique",
-      "formation": []
-    },
-    {
-      "name": "Machines Hydrauliques",
+      "name": "Genie Climatique",
       "formation": []
     }
   ]
