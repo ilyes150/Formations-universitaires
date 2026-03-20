@@ -16,20 +16,41 @@ const UniversityApp = {
         });
     },
 
+    // --- CHANGE 1: load combined.json instead of fields.json ---
+    // One fetch gives us both the fields index AND all major configs at once.
     async loadConfig() {
         try {
-            const response = await fetch(`${BASE_URL}/data/config/fields.json`);
-            if (!response.ok) throw new Error('Failed to load configuration');
+            const response = await fetch(`${BASE_URL}/data/combined.json`);
+            if (!response.ok) throw new Error('Failed to load combined config');
             this.universityData = await response.json();
             return this.universityData;
         } catch (error) {
-            console.error('Error loading config:', error);
-            throw error;
+            // Fallback to original fields.json if combined.json not built yet
+            console.warn('combined.json not found, falling back to fields.json');
+            try {
+                const response = await fetch(`${BASE_URL}/data/config/fields.json`);
+                if (!response.ok) throw new Error('Failed to load configuration');
+                this.universityData = await response.json();
+                return this.universityData;
+            } catch (err) {
+                console.error('Error loading config:', err);
+                throw err;
+            }
         }
     },
 
+    // --- CHANGE 2: loadField now uses embedded data from combined.json ---
+    // If combined.json was loaded, the field data is already in memory.
+    // Only fetches from network if data is missing (e.g. fallback mode).
     async loadField(code) {
         try {
+            if (this.universityData) {
+                const found = this.universityData.fields.find(f => f.code === code);
+                if (found && found.data) {
+                    return found.data;
+                }
+            }
+            // Fallback: fetch individually
             const response = await fetch(`${BASE_URL}/data/config/${code}.json`);
             if (!response.ok) throw new Error(`Failed to load field: ${code}`);
             return await response.json();
@@ -41,7 +62,6 @@ const UniversityApp = {
 
     getStatistics(data) {
         const totalFields = data.fields.length;
-        // majors is now a count number in the index
         const totalMajors = data.fields.reduce((sum, field) => sum + (field.majors || 0), 0);
         return { totalFields, totalMajors };
     },
@@ -124,6 +144,7 @@ const UniversityApp = {
                 return;
             }
 
+            // CHANGE 2 in action: loadField returns in-memory data, no extra fetch
             const field = await this.loadField(fieldCode);
 
             document.getElementById('breadcrumbField').textContent = field.code;
@@ -139,7 +160,7 @@ const UniversityApp = {
                 const total = groups.reduce((s, g) => s + (g.formations?.length || 0), 0);
                 return total === 0;
             }).length;
-            
+
             if (noteBox && majorsWithoutFormations > 0) {
                 noteBox.style.display = 'block';
                 noteBox.innerHTML = `<strong>📝 Informations</strong>${majorsWithoutFormations} filière${majorsWithoutFormations > 1 ? 's' : ''} en cours d'ajout.`;
@@ -179,24 +200,24 @@ const UniversityApp = {
                 0
             );
             const hasFormations = totalFormations > 0;
-            
+
             if (!hasFormations) {
                 majorCard.innerHTML = `<div class="major-header"><div class="major-name">${major.name}</div><div class="major-info">Filière</div></div><div class="formations-list"><div class="formation-item no-program"><div class="formation-header"><div class="formation-type">Programme</div><div class="formation-badge coming-soon">À venir</div></div></div></div>`;
             } else {
-                const formationsList = typeGroups.map((group, index) => {
+                const formationsList = typeGroups.map((group) => {
                     const items = (group.formations || []).map(formation => {
                         const specialtiesText = formation.specialties || 'Programme';
                         const linkHtml = formation.programPath
-                            ? `<a href="${BASE_URL}/program?path=${encodeURIComponent(formation.programPath)}&system=${encodeURIComponent(formation.system || '')}&specialty=${encodeURIComponent(formation.specialties || '')}" class="program-link">Voir le programme →</a>`
+                            ? `<a href="${BASE_URL}/program?path=${encodeURIComponent(formation.programPath)}&system=${encodeURIComponent(formation.system || '')}&specialty=${encodeURIComponent(formation.specialties || '')}" class="program-link" data-prefetch="${formation.programPath}">Voir le programme →</a>`
                             : '<div style="margin-top: 10px; font-size: 0.85rem; color: #64748b;">Programme à venir</div>';
                         return `<div class="formation-item"><div class="formation-header"><div class="formation-type-specialty">${specialtiesText}</div></div>${linkHtml}</div>`;
                     }).join('');
-                    // All types start closed; user clicks to open
                     return `<div class="formation-type-group"><button type="button" class="formation-type-title">${group.type}</button><div class="formation-type-items">${items}</div></div>`;
                 }).join('');
+
                 majorCard.innerHTML = `<div class="major-header"><div class="major-name">${major.name}</div><div class="major-info">${totalFormations} formation${totalFormations > 1 ? 's' : ''}</div></div><div class="formations-list">${formationsList}</div>`;
 
-                // Click on type title to toggle its specialties list
+                // Toggle specialty lists open/close
                 const typeTitles = majorCard.querySelectorAll('.formation-type-title');
                 typeTitles.forEach((titleEl) => {
                     titleEl.addEventListener('click', (e) => {
@@ -207,7 +228,20 @@ const UniversityApp = {
                         }
                     });
                 });
+
+                // --- CHANGE 3: prefetch program JSON on hover ---
+                // When the user hovers a program link, silently fetch the JSON.
+                // The browser caches it so the program page loads instantly on click.
+                majorCard.querySelectorAll('a[data-prefetch]').forEach(link => {
+                    link.addEventListener('mouseenter', () => {
+                        const path = link.dataset.prefetch;
+                        if (path) {
+                            fetch(`${BASE_URL}/data/${path}.json`).catch(() => {});
+                        }
+                    }, { once: true });
+                });
             }
+
             container.appendChild(majorCard);
         });
     },
@@ -277,11 +311,10 @@ const UniversityApp = {
         semesters.forEach(semester => {
             const semesterDiv = document.createElement('div');
             semesterDiv.className = 'semester-container';
-            
+
             const totalCredits = semester.units.reduce((sum, unit) => sum + unit.credit, 0);
             const totalCoef = semester.units.reduce((sum, unit) => sum + unit.Coefficients, 0);
 
-            // Calculate total weekly hours
             let totalC = 0, totalTD = 0, totalTP = 0;
             semester.units.forEach(unit => {
                 unit.subjects.forEach(subject => {
@@ -291,10 +324,8 @@ const UniversityApp = {
                 });
             });
 
-            // Build table rows
             let tableRows = '';
             semester.units.forEach(unit => {
-                // Unit header row
                 tableRows += `
                     <tr class="unit-row">
                         <td class="unit-cell" rowspan="${unit.subjects.length + 1}">
@@ -305,7 +336,6 @@ const UniversityApp = {
                     </tr>
                 `;
 
-                // Subject rows
                 unit.subjects.forEach(subject => {
                     const c = subject.C || subject.c || 0;
                     const td = subject.TD || subject.td || 0;
@@ -332,10 +362,9 @@ const UniversityApp = {
                 });
             });
 
-            // Total row
             const totalVHS = (totalC + totalTD + totalTP) * 14;
             const formatHours = (h) => h > 0 ? (h % 1 === 0 ? h : h.toFixed(1)) + 'h' : '-';
-            
+
             tableRows += `
                 <tr class="total-row">
                     <td colspan="2"><strong>Total Semestre ${semester.semester}</strong></td>
@@ -384,7 +413,7 @@ const UniversityApp = {
 document.addEventListener('DOMContentLoaded', function() {
     const path = window.location.pathname;
     UniversityApp.wireBackButtons();
-    
+
     if (path.includes('index.html') || path === '/' || path.endsWith('/templates/')) {
         UniversityApp.initIndexPage();
     } else if (path.includes('majors.html') || path.endsWith('/majors')) {

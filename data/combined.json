@@ -1,0 +1,656 @@
+{
+  "fields": [
+    {
+      "code": "ST",
+      "name": "Sciences et Technologies",
+      "majors": 22,
+      "data": {
+        "code": "ST",
+        "name": "Sciences et Technologies",
+        "majors": [
+          {
+            "name": "Tronc Commun",
+            "formation": [
+              {
+                "system": "Ingenieur",
+                "specialties": [
+                  {
+                    "specialtie": "Tronc Commun",
+                    "programPath": "MI/tronc Commun/ingenieur"
+                  }
+                ]
+              },
+              {
+                "system": "Licence",
+                "specialties": [
+                  {
+                    "specialtie": "Tronc Commun",
+                    "programPath": "MI/tronc Commun/lmd"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Genie Minier",
+            "formation": []
+          },
+          {
+            "name": "Automatique",
+            "formation": []
+          },
+          {
+            "name": "Hydrocarbures",
+            "formation": []
+          },
+          {
+            "name": "Metallurgie",
+            "formation": []
+          },
+          {
+            "name": "Genie Civil",
+            "formation": []
+          },
+          {
+            "name": "Aeronautique",
+            "formation": []
+          },
+          {
+            "name": "Electromecanique",
+            "formation": []
+          },
+          {
+            "name": "Genie Des Procedes",
+            "formation": []
+          },
+          {
+            "name": "Energies Renouvelables",
+            "formation": []
+          },
+          {
+            "name": "Genie Maritime",
+            "formation": []
+          },
+          {
+            "name": "Optique et Mecanique De Precision",
+            "formation": []
+          },
+          {
+            "name": "Hydraulique",
+            "formation": []
+          },
+          {
+            "name": "Industries Petrochimiques",
+            "formation": []
+          },
+          {
+            "name": "Ingenierie Des Transports",
+            "formation": []
+          },
+          {
+            "name": "Travaux Publics",
+            "formation": []
+          },
+          {
+            "name": "Genie Industriel",
+            "formation": []
+          },
+          {
+            "name": "Genie Mecanique",
+            "formation": []
+          },
+          {
+            "name": "Electrotechnique",
+            "formation": []
+          },
+          {
+            "name": "Electronique",
+            "formation": []
+          },
+          {
+            "name": "Telecommunications",
+            "formation": []
+          },
+          {
+            "name": "Hygiene Et Securite Industrielle",
+            "formation": []
+          },
+          {
+            "name": "Genie Biomedical",
+            "formation": []
+          },
+          {
+            "name": "Genie Climatique",
+            "formation": []
+          }
+        ]
+      }
+    },
+    {
+      "code": "SM",
+      "name": "Sciences de la Matière",
+      "majors": 2,
+      "data": {
+        "code": "SM",
+        "name": "Sciences de la Matière",
+        "majors": [
+          {
+            "name": "Tronc Commun",
+            "formation": []
+          },
+          {
+            "name": "Physique",
+            "formation": []
+          },
+          {
+            "name": "Chimie",
+            "formation": []
+          }
+        ]
+      }
+    },
+    {
+      "code": "MI",
+      "name": "Mathématiques et Informatique",
+      "majors": 3,
+      "data": {
+        "code": "MI",
+        "name": "Mathématiques et Informatique",
+        "majors": [
+          {
+            "name": "Tronc Commun",
+            "formation": [
+              {
+                "system": "Ingenieur",
+                "specialties": [
+                  {
+                    "specialtie": "Tronc Commun",
+                    "programPath": "MI/TC/ingenieur"
+                  }
+                ]
+              },
+              {
+                "system": "Licence",
+                "specialties": [
+                  {
+                    "specialtie": "Tronc Commun",
+                    "programPath": "MI/TC/lmd"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Informatique",
+            "formation": [
+              {
+                "system": "Licence",
+                "specialties": [
+                  {
+                    "specialtie": "Système informatique",
+                    "programPath": "MI/informatique/licence/system-informatique"
+                  }
+                ]
+              },
+              {
+                "system": "Master",
+                "specialties": []
+              },
+              {
+                "system": "Ingenieur",
+                "specialties": [
+                  {
+                    "specialtie": "Genie Logiciel",
+                    "programPath": "MI/informatique/ingenieur/genie-logicial"
+                  },
+                  {
+                    "specialtie": "Intelligence Artificielle",
+                    "programPath": "MI/informatique/ingenieur/intelligence-artificielle"
+                  },
+                  {
+                    "specialtie": "Computer Security",
+                    "programPath": "MI/informatique/ingenieur/computer-security"
+                  },
+                  {
+                    "specialtie": "Science de Donnees",
+                    "programPath": "MI/informatique/ingenieur/science-de-donnees"
+                  },
+                  {
+                    "specialtie": "Reseaux Informatiques",
+                    "programPath": "MI/informatique/ingenieur/reseaux-informatiques"
+                  },
+                  {
+                    "specialtie": "Systèmes d’Information",
+                    "programPath": "MI/informatique/ingenieur/information-systems"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Mathematiques",
+            "formation": []
+          },
+          {
+            "name": "Mathématiques Appliquées",
+            "formation": []
+          }
+        ]
+      }
+    },
+    {
+      "code": "SNV",
+      "name": "Sciences de la Nature et de la Vie",
+      "majors": 6,
+      "data": {
+        "code": "SNV",
+        "name": "Sciences de la Nature et de la Vie",
+        "majors": [
+          {
+            "name": "Tronc Commun",
+            "formation": []
+          },
+          {
+            "name": "Biologie",
+            "formation": []
+          },
+          {
+            "name": "Biotechnologie",
+            "formation": []
+          },
+          {
+            "name": "Sciences Agronomiques",
+            "formation": []
+          },
+          {
+            "name": "Hydrobiologie Marine Et Continentale",
+            "formation": []
+          },
+          {
+            "name": "Ecologie Et Environnement",
+            "formation": []
+          },
+          {
+            "name": "Sciences Alimentaires",
+            "formation": []
+          }
+        ]
+      }
+    },
+    {
+      "code": "STU",
+      "name": "Sciences de la Terre et de l'Univers",
+      "majors": 3,
+      "data": {
+        "code": "STU",
+        "name": "Sciences de la Terre et de l'Univers",
+        "majors": [
+          {
+            "name": "Geographie Et Amenagement Du Territoire",
+            "formation": []
+          },
+          {
+            "name": "Geophysique",
+            "formation": []
+          },
+          {
+            "name": "Geologie",
+            "formation": []
+          }
+        ]
+      }
+    },
+    {
+      "code": "SEGC",
+      "name": "Sciences Économiques, Gestion et Commerce",
+      "majors": 4,
+      "data": {
+        "code": "SEGC",
+        "name": "Sciences Économiques, Gestion et Commerce",
+        "majors": [
+          {
+            "name": "Tronc Commun",
+            "formation": []
+          },
+          {
+            "name": "Sciences Commerciales",
+            "formation": []
+          },
+          {
+            "name": "Sciences De Gestion",
+            "formation": []
+          },
+          {
+            "name": "Sciences Economiques",
+            "formation": []
+          },
+          {
+            "name": "Sciences Financieres Et Comptabilite",
+            "formation": []
+          }
+        ]
+      }
+    },
+    {
+      "code": "DSP",
+      "name": "Droit et Sciences Politiques",
+      "majors": 2,
+      "data": {
+        "code": "DSP",
+        "name": "Droit et Sciences Politiques",
+        "majors": [
+          {
+            "name": "Sciences Politiques",
+            "formation": []
+          },
+          {
+            "name": "Droit",
+            "formation": []
+          }
+        ]
+      }
+    },
+    {
+      "code": "LLE",
+      "name": "Langues et Littératures Étrangères",
+      "majors": 9,
+      "data": {
+        "code": "LLE",
+        "name": "Langues et Littératures Étrangères",
+        "majors": [
+          {
+            "name": "Langue Française",
+            "formation": []
+          },
+          {
+            "name": "Langue Anglaise",
+            "formation": []
+          },
+          {
+            "name": "Langue Espagnole",
+            "formation": []
+          },
+          {
+            "name": "Langue Allemande",
+            "formation": []
+          },
+          {
+            "name": "Langue Russe",
+            "formation": []
+          },
+          {
+            "name": "Langue Turque",
+            "formation": []
+          },
+          {
+            "name": "Langue Italienne",
+            "formation": []
+          },
+          {
+            "name": "Langue Chinoise",
+            "formation": []
+          },
+          {
+            "name": "Traduction Interpretariat",
+            "formation": []
+          }
+        ]
+      }
+    },
+    {
+      "code": "SHS",
+      "name": "Sciences Humaines et Sociales",
+      "majors": 14,
+      "data": {
+        "code": "SHS",
+        "name": "Sciences Humaines et Sociales",
+        "majors": [
+          {
+            "name": "Sciences Humaines - Archeologie",
+            "formation": []
+          },
+          {
+            "name": "Sciences Humaines - Bibliotheconomie",
+            "formation": []
+          },
+          {
+            "name": "Sciences Humaines - Histoire",
+            "formation": []
+          },
+          {
+            "name": "Sciences Humaines - Sciences De L’Information Et De La Communication",
+            "formation": []
+          },
+          {
+            "name": "Sciences Sociales - Anthropologie",
+            "formation": []
+          },
+          {
+            "name": "Sciences Sociales - Sociologie",
+            "formation": []
+          },
+          {
+            "name": "Sciences Sociales - Psychologie",
+            "formation": []
+          },
+          {
+            "name": "Sciences Sociales - Orthophonie",
+            "formation": []
+          },
+          {
+            "name": "Sciences Sociales - Demographie",
+            "formation": []
+          },
+          {
+            "name": "Sciences Sociales - Sciences De L'Education",
+            "formation": []
+          },
+          {
+            "name": "Sciences Sociales - Philosophie",
+            "formation": []
+          },
+          {
+            "name": "Sciences Islamiques - Fondements De La Religion",
+            "formation": []
+          },
+          {
+            "name": "Sciences Islamiques - Charia",
+            "formation": []
+          },
+          {
+            "name": "Sciences Islamiques - Langue Arabe Et Civilisation Islamique",
+            "formation": []
+          }
+        ]
+      }
+    },
+    {
+      "code": "STAPS",
+      "name": "Sciences et Techniques des Activités Physiques et Sportives",
+      "majors": 5,
+      "data": {
+        "code": "STAPS",
+        "name": "Sciences et Techniques des Activités Physiques et Sportives",
+        "majors": [
+          {
+            "name": "Tronc Commun",
+            "formation": []
+          },
+          {
+            "name": "Activite Physique Et Sportive Adaptee",
+            "formation": []
+          },
+          {
+            "name": "Activite Physique Et Sportive Educative",
+            "formation": []
+          },
+          {
+            "name": "Administration Et Gestion Du Sport",
+            "formation": []
+          },
+          {
+            "name": "Entrainement Sportif",
+            "formation": []
+          },
+          {
+            "name": "Information Et Communication Sportive",
+            "formation": []
+          }
+        ]
+      }
+    },
+    {
+      "code": "ART",
+      "name": "Arts",
+      "majors": 2,
+      "data": {
+        "code": "ART",
+        "name": "Arts",
+        "majors": [
+          {
+            "name": "Arts Du Spectacle",
+            "formation": []
+          },
+          {
+            "name": "Arts Visuels",
+            "formation": []
+          }
+        ]
+      }
+    },
+    {
+      "code": "LLA",
+      "name": "Langues et Littérature Arabe",
+      "majors": 3,
+      "data": {
+        "code": "LLA",
+        "name": "Langues et Littérature Arabe",
+        "majors": [
+          {
+            "name": "Etudes Litteraires",
+            "formation": []
+          },
+          {
+            "name": "Etudes Critique",
+            "formation": []
+          },
+          {
+            "name": "Etudes Linguistiques",
+            "formation": []
+          }
+        ]
+      }
+    },
+    {
+      "code": "LCA",
+      "name": "Langues et Civilisation Amazighe",
+      "majors": 3,
+      "data": {
+        "code": "LCA",
+        "name": "Langues et Civilisation Amazighe",
+        "majors": [
+          {
+            "name": "Linguistique Et Education",
+            "formation": []
+          },
+          {
+            "name": "Langue Et Civilisation",
+            "formation": []
+          },
+          {
+            "name": "Langue Et Litterature",
+            "formation": []
+          }
+        ]
+      }
+    },
+    {
+      "code": "AUMV",
+      "name": "Architecture, urbanisme et professions urbaines",
+      "majors": 5,
+      "data": {
+        "code": "AUMV",
+        "name": "Architecture, urbanisme et professions urbaines",
+        "majors": [
+          {
+            "name": "Gestion Des Techniques Urbaines",
+            "formation": []
+          },
+          {
+            "name": "Management Des Projets De Construction",
+            "formation": []
+          },
+          {
+            "name": "Geometre - Topographe",
+            "formation": []
+          },
+          {
+            "name": "Urbanisme",
+            "formation": []
+          },
+          {
+            "name": "Architecture",
+            "formation": []
+          }
+        ]
+      }
+    },
+    {
+      "code": "SS",
+      "name": "Sciences de la santé",
+      "majors": 2,
+      "data": {
+        "code": "SS",
+        "name": "Sciences de la santé",
+        "majors": [
+          {
+            "name": "Pharmacie Industrie Des Produits Pharmaceutiques Et De Sante",
+            "formation": []
+          },
+          {
+            "name": "Pharmacie Auxiliaires En Pharmaci",
+            "formation": []
+          }
+        ]
+      }
+    },
+    {
+      "code": "SVET",
+      "name": "Sciences Vétérinaires  ",
+      "majors": 1,
+      "data": {
+        "code": "SVET",
+        "name": "Sciences Vétérinaires  ",
+        "majors": [
+          {
+            "name": "Sciences Veterinaires",
+            "formation": []
+          }
+        ]
+      }
+    },
+    {
+      "code": "SMED",
+      "name": "Sciences Médicales",
+      "majors": 3,
+      "data": {
+        "code": "SMED",
+        "name": "Sciences Médicales",
+        "majors": [
+          {
+            "name": "Medecine",
+            "formation": []
+          },
+          {
+            "name": "Pharmacie",
+            "formation": []
+          },
+          {
+            "name": "Medecine Dentaire",
+            "formation": []
+          }
+        ]
+      }
+    }
+  ]
+}
