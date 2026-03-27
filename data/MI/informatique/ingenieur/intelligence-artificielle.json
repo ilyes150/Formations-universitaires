@@ -8,18 +8,63 @@
         "credit": 12,
         "Coefficients": 8,
         "subjects": [
-          { "name": "Architecture et administration des BDD", "coef": 4, "credit": 6, "C": 1.5, "TD": 1.5, "TP": 0, "Continuous": 0.4, "Exam": 0.6 },
-          { "name": "Compilation", "coef": 4, "credit": 6, "C": 1.5, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
+          {
+            "name": "Architecture et administration des BDD",
+            "coef": 4,
+            "credit": 6,
+            "C": 1.5,
+            "TD": 0,
+            "TP": 1.5,
+            "Continuous": 0.4,
+            "Exam": 0.6
+          },
+          {
+            "name": "Compilation",
+            "coef": 4,
+            "credit": 6,
+            "C": 1.5,
+            "TD": 1.5,
+            "TP": 1.5,
+            "Continuous": 0.4,
+            "Exam": 0.6
+          }
         ]
       },
       {
         "code": "UEF 2",
-        "credit": 11,
+        "credit": 12,
         "Coefficients": 8,
         "subjects": [
-          { "name": "Programmation Linéaire et Dynamique", "coef": 2, "credit": 4, "C": 1.5, "TD": 1.5, "TP": 0, "Continuous": 0.4, "Exam": 0.6 },
-          { "name": "Analyse numérique 1", "coef": 2, "credit": 4, "C": 1.5, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 },
-          { "name": "Génie logiciel", "coef": 4, "credit": 4, "C": 1.5, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
+          {
+            "name": "Programmation Linéaire et Dynamique",
+            "coef": 2,
+            "credit": 4,
+            "C": 1.5,
+            "TD": 1.5,
+            "TP": 0,
+            "Continuous": 0.4,
+            "Exam": 0.6
+          },
+          {
+            "name": "Analyse numérique 1",
+            "coef": 2,
+            "credit": 4,
+            "C": 1.5,
+            "TD": 1.5,
+            "TP": 1.5,
+            "Continuous": 0.4,
+            "Exam": 0.6
+          },
+          {
+            "name": "Génie logiciel",
+            "coef": 4,
+            "credit": 4,
+            "C": 1.5,
+            "TD": 1.5,
+            "TP": 1.5,
+            "Continuous": 0.4,
+            "Exam": 0.6
+          }
         ]
       },
       {
@@ -27,7 +72,16 @@
         "credit": 3,
         "Coefficients": 2,
         "subjects": [
-          { "name": "Fondements de l'IA", "coef": 2, "credit": 3, "C": 1.5, "TD": 1.5, "TP": 0, "Continuous": 0.4, "Exam": 0.6 }
+          {
+            "name": "Fondements de l'IA",
+            "coef": 2,
+            "credit": 3,
+            "C": 1.5,
+            "TD": 0,
+            "TP": 1.5,
+            "Continuous": 0.4,
+            "Exam": 0.6
+          }
         ]
       },
       {
@@ -35,7 +89,16 @@
         "credit": 3,
         "Coefficients": 2,
         "subjects": [
-          { "name": "Module optionnel (Développement mobile / IHM / Conception de jeux vidéo)", "coef": 2, "credit": 3, "C": 1.5, "TD": 1.5, "TP": 0, "Continuous": 0.4, "Exam": 0.6 }
+          {
+            "name": "Module optionnel (Développement mobile / IHM / Conception de jeux vidéo)",
+            "coef": 2,
+            "credit": 3,
+            "C": 1.5,
+            "TD": 0,
+            "TP": 1.5,
+            "Continuous": 0.4,
+            "Exam": 0.6
+          }
         ]
       }
     ]
@@ -49,9 +112,36 @@
         "credit": 16,
         "Coefficients": 11,
         "subjects": [
-          { "name": "Gestion des bases de données réparties", "coef": 3, "credit": 6, "C": 1.5, "TD": 1.5, "TP": 0, "Continuous": 0.4, "Exam": 0.6 },
-          { "name": "Système d'Exploitation : Synchronisation et Communication", "coef": 4, "credit": 6, "C": 3.0, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 },
-          { "name": "Gestion de projets", "coef": 4, "credit": 4, "C": 1.5, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
+          {
+            "name": "Gestion des bases de données réparties",
+            "coef": 3,
+            "credit": 6,
+            "C": 1.5,
+            "TD": 0,
+            "TP": 1.5,
+            "Continuous": 0.4,
+            "Exam": 0.6
+          },
+          {
+            "name": "Système d'Exploitation : Synchronisation et Communication",
+            "coef": 4,
+            "credit": 6,
+            "C": 3,
+            "TD": 1.5,
+            "TP": 1.5,
+            "Continuous": 0.4,
+            "Exam": 0.6
+          },
+          {
+            "name": "Gestion de projets",
+            "coef": 4,
+            "credit": 4,
+            "C": 1.5,
+            "TD": 1.5,
+            "TP": 1.5,
+            "Continuous": 0.4,
+            "Exam": 0.6
+          }
         ]
       },
       {
@@ -59,8 +149,26 @@
         "credit": 8,
         "Coefficients": 5,
         "subjects": [
-          { "name": "Programmation WEB", "coef": 3, "credit": 4, "C": 1.5, "TD": 1.5, "TP": 0, "Continuous": 0.4, "Exam": 0.6 },
-          { "name": "Analyse numérique 2", "coef": 2, "credit": 4, "C": 1.5, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
+          {
+            "name": "Programmation WEB",
+            "coef": 3,
+            "credit": 4,
+            "C": 1.5,
+            "TD": 0,
+            "TP": 1.5,
+            "Continuous": 0.4,
+            "Exam": 0.6
+          },
+          {
+            "name": "Analyse numérique 2",
+            "coef": 2,
+            "credit": 4,
+            "C": 1.5,
+            "TD": 1.5,
+            "TP": 1.5,
+            "Continuous": 0.4,
+            "Exam": 0.6
+          }
         ]
       },
       {
@@ -68,7 +176,16 @@
         "credit": 4,
         "Coefficients": 2,
         "subjects": [
-          { "name": "Introduction à la sécurité Informatique", "coef": 2, "credit": 4, "C": 1.5, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
+          {
+            "name": "Introduction à la sécurité Informatique",
+            "coef": 2,
+            "credit": 4,
+            "C": 1.5,
+            "TD": 1.5,
+            "TP": 1.5,
+            "Continuous": 0.4,
+            "Exam": 0.6
+          }
         ]
       },
       {
@@ -76,7 +193,15 @@
         "credit": 2,
         "Coefficients": 2,
         "subjects": [
-          { "name": "Éthique de l'IA", "coef": 2, "credit": 2, "C": 1.5, "TD": 0, "TP": 0, "Exam": 1.0 }
+          {
+            "name": "Éthique de l'IA",
+            "coef": 2,
+            "credit": 2,
+            "C": 1.5,
+            "TD": 0,
+            "TP": 0,
+            "Exam": 1
+          }
         ]
       }
     ]
@@ -90,8 +215,26 @@
         "credit": 11,
         "Coefficients": 7,
         "subjects": [
-          { "name": "Représentation des connaissances et raisonnement", "coef": 4, "credit": 6, "C": 1.5, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 },
-          { "name": "Calcul haute performance", "coef": 3, "credit": 5, "C": 1.5, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
+          {
+            "name": "Représentation des connaissances et raisonnement",
+            "coef": 4,
+            "credit": 6,
+            "C": 1.5,
+            "TD": 1.5,
+            "TP": 1.5,
+            "Continuous": 0.4,
+            "Exam": 0.6
+          },
+          {
+            "name": "Calcul haute performance",
+            "coef": 3,
+            "credit": 5,
+            "C": 1.5,
+            "TD": 1.5,
+            "TP": 1.5,
+            "Continuous": 0.4,
+            "Exam": 0.6
+          }
         ]
       },
       {
@@ -99,8 +242,26 @@
         "credit": 11,
         "Coefficients": 7,
         "subjects": [
-          { "name": "Machine Learning", "coef": 4, "credit": 6, "C": 3.0, "TD": 1.5, "TP": 0, "Continuous": 0.4, "Exam": 0.6 },
-          { "name": "Modélisation et simulation", "coef": 3, "credit": 5, "C": 1.5, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
+          {
+            "name": "Machine Learning",
+            "coef": 4,
+            "credit": 6,
+            "C": 3,
+            "TD": 0,
+            "TP": 1.5,
+            "Continuous": 0.4,
+            "Exam": 0.6
+          },
+          {
+            "name": "Modélisation et simulation",
+            "coef": 3,
+            "credit": 5,
+            "C": 1.5,
+            "TD": 1.5,
+            "TP": 1.5,
+            "Continuous": 0.4,
+            "Exam": 0.6
+          }
         ]
       },
       {
@@ -108,8 +269,26 @@
         "credit": 6,
         "Coefficients": 4,
         "subjects": [
-          { "name": "Business Intelligence", "coef": 2, "credit": 3, "C": 1.5, "TD": 1.5, "TP": 0, "Continuous": 0.4, "Exam": 0.6 },
-          { "name": "Recherche opérationnelle", "coef": 2, "credit": 3, "C": 1.5, "TD": 1.5, "TP": 0, "Continuous": 0.4, "Exam": 0.6 }
+          {
+            "name": "Business Intelligence",
+            "coef": 2,
+            "credit": 3,
+            "C": 1.5,
+            "TD": 0,
+            "TP": 1.5,
+            "Continuous": 0.4,
+            "Exam": 0.6
+          },
+          {
+            "name": "Recherche opérationnelle",
+            "coef": 2,
+            "credit": 3,
+            "C": 1.5,
+            "TD": 1.5,
+            "TP": 0,
+            "Continuous": 0.4,
+            "Exam": 0.6
+          }
         ]
       },
       {
@@ -117,7 +296,16 @@
         "credit": 2,
         "Coefficients": 2,
         "subjects": [
-          { "name": "Techniques de rédaction", "coef": 2, "credit": 2, "C": 1.5, "TD": 1.5, "TP": 0, "Continuous": 0.4, "Exam": 0.6 }
+          {
+            "name": "Techniques de rédaction",
+            "coef": 2,
+            "credit": 2,
+            "C": 1.5,
+            "TD": 0,
+            "TP": 1.5,
+            "Continuous": 0.4,
+            "Exam": 0.6
+          }
         ]
       }
     ]
@@ -131,8 +319,26 @@
         "credit": 10,
         "Coefficients": 6,
         "subjects": [
-          { "name": "Sécurité des données", "coef": 3, "credit": 5, "C": 1.5, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 },
-          { "name": "Deep Learning", "coef": 3, "credit": 5, "C": 3.0, "TD": 1.5, "TP": 0, "Continuous": 0.4, "Exam": 0.6 }
+          {
+            "name": "Sécurité des données",
+            "coef": 3,
+            "credit": 5,
+            "C": 1.5,
+            "TD": 1.5,
+            "TP": 1.5,
+            "Continuous": 0.4,
+            "Exam": 0.6
+          },
+          {
+            "name": "Deep Learning",
+            "coef": 3,
+            "credit": 5,
+            "C": 3,
+            "TD": 0,
+            "TP": 1.5,
+            "Continuous": 0.4,
+            "Exam": 0.6
+          }
         ]
       },
       {
@@ -140,8 +346,26 @@
         "credit": 10,
         "Coefficients": 6,
         "subjects": [
-          { "name": "Traitement Automatique du Langage Naturel", "coef": 3, "credit": 5, "C": 1.5, "TD": 1.5, "TP": 0, "Continuous": 0.4, "Exam": 0.6 },
-          { "name": "Traitement de données massives", "coef": 3, "credit": 5, "C": 1.5, "TD": 1.5, "TP": 0, "Continuous": 0.4, "Exam": 0.6 }
+          {
+            "name": "Traitement Automatique du Langage Naturel",
+            "coef": 3,
+            "credit": 5,
+            "C": 1.5,
+            "TD": 0,
+            "TP": 1.5,
+            "Continuous": 0.4,
+            "Exam": 0.6
+          },
+          {
+            "name": "Traitement de données massives",
+            "coef": 3,
+            "credit": 5,
+            "C": 1.5,
+            "TD": 0,
+            "TP": 1.5,
+            "Continuous": 0.4,
+            "Exam": 0.6
+          }
         ]
       },
       {
@@ -149,8 +373,26 @@
         "credit": 6,
         "Coefficients": 4,
         "subjects": [
-          { "name": "Technologies de Calcul Distribué et Intelligence Artificielle", "coef": 2, "credit": 3, "C": 1.5, "TD": 1.5, "TP": 0, "Continuous": 0.4, "Exam": 0.6 },
-          { "name": "Analyse et Traitement d'image", "coef": 2, "credit": 3, "C": 1.5, "TD": 1.5, "TP": 0, "Continuous": 0.4, "Exam": 0.6 }
+          {
+            "name": "Technologies de Calcul Distribué et Intelligence Artificielle",
+            "coef": 2,
+            "credit": 3,
+            "C": 1.5,
+            "TD": 0,
+            "TP": 1.5,
+            "Continuous": 0.4,
+            "Exam": 0.6
+          },
+          {
+            "name": "Analyse et Traitement d'image",
+            "coef": 2,
+            "credit": 3,
+            "C": 1.5,
+            "TD": 0,
+            "TP": 1.5,
+            "Continuous": 0.4,
+            "Exam": 0.6
+          }
         ]
       },
       {
@@ -158,7 +400,15 @@
         "credit": 4,
         "Coefficients": 4,
         "subjects": [
-          { "name": "Projet Pluridisciplinaire", "coef": 4, "credit": 4, "C": 0, "TD": 0, "TP": 3.0, "Exam": 1.0 }
+          {
+            "name": "Projet Pluridisciplinaire",
+            "coef": 4,
+            "credit": 4,
+            "C": 0,
+            "TD": 0,
+            "TP": 3,
+            "Exam": 1
+          }
         ]
       }
     ]
@@ -172,8 +422,26 @@
         "credit": 11,
         "Coefficients": 6,
         "subjects": [
-          { "name": "Visualisation de données", "coef": 3, "credit": 6, "C": 1.5, "TD": 1.5, "TP": 0, "Continuous": 0.4, "Exam": 0.6 },
-          { "name": "Vision par ordinateur", "coef": 3, "credit": 5, "C": 1.5, "TD": 1.5, "TP": 0, "Continuous": 0.4, "Exam": 0.6 }
+          {
+            "name": "Visualisation de données",
+            "coef": 3,
+            "credit": 6,
+            "C": 1.5,
+            "TD": 0,
+            "TP": 1.5,
+            "Continuous": 0.4,
+            "Exam": 0.6
+          },
+          {
+            "name": "Vision par ordinateur",
+            "coef": 3,
+            "credit": 5,
+            "C": 1.5,
+            "TD": 0,
+            "TP": 1.5,
+            "Continuous": 0.4,
+            "Exam": 0.6
+          }
         ]
       },
       {
@@ -181,8 +449,26 @@
         "credit": 11,
         "Coefficients": 6,
         "subjects": [
-          { "name": "Generative AI", "coef": 3, "credit": 6, "C": 1.5, "TD": 1.5, "TP": 0, "Continuous": 0.4, "Exam": 0.6 },
-          { "name": "Méthodes bio-inspirées", "coef": 3, "credit": 5, "C": 1.5, "TD": 1.5, "TP": 0, "Continuous": 0.4, "Exam": 0.6 }
+          {
+            "name": "Generative AI",
+            "coef": 3,
+            "credit": 6,
+            "C": 1.5,
+            "TD": 0,
+            "TP": 1.5,
+            "Continuous": 0.4,
+            "Exam": 0.6
+          },
+          {
+            "name": "Méthodes bio-inspirées",
+            "coef": 3,
+            "credit": 5,
+            "C": 1.5,
+            "TD": 0,
+            "TP": 1.5,
+            "Continuous": 0.4,
+            "Exam": 0.6
+          }
         ]
       },
       {
@@ -190,8 +476,26 @@
         "credit": 6,
         "Coefficients": 6,
         "subjects": [
-          { "name": "Architectures et technologies blockchain", "coef": 3, "credit": 3, "C": 1.5, "TD": 1.5, "TP": 0, "Continuous": 0.4, "Exam": 0.6 },
-          { "name": "Recherche d'information", "coef": 3, "credit": 3, "C": 1.5, "TD": 1.5, "TP": 0, "Continuous": 0.4, "Exam": 0.6 }
+          {
+            "name": "Architectures et technologies blockchain",
+            "coef": 3,
+            "credit": 3,
+            "C": 1.5,
+            "TD": 0,
+            "TP": 1.5,
+            "Continuous": 0.4,
+            "Exam": 0.6
+          },
+          {
+            "name": "Recherche d'information",
+            "coef": 3,
+            "credit": 3,
+            "C": 1.5,
+            "TD": 0,
+            "TP": 1.5,
+            "Continuous": 0.4,
+            "Exam": 0.6
+          }
         ]
       },
       {
@@ -199,7 +503,15 @@
         "credit": 2,
         "Coefficients": 2,
         "subjects": [
-          { "name": "Séminaire & workshops", "coef": 2, "credit": 2, "C": 1.5, "TD": 0, "TP": 0, "Exam": 1.0 }
+          {
+            "name": "Séminaire & workshops",
+            "coef": 2,
+            "credit": 2,
+            "C": 1.5,
+            "TD": 0,
+            "TP": 0,
+            "Exam": 1
+          }
         ]
       }
     ]
@@ -213,7 +525,16 @@
         "credit": 30,
         "Coefficients": 20,
         "subjects": [
-          { "name": "Stage en entreprise (Mémoire)", "coef": 20, "credit": 30, "C": 0, "TD": 0, "TP": 0, "Continuous": 1.0, "Exam": 0 }
+          {
+            "name": "Stage en entreprise (Mémoire)",
+            "coef": 20,
+            "credit": 30,
+            "C": 0,
+            "TD": 0,
+            "TP": 0,
+            "Continuous": 1,
+            "Exam": 0
+          }
         ]
       }
     ]
