@@ -5,10 +5,25 @@
 ```
 university-website/
 ├── data/                           # JSON program files
+│   └── config/
 │   └── MI/
+│       └── TC/
+│           └── ingenieur.json
+│           └── lmd.json
 │       └── informatique/
 │           └── ingenieur/
-│               └── tronc-commun.json
+│               └── computer-security.json
+│               └── genie-logicial.json
+│               └── information-systems.json
+│               └── intelligence-artificielle.json
+│               └── reseaux-informatiques.json
+│               └── science-de-donnees.json
+│           └── licence/
+│           └── master/
+│   └── ST/
+│       └── .../
+│           └── .../
+│               └── ...
 │
 ├── src/                            # JavaScript and CSS files
 │   ├── app.js                      # Main application logic

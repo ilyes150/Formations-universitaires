@@ -8,8 +8,8 @@
         "credit": 12,
         "Coefficients": 8,
         "subjects": [
-          { "name": "Algorithmique et Complexité Avancées", "coef": 4, "credit": 6, "C": 3.0, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 },
-          { "name": "Génie logiciel (GL)", "coef": 4, "credit": 6, "C": 3.0, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
+          { "name": "Advanced Algorithms and Complexity", "coef": 4, "credit": 6, "C": 3.0, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 },
+          { "name": "Software Engineering (SE)", "coef": 4, "credit": 6, "C": 3.0, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
         ]
       },
       {
@@ -17,8 +17,8 @@
         "credit": 10,
         "Coefficients": 7,
         "subjects": [
-          { "name": "BDD : Administration et Architecture", "coef": 4, "credit": 5, "C": 1.5, "TD": 0, "TP": 3.0, "Continuous": 0.4, "Exam": 0.6 },
-          { "name": "Système d’Exploitation : Synchronisation et Communication (SYS2)", "coef": 3, "credit": 5, "C": 3.0, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
+          { "name": "DB: Administration and Architecture", "coef": 4, "credit": 5, "C": 1.5, "TD": 0, "TP": 3.0, "Continuous": 0.4, "Exam": 0.6 },
+          { "name": "Operating Systems: Sync and Communication (SYS2)", "coef": 3, "credit": 5, "C": 3.0, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
         ]
       },
       {
@@ -26,7 +26,7 @@
         "credit": 5,
         "Coefficients": 3,
         "subjects": [
-          { "name": "Techniques d’Optimisation (TOp)", "coef": 3, "credit": 5, "C": 1.5, "TD": 1.5, "TP": 0, "Continuous": 0.4, "Exam": 0.6 }
+          { "name": "Optimization Techniques", "coef": 3, "credit": 5, "C": 1.5, "TD": 1.5, "TP": 0, "Continuous": 0.4, "Exam": 0.6 }
         ]
       },
       {
@@ -34,7 +34,7 @@
         "credit": 3,
         "Coefficients": 2,
         "subjects": [
-          { "name": "Fondements de l’IA (FIA)", "coef": 2, "credit": 3, "C": 1.5, "TD": 0, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
+          { "name": "Foundations of AI", "coef": 2, "credit": 3, "C": 1.5, "TD": 0, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
         ]
       }
     ]
@@ -48,8 +48,8 @@
         "credit": 10,
         "Coefficients": 7,
         "subjects": [
-          { "name": "Conception de logiciels", "coef": 4, "credit": 5, "C": 1.5, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 },
-          { "name": "Programmation WEB (PWEB)", "coef": 3, "credit": 5, "C": 1.5, "TD": 0, "TP": 3.0, "Continuous": 0.4, "Exam": 0.6 }
+          { "name": "Software Design", "coef": 4, "credit": 5, "C": 1.5, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 },
+          { "name": "Web Programming", "coef": 3, "credit": 5, "C": 1.5, "TD": 0, "TP": 3.0, "Continuous": 0.4, "Exam": 0.6 }
         ]
       },
       {
@@ -57,8 +57,8 @@
         "credit": 11,
         "Coefficients": 7,
         "subjects": [
-          { "name": "BDD : Optimisation et gestion des accès concurrents", "coef": 3, "credit": 5, "C": 1.5, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 },
-          { "name": "Compilation 1 (COMPIL1)", "coef": 4, "credit": 6, "C": 3.0, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
+          { "name": "DB: Optimization and Concurrency Control", "coef": 3, "credit": 5, "C": 1.5, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 },
+          { "name": "Compilation 1", "coef": 4, "credit": 6, "C": 3.0, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
         ]
       },
       {
@@ -66,7 +66,7 @@
         "credit": 5,
         "Coefficients": 4,
         "subjects": [
-          { "name": "Analyse numérique", "coef": 4, "credit": 5, "C": 3.0, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
+          { "name": "Numerical Analysis", "coef": 4, "credit": 5, "C": 3.0, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
         ]
       },
       {
@@ -74,7 +74,7 @@
         "credit": 4,
         "Coefficients": 2,
         "subjects": [
-          { "name": "Introduction à la sécurité Informatique (ISEC)", "coef": 2, "credit": 4, "C": 1.5, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
+          { "name": "Introduction to IT Security", "coef": 2, "credit": 4, "C": 1.5, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
         ]
       }
     ]
@@ -88,9 +88,9 @@
         "credit": 11,
         "Coefficients": 8,
         "subjects": [
-          { "name": "Concepts avancés de BD", "coef": 3, "credit": 4, "C": 1.5, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 },
-          { "name": "Gestion de projets (GP)", "coef": 3, "credit": 4, "C": 1.5, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 },
-          { "name": "Web avancé et Micro-services", "coef": 2, "credit": 3, "C": 1.5, "TD": 0, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
+          { "name": "Advanced DB Concepts", "coef": 3, "credit": 4, "C": 1.5, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 },
+          { "name": "Project Management", "coef": 3, "credit": 4, "C": 1.5, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 },
+          { "name": "Advanced Web and Micro-services", "coef": 2, "credit": 3, "C": 1.5, "TD": 0, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
         ]
       },
       {
@@ -107,8 +107,8 @@
         "credit": 6,
         "Coefficients": 4,
         "subjects": [
-          { "name": "Méthodes de management agiles", "coef": 2, "credit": 3, "C": 1.5, "TD": 0, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 },
-          { "name": "Réseaux et protocoles", "coef": 2, "credit": 3, "C": 1.5, "TD": 0, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
+          { "name": "Agile Management Methods", "coef": 2, "credit": 3, "C": 1.5, "TD": 0, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 },
+          { "name": "Networks and Protocols", "coef": 2, "credit": 3, "C": 1.5, "TD": 0, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
         ]
       },
       {
@@ -116,7 +116,7 @@
         "credit": 3,
         "Coefficients": 2,
         "subjects": [
-          { "name": "IHM : Conception et évaluation des interfaces", "coef": 2, "credit": 3, "C": 1.5, "TD": 0, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
+          { "name": "HCI: Interface Design and Evaluation", "coef": 2, "credit": 3, "C": 1.5, "TD": 0, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
         ]
       }
     ]
@@ -130,8 +130,8 @@
         "credit": 8,
         "Coefficients": 6,
         "subjects": [
-          { "name": "Architecture et Gestion des Systèmes d’Information Avancés", "coef": 3, "credit": 4, "C": 1.5, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 },
-          { "name": "Big-Data et Base de données NoSQL", "coef": 3, "credit": 4, "C": 1.5, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
+          { "name": "Architecture and Management of Advanced Information Systems", "coef": 3, "credit": 4, "C": 1.5, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 },
+          { "name": "Big Data and NoSQL Databases", "coef": 3, "credit": 4, "C": 1.5, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
         ]
       },
       {
@@ -139,9 +139,9 @@
         "credit": 12,
         "Coefficients": 7,
         "subjects": [
-          { "name": "Architectures Logicielles", "coef": 2, "credit": 4, "C": 1.5, "TD": 0, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 },
-          { "name": "Modèles et Gestion de Procédés Logiciels", "coef": 3, "credit": 4, "C": 1.5, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 },
-          { "name": "Test Logiciel et Assurance qualité", "coef": 2, "credit": 4, "C": 1.5, "TD": 0, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
+          { "name": "Software Architectures", "coef": 2, "credit": 4, "C": 1.5, "TD": 0, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 },
+          { "name": "Models and Software Process Management", "coef": 3, "credit": 4, "C": 1.5, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 },
+          { "name": "Software Testing and Quality Assurance", "coef": 2, "credit": 4, "C": 1.5, "TD": 0, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
         ]
       },
       {
@@ -149,8 +149,8 @@
         "credit": 6,
         "Coefficients": 4,
         "subjects": [
-          { "name": "Modélisation et Evaluation des Performances", "coef": 2, "credit": 3, "C": 1.5, "TD": 1.5, "TP": 0, "Continuous": 0.4, "Exam": 0.6 },
-          { "name": "Systèmes d’exploitation Mobiles", "coef": 2, "credit": 3, "C": 1.5, "TD": 0, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
+          { "name": "Modeling and Performance Evaluation", "coef": 2, "credit": 3, "C": 1.5, "TD": 1.5, "TP": 0, "Continuous": 0.4, "Exam": 0.6 },
+          { "name": "Mobile Operating Systems", "coef": 2, "credit": 3, "C": 1.5, "TD": 0, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
         ]
       },
       {
@@ -158,7 +158,7 @@
         "credit": 4,
         "Coefficients": 3,
         "subjects": [
-          { "name": "Projet Pluridisciplinaire", "coef": 3, "credit": 4, "C": 0, "TD": 0, "TP": 3.0, "Continuous": 1.0, "Exam": 0 }
+          { "name": "Multidisciplinary Project", "coef": 3, "credit": 4, "C": 0, "TD": 0, "TP": 3.0, "Continuous": 1.0, "Exam": 0 }
         ]
       }
     ]
@@ -172,8 +172,8 @@
         "credit": 8,
         "Coefficients": 6,
         "subjects": [
-          { "name": "Méthodes formelles pour GL", "coef": 3, "credit": 4, "C": 1.5, "TD": 0.75, "TP": 0.75, "Continuous": 0.4, "Exam": 0.6 },
-          { "name": "Développement de logiciels embarqués", "coef": 3, "credit": 4, "C": 1.5, "TD": 0, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
+          { "name": "Formal Methods for SE", "coef": 3, "credit": 4, "C": 1.5, "TD": 0.75, "TP": 0.75, "Continuous": 0.4, "Exam": 0.6 },
+          { "name": "Embedded Software Development", "coef": 3, "credit": 4, "C": 1.5, "TD": 0, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
         ]
       },
       {
@@ -181,8 +181,8 @@
         "credit": 9,
         "Coefficients": 7,
         "subjects": [
-          { "name": "Conception de jeux vidéo : Théorie et Pratique", "coef": 3, "credit": 4, "C": 1.5, "TD": 0, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 },
-          { "name": "Internet of Things (IoT) : Concepts et développement", "coef": 4, "credit": 5, "C": 1.5, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
+          { "name": "Video Game Design: Theory and Practice", "coef": 3, "credit": 4, "C": 1.5, "TD": 0, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 },
+          { "name": "Internet of Things (IoT): Concepts and Development", "coef": 4, "credit": 5, "C": 1.5, "TD": 1.5, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
         ]
       },
       {
@@ -190,9 +190,9 @@
         "credit": 11,
         "Coefficients": 8,
         "subjects": [
-          { "name": "DevOPs & Cloud Computing", "coef": 4, "credit": 5, "C": 3.0, "TD": 0, "TP": 3.0, "Continuous": 0.4, "Exam": 0.6 },
-          { "name": "Sécurité Logicielle", "coef": 2, "credit": 3, "C": 1.5, "TD": 0, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 },
-          { "name": "Développement mobile", "coef": 2, "credit": 3, "C": 1.5, "TD": 0, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
+          { "name": "DevOps & Cloud Computing", "coef": 4, "credit": 5, "C": 3.0, "TD": 0, "TP": 3.0, "Continuous": 0.4, "Exam": 0.6 },
+          { "name": "Software Security", "coef": 2, "credit": 3, "C": 1.5, "TD": 0, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 },
+          { "name": "Mobile Development", "coef": 2, "credit": 3, "C": 1.5, "TD": 0, "TP": 1.5, "Continuous": 0.4, "Exam": 0.6 }
         ]
       },
       {
@@ -200,7 +200,7 @@
         "credit": 2,
         "Coefficients": 1,
         "subjects": [
-          { "name": "Aspects juridiques", "coef": 1, "credit": 2, "C": 1.5, "TD": 0, "TP": 0, "Continuous": 0, "Exam": 1.0 }
+          { "name": "Legal Aspects", "coef": 1, "credit": 2, "C": 1.5, "TD": 0, "TP": 0, "Continuous": 0, "Exam": 1.0 }
         ]
       }
     ]
@@ -214,7 +214,7 @@
         "credit": 30,
         "Coefficients": 22,
         "subjects": [
-          { "name": "Stage en entreprise (Mémoire)", "coef": 22, "credit": 30, "C": 0, "TD": 0, "TP": 0, "Continuous": 1.0, "Exam": 0 }
+          { "name": "Company Internship (Thesis)", "coef": 22, "credit": 30, "C": 0, "TD": 0, "TP": 0, "Continuous": 1.0, "Exam": 0 }
         ]
       }
     ]
