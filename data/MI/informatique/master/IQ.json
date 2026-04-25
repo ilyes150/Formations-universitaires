@@ -75,13 +75,21 @@
             "TP": 1.5,
             "Continuous": 0.4,
             "Exam": 0.6
-          },
+          }
+        ]
+      },
+      {
+        "code": "UED",
+        "credit": 2,
+        "Coefficients": 1,
+        "subjects": [
           {
-            "name": "UE Découverte Crédits : 3 Coefficients : 1",
-            "coef": 3,
-            "C": 1.0,
-            "TD": 1.5,
-            "Exam": 0.4
+            "name": "Nano Electronics",
+            "coef": 1,
+            "credit": 3,
+            "C": 1.5,
+            "TP": 1.5,
+            "Exam": 1.0
           }
         ]
       },
@@ -177,10 +185,18 @@
             "TP": 1.5,
             "Continuous": 0.4,
             "Exam": 0.6
-          },
+          }
+        ]
+      },
+      {
+        "code": "UED",
+        "credit": 2,
+        "Coefficients": 1,
+        "subjects": [
           {
-            "name": "UE Découverte Crédits : 3 Coefficients : 1",
-            "coef": 3,
+            "name": "Spintronic",
+            "coef": 1,
+            "credit": 3,
             "C": 1.0,
             "TD": 1.5,
             "TP": 1.5,
@@ -280,14 +296,22 @@
             "TP": 1.5,
             "Continuous": 0.4,
             "Exam": 0.6
-          },
+          }
+        ]
+      },
+      {
+        "code": "UED",
+        "credit": 2,
+        "Coefficients": 1,
+        "subjects": [
           {
-            "name": "UE Découverte Crédits : 3 Coefficients : 1",
-            "coef": 3,
-            "C": 1.0,
+            "name": "Entrepreneurship",
+            "coef": 1,
+            "credit": 3,
+            "C": 1.5,
             "TD": 1.5,
-            "TP": 1.5,
-            "Exam": 0.4
+            "Continuous": 0.4,
+            "Exam": 0.6
           }
         ]
       },
@@ -318,8 +342,8 @@
         "subjects": [
           {
             "name": "Stage et mémoire",
-            "credit": 30,
             "coef": 6,
+            "credit": 30,
             "C": 0,
             "TD": 0,
             "TP": 0,
