@@ -88,6 +88,7 @@
             "coef": 1,
             "credit": 3,
             "C": 1.5,
+            "TP": 1.5,
             "Continuous": 0.4,
             "Exam": 0.6
           }
@@ -197,10 +198,10 @@
             "name": "Spintronic",
             "coef": 1,
             "credit": 3,
-            "C": 1.0,
+            "C": 1.5,
             "TD": 1.5,
-            "TP": 1.5,
-            "Exam": 0.4
+            "Continuous": 0.4,
+            "Exam": 0.6
           }
         ]
       },
