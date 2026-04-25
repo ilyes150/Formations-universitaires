@@ -40,6 +40,34 @@
         {
           "system": "Master",
           "specialties": [
+            {
+              "specialtie": "Fondements et Ingénierie de l'Information et de l'Image",
+              "programPath": "MI/informatique/master/F3I"
+            },
+            {
+              "specialtie": "Informatique Fondamentale et Intelligence Artificielle",
+              "programPath": "MI/informatique/master/IFIA"
+            },
+            {
+              "specialtie": "Génie Logiciel",
+              "programPath": "MI/informatique/master/GL"
+            },
+            {
+              "specialtie": "Réseaux et Systèmes Distribués",
+              "programPath": "MI/informatique/master/RSD"
+            },
+            {
+              "specialtie": "Ingénierie des Données et Technologie Web",
+              "programPath": "MI/informatique/master/IDTW"
+            },
+            {
+              "specialtie": "Cyber Security",
+              "programPath": "MI/informatique/master/CS"
+            },
+            {
+              "specialtie": "Informatique Quantique",
+              "programPath": "MI/informatique/master/IQ"
+            }
           ]
         },
         {

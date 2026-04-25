@@ -4,42 +4,48 @@
     "units": [
       {
         "code": "UEF 1",
-        "credit": 18,
-        "Coefficients": 9,
+        "credit": 9,
+        "Coefficients": 5,
         "subjects": [
           {
-            "name": "BDA: Bases de données avancées",
-            "coef": 2,
-            "credit": 4,
-            "C": 1.5,
-            "TP": 1.5,
-            "Continuous": 0.4,
-            "Exam": 0.6
-          },
-          {
-            "name": "PWA: Programmation web avancée",
-            "coef": 2,
-            "credit": 4,
-            "C": 1.5,
-            "TP": 1.5,
-            "Continuous": 0.4,
-            "Exam": 0.6
-          },
-          {
-            "name": "AAC: Algorithmique avancé et complexité",
-            "coef": 2,
-            "credit": 4,
-            "C": 1.5,
-            "TP": 1.5,
-            "Continuous": 0.4,
-            "Exam": 0.6
-          },
-          {
-            "name": "SR: Systèmes répartis",
+            "name": "DMSS: Designing and Managing Secure Systems",
             "coef": 3,
-            "credit": 6,
+            "credit": 5,
             "C": 1.5,
-            "TD": 1.5,
+            "TP": 1.5,
+            "Continuous": 0.4,
+            "Exam": 0.6
+          },
+          {
+            "name": "AC: Advanced Cryptography",
+            "coef": 2,
+            "credit": 4,
+            "C": 1.5,
+            "TP": 1.5,
+            "Continuous": 0.4,
+            "Exam": 0.6
+          }
+        ]
+      },
+      {
+        "code": "UEF 2",
+        "credit": 9,
+        "Coefficients": 5,
+        "subjects": [
+          {
+            "name": "A2CS: Artificial Intelligence for Cyber Security",
+            "coef": 3,
+            "credit": 5,
+            "C": 1.5,
+            "TP": 1.5,
+            "Continuous": 0.4,
+            "Exam": 0.6
+          },
+          {
+            "name": "QC: Quantum Computing",
+            "coef": 2,
+            "credit": 4,
+            "C": 1.5,
             "TP": 1.5,
             "Continuous": 0.4,
             "Exam": 0.6
@@ -48,25 +54,49 @@
       },
       {
         "code": "UEM",
-        "credit": 9,
-        "Coefficients": 4,
+        "credit": 5,
+        "Coefficients": 3,
         "subjects": [
           {
-            "name": "MS: Modélisation et simulation",
+            "name": "USA: Unix System Administration",
             "coef": 2,
-            "credit": 4,
+            "credit": 3,
             "C": 1.5,
             "TP": 1.5,
             "Continuous": 0.4,
             "Exam": 0.6
           },
           {
-            "name": "CP: Conduite de projets",
-            "coef": 2,
-            "credit": 5,
+            "name": "CAV: Computer-Aided Verification",
+            "coef": 1,
+            "credit": 2,
             "C": 1.5,
-            "TD": 1.5,
-            "TP": 1.0,
+            "TP": 1.5,
+            "Continuous": 0.4,
+            "Exam": 0.6
+          }
+        ]
+      },
+      {
+        "code": "UEM 2",
+        "credit": 4,
+        "Coefficients": 2,
+        "subjects": [
+          {
+            "name": "AVR: Augmented and Virtual Reality",
+            "coef": 1,
+            "credit": 2,
+            "C": 1.5,
+            "TP": 1.5,
+            "Continuous": 0.4,
+            "Exam": 0.6
+          },
+          {
+            "name": "CC: Cybercrime",
+            "coef": 1,
+            "credit": 2,
+            "C": 1.5,
+            "TP": 1.5,
             "Continuous": 0.4,
             "Exam": 0.6
           }
@@ -78,18 +108,11 @@
         "Coefficients": 2,
         "subjects": [
           {
-            "name": "ANG1 : Anglais 1",
-            "coef": 1,
-            "credit": 2,
+            "name": "CE 1: Communication skills in English 1",
+            "coef": 2,
+            "credit": 3,
             "C": 1.5,
             "TD": 1.5,
-            "Exam": 1.0
-          },
-          {
-            "name": "CDT : Corruption et déontologie de travail",
-            "coef": 1,
-            "credit": 1,
-            "C": 1.5,
             "Exam": 1.0
           }
         ]
@@ -102,11 +125,11 @@
       {
         "code": "UEF 1",
         "credit": 9,
-        "Coefficients": 4,
+        "Coefficients": 5,
         "subjects": [
           {
-            "name": "ACS: Administration client /serveur",
-            "coef": 2,
+            "name": "EHSD: Ethical Hacking and Systems Defense",
+            "coef": 3,
             "credit": 5,
             "C": 1.5,
             "TP": 1.5,
@@ -114,7 +137,7 @@
             "Exam": 0.6
           },
           {
-            "name": "AR : Algorithmique répartis",
+            "name": "WAS : Web Application Security",
             "coef": 2,
             "credit": 4,
             "C": 1.5,
@@ -130,17 +153,16 @@
         "Coefficients": 5,
         "subjects": [
           {
-            "name": "RII: Réseaux II",
+            "name": "MLCS: Machine Learning for Cyber Security",
             "coef": 3,
             "credit": 5,
             "C": 1.5,
-            "TD": 1.5,
             "TP": 1.5,
             "Continuous": 0.4,
             "Exam": 0.6
           },
           {
-            "name": "RM : Réseaux mobiles",
+            "name": "INS: Information And Network Security",
             "coef": 2,
             "credit": 4,
             "C": 1.5,
@@ -152,23 +174,47 @@
       },
       {
         "code": "UEM",
-        "credit": 9,
-        "Coefficients": 4,
+        "credit": 5,
+        "Coefficients": 3,
         "subjects": [
           {
-            "name": "EPS : Evaluation des performances des Systèmes",
+            "name": "OSFS: Operating Systems Forensics And Security",
             "coef": 2,
-            "credit": 5,
+            "credit": 3,
             "C": 1.5,
-            "TD": 1.5,
-            "TP": 1.0,
+            "TP": 1.5,
             "Continuous": 0.4,
             "Exam": 0.6
           },
           {
-            "name": "MF : Méthodes formelles",
-            "coef": 2,
-            "credit": 4,
+            "name": "SSD: Secure Software Development",
+            "coef": 1,
+            "credit": 2,
+            "C": 1.5,
+            "TP": 1.5,
+            "Continuous": 0.4,
+            "Exam": 0.6
+          }
+        ]
+      },
+      {
+        "code": "UEM 2",
+        "credit": 4,
+        "Coefficients": 2,
+        "subjects": [
+          {
+            "name": "CC: Cloud Computing",
+            "coef": 1,
+            "credit": 2,
+            "C": 1.5,
+            "TP": 1.5,
+            "Continuous": 0.4,
+            "Exam": 0.6
+          },
+          {
+            "name": "BC: Blockchain",
+            "coef": 1,
+            "credit": 2,
             "C": 1.5,
             "TP": 1.5,
             "Continuous": 0.4,
@@ -182,18 +228,11 @@
         "Coefficients": 2,
         "subjects": [
           {
-            "name": "ANG2 : Anglais2",
-            "coef": 1,
-            "credit": 2,
+            "name": "CE 2: Communication skills in English 2",
+            "coef": 2,
+            "credit": 3,
             "C": 1.5,
             "TD": 1.5,
-            "Exam": 1.0
-          },
-          {
-            "name": "Pédag : Pédagogie",
-            "coef": 1,
-            "credit": 1,
-            "C": 1.5,
             "Exam": 1.0
           }
         ]
@@ -206,11 +245,11 @@
       {
         "code": "UEF 1",
         "credit": 9,
-        "Coefficients": 4,
+        "Coefficients": 5,
         "subjects": [
           {
-            "name": "CAR: Construction d’applications réparties",
-            "coef": 2,
+            "name": "NF: Network Forensics",
+            "coef": 3,
             "credit": 5,
             "C": 1.5,
             "TP": 1.5,
@@ -218,7 +257,7 @@
             "Exam": 0.6
           },
           {
-            "name": "SP2P: Systèmes P2P",
+            "name": "SPBD: Security and Privacy for Big Data",
             "coef": 2,
             "credit": 4,
             "C": 1.5,
@@ -234,20 +273,19 @@
         "Coefficients": 5,
         "subjects": [
           {
-            "name": "TOR : Techniques d’optimisation des réseaux",
-            "coef": 2,
-            "credit": 4,
+            "name": "DSF: Databases Security And Forensicsy",
+            "coef": 3,
+            "credit": 5,
             "C": 1.5,
             "TP": 1.5,
             "Continuous": 0.4,
             "Exam": 0.6
           },
           {
-            "name": "IR: Ingénierie des réseaux",
-            "coef": 3,
-            "credit": 5,
+            "name": "CF: Computer Forensics",
+            "coef": 2,
+            "credit": 4,
             "C": 1.5,
-            "TD": 1.5,
             "TP": 1.5,
             "Continuous": 0.4,
             "Exam": 0.6
@@ -256,25 +294,49 @@
       },
       {
         "code": "UEM",
-        "credit": 9,
-        "Coefficients": 4,
+        "credit": 5,
+        "Coefficients": 3,
         "subjects": [
           {
-            "name": "SEAM : Systèmes embarqués et applications",
+            "name": "CS: Cloud Security",
             "coef": 2,
-            "credit": 4,
+            "credit": 3,
             "C": 1.5,
             "TP": 1.5,
             "Continuous": 0.4,
             "Exam": 0.6
           },
           {
-            "name": "SMA : Systèmes multi-agents",
-            "coef": 2,
-            "credit": 5,
+            "name": "DACS: Data Analytics For Cyber Security",
+            "coef": 1,
+            "credit": 2,
             "C": 1.5,
-            "TD": 1.5,
-            "TP": 1.0,
+            "TP": 1.5,
+            "Continuous": 0.4,
+            "Exam": 0.6
+          }
+        ]
+      },
+      {
+        "code": "UEM 2",
+        "credit": 4,
+        "Coefficients": 2,
+        "subjects": [
+          {
+            "name": "IOTS: Internet Of Things (Iot) Security",
+            "coef": 1,
+            "credit": 2,
+            "C": 1.5,
+            "TP": 1.5,
+            "Continuous": 0.4,
+            "Exam": 0.6
+          },
+          {
+            "name": "MFS: Multimedia Forensics And Security",
+            "coef": 1,
+            "credit": 2,
+            "C": 1.5,
+            "TP": 1.5,
             "Continuous": 0.4,
             "Exam": 0.6
           }
@@ -286,17 +348,11 @@
         "Coefficients": 2,
         "subjects": [
           {
-            "name": "MR: Méthodologie de recherche",
-            "coef": 1,
-            "credit": 2,
+            "name": "RM : Research Methodology",
+            "coef": 2,
+            "credit": 3,
             "C": 1.5,
-            "Exam": 1.0
-          },
-          {
-            "name": "Anglais3",
-            "coef": 1,
-            "credit": 1,
-            "C": 1.5,
+            "TD": 1.5,
             "Exam": 1.0
           }
         ]
@@ -309,21 +365,11 @@
       {
         "code": "PFE",
         "credit": 30,
-        "Coefficients": 6,
+        "Coefficients": null,
         "subjects": [
           {
             "name": "Stage dans un laboratoire de recherche ou dans une entreprise sanctionné par un mémoire de fin d'études et une soutenance.",
-            "coef": 5,
-            "credit": 25,
-            "C": 0,
-            "TD": 0,
-            "TP": 0,
-            "Exam": 1.0
-          },
-          {
-            "name": "Séminaires",
-            "coef": 1,
-            "credit": 5,
+            "credit": 30,
             "C": 0,
             "TD": 0,
             "TP": 0,

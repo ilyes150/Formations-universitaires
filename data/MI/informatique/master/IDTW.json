@@ -101,23 +101,24 @@
     "units": [
       {
         "code": "UEF 1",
-        "credit": 9,
-        "Coefficients": 4,
+        "credit": 10,
+        "Coefficients": 5,
         "subjects": [
           {
-            "name": "ACS: Administration client /serveur",
+            "name": "AA1: Apprentissage automatique 1",
             "coef": 2,
-            "credit": 5,
+            "credit": 4,
             "C": 1.5,
             "TP": 1.5,
             "Continuous": 0.4,
             "Exam": 0.6
           },
           {
-            "name": "AR : Algorithmique répartis",
-            "coef": 2,
-            "credit": 4,
+            "name": "MPR: Méthodes de résolution de problème",
+            "coef": 3,
+            "credit": 6,
             "C": 1.5,
+            "TD": 1.5,
             "TP": 1.5,
             "Continuous": 0.4,
             "Exam": 0.6
@@ -126,23 +127,22 @@
       },
       {
         "code": "UEF 2",
-        "credit": 9,
-        "Coefficients": 5,
+        "credit": 8,
+        "Coefficients": 4,
         "subjects": [
           {
-            "name": "RII: Réseaux II",
-            "coef": 3,
-            "credit": 5,
+            "name": "WS: Web sémantique et ontologies",
+            "coef": 2,
+            "credit": 4,
             "C": 1.5,
-            "TD": 1.5,
             "TP": 1.5,
             "Continuous": 0.4,
             "Exam": 0.6
           },
           {
-            "name": "RM : Réseaux mobiles",
-            "coef": 2,
-            "credit": 4,
+            "name": "SAW : Sécurité des applications web",
+            "coef": 3,
+            "credit": 6,
             "C": 1.5,
             "TP": 1.5,
             "Continuous": 0.4,
@@ -156,20 +156,20 @@
         "Coefficients": 4,
         "subjects": [
           {
-            "name": "EPS : Evaluation des performances des Systèmes",
+            "name": "CM : Contenu multimédias",
             "coef": 2,
             "credit": 5,
             "C": 1.5,
-            "TD": 1.5,
-            "TP": 1.0,
+            "TP": 1.5,
             "Continuous": 0.4,
             "Exam": 0.6
           },
           {
-            "name": "MF : Méthodes formelles",
+            "name": "CC : Cloud computing",
             "coef": 2,
             "credit": 4,
             "C": 1.5,
+            "TD": 1.0,
             "TP": 1.5,
             "Continuous": 0.4,
             "Exam": 0.6
@@ -190,7 +190,7 @@
             "Exam": 1.0
           },
           {
-            "name": "Pédag : Pédagogie",
+            "name": "PEDAG: Pédagogie",
             "coef": 1,
             "credit": 1,
             "C": 1.5,
@@ -205,23 +205,24 @@
     "units": [
       {
         "code": "UEF 1",
-        "credit": 9,
-        "Coefficients": 4,
+        "credit": 10,
+        "Coefficients": 5,
         "subjects": [
           {
-            "name": "CAR: Construction d’applications réparties",
+            "name": "EDD: Entrepôts de données",
             "coef": 2,
-            "credit": 5,
+            "credit": 4,
             "C": 1.5,
             "TP": 1.5,
             "Continuous": 0.4,
             "Exam": 0.6
           },
           {
-            "name": "SP2P: Systèmes P2P",
-            "coef": 2,
-            "credit": 4,
+            "name": "AA2:Apprentissage automatique 2",
+            "coef": 3,
+            "credit": 6,
             "C": 1.5,
+            "TD": 1.5,
             "TP": 1.5,
             "Continuous": 0.4,
             "Exam": 0.6
@@ -230,11 +231,11 @@
       },
       {
         "code": "UEF 2",
-        "credit": 9,
-        "Coefficients": 5,
+        "credit": 8,
+        "Coefficients": 4,
         "subjects": [
           {
-            "name": "TOR : Techniques d’optimisation des réseaux",
+            "name": "WM: Web mining",
             "coef": 2,
             "credit": 4,
             "C": 1.5,
@@ -243,11 +244,10 @@
             "Exam": 0.6
           },
           {
-            "name": "IR: Ingénierie des réseaux",
-            "coef": 3,
-            "credit": 5,
+            "name": "RIW: Recherche d’informations sur le web",
+            "coef": 2,
+            "credit": 4,
             "C": 1.5,
-            "TD": 1.5,
             "TP": 1.5,
             "Continuous": 0.4,
             "Exam": 0.6
@@ -260,7 +260,7 @@
         "Coefficients": 4,
         "subjects": [
           {
-            "name": "SEAM : Systèmes embarqués et applications",
+            "name": "W3D:Web 3D",
             "coef": 2,
             "credit": 4,
             "C": 1.5,
@@ -269,12 +269,12 @@
             "Exam": 0.6
           },
           {
-            "name": "SMA : Systèmes multi-agents",
+            "name": "SMA: Systèmes multi-agents",
             "coef": 2,
             "credit": 5,
             "C": 1.5,
-            "TD": 1.5,
-            "TP": 1.0,
+            "TD": 1.0,
+            "TP": 1.5,
             "Continuous": 0.4,
             "Exam": 0.6
           }
@@ -309,21 +309,11 @@
       {
         "code": "PFE",
         "credit": 30,
-        "Coefficients": 6,
+        "Coefficients": null,
         "subjects": [
           {
             "name": "Stage dans un laboratoire de recherche ou dans une entreprise sanctionné par un mémoire de fin d'études et une soutenance.",
-            "coef": 5,
-            "credit": 25,
-            "C": 0,
-            "TD": 0,
-            "TP": 0,
-            "Exam": 1.0
-          },
-          {
-            "name": "Séminaires",
-            "coef": 1,
-            "credit": 5,
+            "credit": 30,
             "C": 0,
             "TD": 0,
             "TP": 0,

@@ -101,49 +101,42 @@
     "units": [
       {
         "code": "UEF 1",
-        "credit": 9,
-        "Coefficients": 4,
+        "credit": 18,
+        "Coefficients": 9,
         "subjects": [
           {
-            "name": "ACS: Administration client /serveur",
-            "coef": 2,
-            "credit": 5,
-            "C": 1.5,
-            "TP": 1.5,
-            "Continuous": 0.4,
-            "Exam": 0.6
-          },
-          {
-            "name": "AR : Algorithmique répartis",
+            "name": "MF: Méthodes formelles",
             "coef": 2,
             "credit": 4,
             "C": 1.5,
             "TP": 1.5,
             "Continuous": 0.4,
             "Exam": 0.6
-          }
-        ]
-      },
-      {
-        "code": "UEF 2",
-        "credit": 9,
-        "Coefficients": 5,
-        "subjects": [
+          },
           {
-            "name": "RII: Réseaux II",
-            "coef": 3,
-            "credit": 5,
+            "name": "IB : Ingénierie des besoins",
+            "coef": 2,
+            "credit": 4,
             "C": 1.5,
             "TD": 1.5,
+            "Continuous": 0.4,
+            "Exam": 0.6
+          },
+          {
+            "name": "IDM: Ingénierie dirigé par les modèles",
+            "coef": 2,
+            "credit": 4,
+            "C": 1.5,
             "TP": 1.5,
             "Continuous": 0.4,
             "Exam": 0.6
           },
           {
-            "name": "RM : Réseaux mobiles",
-            "coef": 2,
-            "credit": 4,
+            "name": "ABCL: Architectures à base de composants logiciels",
+            "coef": 3,
+            "credit": 6,
             "C": 1.5,
+            "TD": 1.5,
             "TP": 1.5,
             "Continuous": 0.4,
             "Exam": 0.6
@@ -156,7 +149,7 @@
         "Coefficients": 4,
         "subjects": [
           {
-            "name": "EPS : Evaluation des performances des Systèmes",
+            "name": "SAW : Sécurité des applications web",
             "coef": 2,
             "credit": 5,
             "C": 1.5,
@@ -166,7 +159,7 @@
             "Exam": 0.6
           },
           {
-            "name": "MF : Méthodes formelles",
+            "name": "IHMA : IHM avancée",
             "coef": 2,
             "credit": 4,
             "C": 1.5,
@@ -182,7 +175,7 @@
         "Coefficients": 2,
         "subjects": [
           {
-            "name": "ANG2 : Anglais2",
+            "name": "ANG2 : Anglais 2",
             "coef": 1,
             "credit": 2,
             "C": 1.5,
@@ -190,7 +183,7 @@
             "Exam": 1.0
           },
           {
-            "name": "Pédag : Pédagogie",
+            "name": "PEDAG : Pédagogie",
             "coef": 1,
             "credit": 1,
             "C": 1.5,
@@ -205,49 +198,42 @@
     "units": [
       {
         "code": "UEF 1",
-        "credit": 9,
-        "Coefficients": 4,
+        "credit": 18,
+        "Coefficients": 9,
         "subjects": [
           {
-            "name": "CAR: Construction d’applications réparties",
-            "coef": 2,
-            "credit": 5,
-            "C": 1.5,
-            "TP": 1.5,
-            "Continuous": 0.4,
-            "Exam": 0.6
-          },
-          {
-            "name": "SP2P: Systèmes P2P",
+            "name": "ED : Entrepôts de données",
             "coef": 2,
             "credit": 4,
-            "C": 1.5,
-            "TP": 1.5,
-            "Continuous": 0.4,
-            "Exam": 0.6
-          }
-        ]
-      },
-      {
-        "code": "UEF 2",
-        "credit": 9,
-        "Coefficients": 5,
-        "subjects": [
-          {
-            "name": "TOR : Techniques d’optimisation des réseaux",
-            "coef": 2,
-            "credit": 4,
-            "C": 1.5,
-            "TP": 1.5,
-            "Continuous": 0.4,
-            "Exam": 0.6
-          },
-          {
-            "name": "IR: Ingénierie des réseaux",
-            "coef": 3,
-            "credit": 5,
             "C": 1.5,
             "TD": 1.5,
+            "Continuous": 0.4,
+            "Exam": 0.6
+          },
+          {
+            "name": "TL: Tests du logiciel",
+            "coef": 2,
+            "credit": 4,
+            "C": 1.5,
+            "TP": 1.5,
+            "Continuous": 0.4,
+            "Exam": 0.6
+          },
+          {
+            "name": "PR: Performances des réseaux",
+            "coef": 3,
+            "credit": 6,
+            "C": 1.5,
+            "TD": 1.5,
+            "TP": 1.5,
+            "Continuous": 0.4,
+            "Exam": 0.6
+          },
+          {
+            "name": "IPA : Ingénierie des protocoles et des applications",
+            "coef": 2,
+            "credit": 4,
+            "C": 1.5,
             "TP": 1.5,
             "Continuous": 0.4,
             "Exam": 0.6
@@ -260,7 +246,7 @@
         "Coefficients": 4,
         "subjects": [
           {
-            "name": "SEAM : Systèmes embarqués et applications",
+            "name": "IAGL:IA pour le génie logiciel",
             "coef": 2,
             "credit": 4,
             "C": 1.5,
@@ -269,7 +255,7 @@
             "Exam": 0.6
           },
           {
-            "name": "SMA : Systèmes multi-agents",
+            "name": "ASI : Architectures des systèmes d’Information",
             "coef": 2,
             "credit": 5,
             "C": 1.5,
