@@ -9,7 +9,7 @@
         "Coefficients": 5,
         "subjects": [
           {
-            "name": "DMSS: Designing and Managing Secure Systems",
+            "name": "Designing and Managing Secure Systems",
             "coef": 3,
             "credit": 5,
             "C": 1.5,
@@ -18,7 +18,7 @@
             "Exam": 0.6
           },
           {
-            "name": "AC: Advanced Cryptography",
+            "name": "Advanced Cryptography",
             "coef": 2,
             "credit": 4,
             "C": 1.5,
@@ -34,7 +34,7 @@
         "Coefficients": 5,
         "subjects": [
           {
-            "name": "A2CS: Artificial Intelligence for Cyber Security",
+            "name": "Artificial Intelligence for Cyber Security",
             "coef": 3,
             "credit": 5,
             "C": 1.5,
@@ -43,7 +43,7 @@
             "Exam": 0.6
           },
           {
-            "name": "QC: Quantum Computing",
+            "name": "Quantum Computing",
             "coef": 2,
             "credit": 4,
             "C": 1.5,
@@ -59,7 +59,7 @@
         "Coefficients": 3,
         "subjects": [
           {
-            "name": "USA: Unix System Administration",
+            "name": "Unix System Administration",
             "coef": 2,
             "credit": 3,
             "C": 1.5,
@@ -68,7 +68,7 @@
             "Exam": 0.6
           },
           {
-            "name": "CAV: Computer-Aided Verification",
+            "name": "Computer-Aided Verification",
             "coef": 1,
             "credit": 2,
             "C": 1.5,
@@ -84,7 +84,7 @@
         "Coefficients": 2,
         "subjects": [
           {
-            "name": "AVR: Augmented and Virtual Reality",
+            "name": "Augmented and Virtual Reality",
             "coef": 1,
             "credit": 2,
             "C": 1.5,
@@ -93,7 +93,7 @@
             "Exam": 0.6
           },
           {
-            "name": "CC: Cybercrime",
+            "name": "Cybercrime",
             "coef": 1,
             "credit": 2,
             "C": 1.5,
@@ -109,7 +109,7 @@
         "Coefficients": 2,
         "subjects": [
           {
-            "name": "CE 1: Communication skills in English 1",
+            "name": "Communication skills in English 1",
             "coef": 2,
             "credit": 3,
             "C": 1.5,
@@ -130,7 +130,7 @@
         "Coefficients": 5,
         "subjects": [
           {
-            "name": "EHSD: Ethical Hacking and Systems Defense",
+            "name": "Ethical Hacking and Systems Defense",
             "coef": 3,
             "credit": 5,
             "C": 1.5,
@@ -139,7 +139,7 @@
             "Exam": 0.6
           },
           {
-            "name": "WAS : Web Application Security",
+            "name": "Web Application Security",
             "coef": 2,
             "credit": 4,
             "C": 1.5,
@@ -155,7 +155,7 @@
         "Coefficients": 5,
         "subjects": [
           {
-            "name": "MLCS: Machine Learning for Cyber Security",
+            "name": "Machine Learning for Cyber Security",
             "coef": 3,
             "credit": 5,
             "C": 1.5,
@@ -164,7 +164,7 @@
             "Exam": 0.6
           },
           {
-            "name": "INS: Information And Network Security",
+            "name": "Information And Network Security",
             "coef": 2,
             "credit": 4,
             "C": 1.5,
@@ -180,7 +180,7 @@
         "Coefficients": 3,
         "subjects": [
           {
-            "name": "OSFS: Operating Systems Forensics And Security",
+            "name": "Operating Systems Forensics And Security",
             "coef": 2,
             "credit": 3,
             "C": 1.5,
@@ -189,7 +189,7 @@
             "Exam": 0.6
           },
           {
-            "name": "SSD: Secure Software Development",
+            "name": "Secure Software Development",
             "coef": 1,
             "credit": 2,
             "C": 1.5,
@@ -205,7 +205,7 @@
         "Coefficients": 2,
         "subjects": [
           {
-            "name": "CC: Cloud Computing",
+            "name": "Cloud Computing",
             "coef": 1,
             "credit": 2,
             "C": 1.5,
@@ -214,7 +214,7 @@
             "Exam": 0.6
           },
           {
-            "name": "BC: Blockchain",
+            "name": "Blockchain",
             "coef": 1,
             "credit": 2,
             "C": 1.5,
@@ -230,7 +230,7 @@
         "Coefficients": 2,
         "subjects": [
           {
-            "name": "CE 2: Communication skills in English 2",
+            "name": "Communication skills in English 2",
             "coef": 2,
             "credit": 3,
             "C": 1.5,
@@ -251,7 +251,7 @@
         "Coefficients": 5,
         "subjects": [
           {
-            "name": "NF: Network Forensics",
+            "name": "Network Forensics",
             "coef": 3,
             "credit": 5,
             "C": 1.5,
@@ -260,7 +260,7 @@
             "Exam": 0.6
           },
           {
-            "name": "SPBD: Security and Privacy for Big Data",
+            "name": "Security and Privacy for Big Data",
             "coef": 2,
             "credit": 4,
             "C": 1.5,
@@ -276,7 +276,7 @@
         "Coefficients": 5,
         "subjects": [
           {
-            "name": "DSF: Databases Security And Forensicsy",
+            "name": "Databases Security And Forensicsy",
             "coef": 3,
             "credit": 5,
             "C": 1.5,
@@ -285,7 +285,7 @@
             "Exam": 0.6
           },
           {
-            "name": "CF: Computer Forensics",
+            "name": "Computer Forensics",
             "coef": 2,
             "credit": 4,
             "C": 1.5,
@@ -301,7 +301,7 @@
         "Coefficients": 3,
         "subjects": [
           {
-            "name": "CS: Cloud Security",
+            "name": "Cloud Security",
             "coef": 2,
             "credit": 3,
             "C": 1.5,
@@ -310,7 +310,7 @@
             "Exam": 0.6
           },
           {
-            "name": "DACS: Data Analytics For Cyber Security",
+            "name": "Data Analytics For Cyber Security",
             "coef": 1,
             "credit": 2,
             "C": 1.5,
@@ -326,7 +326,7 @@
         "Coefficients": 2,
         "subjects": [
           {
-            "name": "IOTS: Internet Of Things (Iot) Security",
+            "name": "Internet Of Things (Iot) Security",
             "coef": 1,
             "credit": 2,
             "C": 1.5,
@@ -335,7 +335,7 @@
             "Exam": 0.6
           },
           {
-            "name": "MFS: Multimedia Forensics And Security",
+            "name": "Multimedia Forensics And Security",
             "coef": 1,
             "credit": 2,
             "C": 1.5,
@@ -351,7 +351,7 @@
         "Coefficients": 2,
         "subjects": [
           {
-            "name": "RM : Research Methodology",
+            "name": "Research Methodology",
             "coef": 2,
             "credit": 3,
             "C": 1.5,

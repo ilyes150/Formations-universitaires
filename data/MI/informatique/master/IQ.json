@@ -80,7 +80,7 @@
       },
       {
         "code": "UED",
-        "credit": 2,
+        "credit": 3,
         "Coefficients": 1,
         "subjects": [
           {
@@ -88,8 +88,8 @@
             "coef": 1,
             "credit": 3,
             "C": 1.5,
-            "TP": 1.5,
-            "Exam": 1.0
+            "Continuous": 0.4,
+            "Exam": 0.6
           }
         ]
       },
@@ -102,7 +102,7 @@
             "name": "Communication in English",
             "coef": 1,
             "credit": 2,
-            "TD": 3.0,
+            "TD": 3.0,  
             "Exam": 1.0
           }
         ]
@@ -190,7 +190,7 @@
       },
       {
         "code": "UED",
-        "credit": 2,
+        "credit": 3,
         "Coefficients": 1,
         "subjects": [
           {
@@ -301,7 +301,7 @@
       },
       {
         "code": "UED",
-        "credit": 2,
+        "credit": 3,
         "Coefficients": 1,
         "subjects": [
           {
