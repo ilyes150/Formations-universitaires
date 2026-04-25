@@ -1,5 +1,6 @@
 [
   {
+    "year": 1,
     "semester": 1,
     "units": [
       {
@@ -97,6 +98,7 @@
     ]
   },
   {
+    "year": 1,
     "semester": 2,
     "units": [
       {
@@ -201,6 +203,7 @@
     ]
   },
   {
+    "year": 2,
     "semester": 3,
     "units": [
       {
@@ -304,26 +307,18 @@
     ]
   },
   {
+    "year": 2,
     "semester": 4,
     "units": [
       {
         "code": "PFE",
-        "credit": 30,
-        "Coefficients": 6,
+        "credit": 25,
+        "Coefficients": 5,
         "subjects": [
           {
-            "name": "Stage dans un laboratoire de recherche ou dans une entreprise sanctionné par un mémoire de fin d'études et une soutenance.",
-            "coef": 5,
+            "name": "Stage et mémoire",
             "credit": 25,
-            "C": 0,
-            "TD": 0,
-            "TP": 0,
-            "Exam": 1.0
-          },
-          {
-            "name": "Séminaires",
-            "coef": 1,
-            "credit": 5,
+            "coef": 5,
             "C": 0,
             "TD": 0,
             "TP": 0,

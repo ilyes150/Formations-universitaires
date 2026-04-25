@@ -1,5 +1,6 @@
 [
   {
+    "year": 1,
     "semester": 1,
     "units": [
       {
@@ -101,6 +102,7 @@
     ]
   },
   {
+    "year": 1,
     "semester": 2,
     "units": [
       {
@@ -203,6 +205,7 @@
     ]
   },
   {
+    "year": 2,
     "semester": 3,
     "units": [
       {
@@ -305,6 +308,7 @@
     ]
   },
   {
+    "year": 2,
     "semester": 4,
     "units": [
       {
@@ -313,16 +317,9 @@
         "Coefficients": 6,
         "subjects": [
           {
-            "name": "Unité d'Enseignement",
-            "C": 0,
-            "TD": 0,
-            "TP": 0,
-            "Exam": 1.0
-          },
-          {
-            "name": "Projet de fin d’étude",
-            "coef": 6,
+            "name": "Stage et mémoire",
             "credit": 30,
+            "coef": 6,
             "C": 0,
             "TD": 0,
             "TP": 0,
